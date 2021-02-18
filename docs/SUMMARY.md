@@ -5,5 +5,5 @@
 
 ## Onyxia Demo
 
-* [An R demo project](onyxia-demo/an-r-demo-project.md)
+* [Utiliser R avec le SSP Cloud](onyxia-demo/utiliser-r-avec-le-ssp-cloud.md)
 
