@@ -67,3 +67,6 @@ Un exemple minimal est présent dans le fichier [datasaurus.R](https://github.co
 
 Pour exécuter ce pipeline :
 
+```text
+source("datasaurus.R")
+```
