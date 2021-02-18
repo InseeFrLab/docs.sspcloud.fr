@@ -1,11 +1,10 @@
 ---
-description: An R demo project for datalab.sspcloud.fr.
+title: Utiliser R avec le SSP Cloud
+
+description: Une courte démonstration pour utiliser R avec le [datalab SSP Cloud](https://datalab.sspcloud.fr).
+
+keywords: getting started, account, Subscription, Pay-As-You-Go, enterprise, catalog, upgrade account, IAM, access groups, invite users, notifications, email preferences, account settings, MFA, authetication, TOTP, U2F, FIDO U2F, security key
 ---
-
-# Utiliser R avec le SSP Cloud
-
-Une courte démonstration pour utiliser R avec le [datalab SSP Cloud](https://datalab.sspcloud.fr).
-
 ## Configuration de l'environnement
 
 * Ouvrir le [catalogue de service](https://datalab.sspcloud.fr/my-lab/catalogue/inseefrlab-helm-charts-datascience)
