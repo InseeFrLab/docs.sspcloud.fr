@@ -3,7 +3,8 @@
 * [Initial page](README.md)
 * [Le datalab](https://datalab.sspcloud.fr)
 
-## Onyxia Demo
+## Utiliser le datalab Onyxia
 
-* [Utiliser R avec le SSP Cloud](onyxia-demo/utiliser-r-avec-le-ssp-cloud.md)
+* [Lancer un service](utiliser-le-datalab-onyxia/lancer-un-service.md)
+* [Utiliser R avec le SSPCloud](utiliser-le-datalab-onyxia/utiliser-r-avec-le-ssp-cloud.md)
 
