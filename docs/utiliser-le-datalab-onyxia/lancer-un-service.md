@@ -36,6 +36,9 @@ La page [Mes services](https://datalab.sspcloud.fr/my-service) permet de visuali
 
 | Services | Identifiants |
 | :--- | :--- |
-| Rstudio | rstudio |
-| Jupyter | / |
+| RStudio | rstudio |
+| Neo4j | neo4j |
+| PgAdmin | Email compte SSP Cloud |
+
+Les autres services ne demandent pas d'identifiants
 
