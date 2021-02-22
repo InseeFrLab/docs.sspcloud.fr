@@ -1,5 +1,5 @@
 ---
-description: Un court tutoriel pour lancer un service avec le datalab SSP Cloud.
+description: Tutoriel pour lancer un service avec le datalab SSP Cloud.
 ---
 
 # Lancer un service

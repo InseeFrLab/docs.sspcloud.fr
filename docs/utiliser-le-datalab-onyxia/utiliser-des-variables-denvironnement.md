@@ -1,7 +1,7 @@
 ---
 description: >-
-  Un court tutoriel pour utiliser des variables d’environnement avec le datalab
-  SSP Cloud.
+  Tutoriel pour utiliser des variables d’environnement avec le datalab SSP
+  Cloud.
 ---
 
 # Utiliser des variables d’environnement
