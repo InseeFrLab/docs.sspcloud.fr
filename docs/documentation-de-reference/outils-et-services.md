@@ -2,7 +2,7 @@
 description: 'Documentation officielle des outils et services proposées par la plateforme:'
 ---
 
-# Outils et services - Documentation officielle
+# Outils et services
 
 * [RStudio](https://docs.rstudio.com/   )
 * [BlazingSQL](https://docs.blazingdb.com/docs)

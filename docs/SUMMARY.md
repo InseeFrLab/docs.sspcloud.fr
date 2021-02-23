@@ -16,7 +16,7 @@
 
 ## Documentation de référence
 
-* [Outils et services - Documentation officielle](documentation-de-reference/outils-et-services-documentation-officielle.md)
+* [Outils et services](documentation-de-reference/outils-et-services.md)
 * [Documentation R](documentation-de-reference/documentation-r.md)
 * [Documentation Gitlab](documentation-de-reference/documentation-gitlab.md)
 
