@@ -1,12 +1,26 @@
 # Table of contents
 
-* [Initial page](README.md)
+* [Communauté SSP Cloud](README.md)
+* [Comment contribuer ?](comment-contribuer.md)
 * [Le datalab](https://datalab.sspcloud.fr)
 
-## Utiliser le datalab Onyxia
+## Onyxia - Guide de démarrage
 
-* [Lancer un service](utiliser-le-datalab-onyxia/lancer-un-service.md)
-* [Importer des données](utiliser-le-datalab-onyxia/importer-des-donnees.md)
-* [Utiliser des secrets](utiliser-le-datalab-onyxia/utiliser-des-variables-denvironnement.md)
-* [Utiliser R avec le SSPCloud](utiliser-le-datalab-onyxia/utiliser-r-avec-le-ssp-cloud.md)
+* [Lancer rapidement un service](onyxia-guide-de-demarrage/lancer-un-service.md)
+* [Importer des données](onyxia-guide-de-demarrage/importer-des-donnees.md)
+
+## Onyxia - Guide avancé
+
+* [Configurer un service](onyxia-guide-avance/configurer-un-service.md)
+* [Utiliser des secrets](onyxia-guide-avance/utiliser-des-variables-denvironnement.md)
+
+## Documentation de référence
+
+* [Outils et services - Documentation officielle](documentation-de-reference/outils-et-services-documentation-officielle.md)
+* [Documentation R](documentation-de-reference/documentation-r.md)
+* [Documentation Gitlab](documentation-de-reference/documentation-gitlab.md)
+
+## Exemples
+
+* [Projet de démonstration R avec Onyxia](exemples/projet-de-demonstration-r-avec-onyxia.md)
 

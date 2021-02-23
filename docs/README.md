@@ -1,12 +1,24 @@
-# Initial page
+---
+description: >-
+  Toutes les ressources pour aider les membres de la communauté à s'approprier
+  la plateforme Onyxia et ses services.
+---
 
-## Can I become who I want to be?
+# Communauté SSP Cloud
 
-That's a tough question but thankfully, our team is on it. Please bear with us while we're investigating.
+## Nouvel utilisateur du datalab? 
 
-## Have you had a chance to answer the previous question?
+Découvre facilement les premiers usages de la plateforme en suivant ce petit guide.
 
-Yes, after a few months we finally found the answer. Sadly, Mike is on vacations right now so I'm afraid we are not able to provide the answer at this point.
+## Envie d'en découvrir un peu plus ?
+
+{% page-ref page="onyxia-guide-avance/configurer-un-service.md" %}
+
+{% page-ref page="onyxia-guide-avance/utiliser-des-variables-denvironnement.md" %}
+
+## Envie de contribuer à la communauté?
+
+{% page-ref page="comment-contribuer.md" %}
 
 
 

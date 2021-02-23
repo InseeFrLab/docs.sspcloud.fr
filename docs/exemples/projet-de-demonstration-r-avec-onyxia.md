@@ -1,6 +1,6 @@
 ---
 title: Utiliser R avec le SSP Cloud
-description: Une courte démonstration pour utiliser R avec le datalab SSP Cloud
+description: Une courte démonstration pour lancer un projet R avec le datalab SSP Cloud
 keywords: >-
   getting started, account, Subscription, Pay-As-You-Go, enterprise, catalog,
   upgrade account, IAM, access groups, invite users, notifications, email
@@ -8,7 +8,7 @@ keywords: >-
   security key
 ---
 
-# Utiliser R avec le SSPCloud
+# Projet de démonstration R avec Onyxia
 
 Une courte démonstration pour utiliser R avec le [datalab SSP Cloud](https://datalab.sspcloud.fr).
 
