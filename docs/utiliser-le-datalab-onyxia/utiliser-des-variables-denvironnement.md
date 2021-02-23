@@ -1,10 +1,10 @@
 ---
 description: >-
-  Tutoriel pour utiliser des variables d’environnement avec le datalab SSP
-  Cloud.
+  Tutoriel pour utiliser des secrets en tant que variables d’environnement avec
+  le datalab SSP Cloud.
 ---
 
-# Utiliser des variables d’environnement
+# Utiliser des secrets
 
 ### Les variables d'environnement 
 
