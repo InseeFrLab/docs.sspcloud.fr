@@ -12,3 +12,11 @@ L'identifiant RStudio est: `rstudio` Le mot de passe est le même pour tous les 
 
 Oui, il est possible de modifier plusieurs informations liées au compte depuis la page [Mon compte](https://datalab.sspcloud.fr/account).
 
+## 🟠 J'ai l'impression que Blazing SQL ne fonctionne pas...
+
+Dans le formulaire de configuration, il y a l’onglet dédiées aux ressources où réserver la mémoire \(Mi\), la CPU et la GPU d’un service avant son lancement.
+
+## 🟠 Mon service me renvoie une erreur 403. 
+
+Une erreur 403 est liée à la protection réseau qu'on applique aux services. Les services créés à partir d'une certaine IP ne sont initialement accessibles que depuis cette IP. cette protection est gérée dans l'onglet « Security » avec la case à cocher « Enable IP protection ».
+
