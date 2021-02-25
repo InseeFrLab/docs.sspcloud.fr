@@ -32,3 +32,7 @@
 
 * [A complèter](articles/a-completer.md)
 
+---
+
+* [FAQ](faq.md)
+
