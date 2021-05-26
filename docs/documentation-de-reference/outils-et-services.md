@@ -23,3 +23,23 @@ description: 'Documentation officielle des outils et services proposées par la 
 * [Github](https://docs.github.com/en)
 * [Gravitee](https://docs.gravitee.io/)
 
+## RStudio 
+
+#### Description
+
+R Studio est l’environnement / IDE de référence pour la programmation avec R, un langage de programmation utilisé pour le traitement de données et l’analyse statistique.
+
+#### Documentation officielle :
+
+{% embed url="https://docs.rstudio.com/" %}
+
+## Liste des identifiants
+
+| Services | Identifiants |
+| :--- | :--- |
+| RStudio | rstudio |
+| Neo4j | neo4j |
+| PgAdmin | Email compte SSP Cloud |
+
+Les autres services ne demandent pas d'identifiants.
+

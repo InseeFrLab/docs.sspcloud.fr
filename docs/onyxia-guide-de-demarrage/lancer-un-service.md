@@ -8,6 +8,8 @@ description: Tutoriel pour lancer rapidement un service avec le datalab SSP Clou
 
 La plateforme Onyxia propose un catalogue de services et d'outils dédiés au traitement de données statistique et à la datascience.
 
+![Onyxia - Catalogue de services](../.gitbook/assets/onyxiacatalogue.png)
+
 Vous pouvez accéder au catalogue de service depuis la page d'accueil et le menu de navigation.
 
 * Ouvrir le [catalogue de service](https://datalab.sspcloud.fr/my-lab/catalogue/inseefrlab-helm-charts-datascience)
@@ -24,16 +26,6 @@ La page [Mes services](https://datalab.sspcloud.fr/my-service) permet de visuali
 * Une fois votre service chargé, cliquez sur `Ouvrir` pour accéder à votre service.
 * Ci-dessous la liste complète des identifiants en fonction de chaque service
 * Le mot de passe est le même pour tous les services et est accessible depuis la page [Mon compte](https://datalab.sspcloud.fr/account) ou la page [Mes services](https://datalab.sspcloud.fr/my-service) en cliquant sur le bouton `Mot de passe des services`
-
-### Liste des identifiants
-
-| Services | Identifiants |
-| :--- | :--- |
-| RStudio | rstudio |
-| Neo4j | neo4j |
-| PgAdmin | Email compte SSP Cloud |
-
-Les autres services ne demandent pas d'identifiants.
 
 ### Gérer ses services
 
