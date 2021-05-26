@@ -28,9 +28,10 @@
 
 * [A complèter](tutoriels/a-completer.md)
 
-## Articles
+## Projets
 
-* [A complèter](articles/a-completer.md)
+* [Datavisualisation: Mouvements de population autour du confinement de mars 2020](projets/lockdown-maps-r.md)
+* [A complèter](projets/a-completer.md)
 
 ---
 
