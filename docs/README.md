@@ -12,13 +12,13 @@ Découvre facilement les premiers usages de la plateforme en suivant ce petit gu
 
 ## Envie d'en découvrir un peu plus ?
 
-{% page-ref page="onyxia-guide-avance/configurer-un-service.md" %}
+{% page-ref page="onyxia-guide/configurer-un-service.md" %}
 
-{% page-ref page="onyxia-guide-avance/utiliser-des-variables-denvironnement.md" %}
+{% page-ref page="onyxia-guide/utiliser-des-variables-denvironnement.md" %}
 
 ## Envie de contribuer à la communauté?
 
-{% page-ref page="comment-contribuer.md" %}
+{% page-ref page="comment-contribuer-1/comment-contribuer.md" %}
 
 
 
