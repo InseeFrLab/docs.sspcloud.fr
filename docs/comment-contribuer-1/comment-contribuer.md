@@ -51,7 +51,7 @@ Concernant l'organisation des pages, nous avons construit le Gitbook de la faço
 * **Onyxia - Guide** pour tous les pas à pas de prise en main de la plateforme Onyxia
 * **Exemples** pour proposer des bouts de codes, des projets exploratoire, etc.
 * **Tutoriels** pour diverses aides, guides et formations
-* **Projets** pour présenter des cas d'usages du datalab et les services et fonctionnalités utilisées 
+* **Projets** pour présenter des cas d'usages du datalab et les services et fonctionnalités utilisées. [Comment présenter un projet ?](comment-presenter-un-projet.md)
 
 {% hint style="warning" %}
 Après avoir effectué une modification ou ajouter une page, pensez à décrire les modifications avec un court message en cliquant sur « Décrire ce brouillon » dans la section Brouillons de la barre latérale et en rédigeant une brève description :

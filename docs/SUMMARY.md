@@ -13,6 +13,8 @@
 ## Comment contribuer ? <a id="comment-contribuer-1"></a>
 
 * [Comment contribuer à la documentation?](comment-contribuer-1/comment-contribuer.md)
+* [Comment contribuer au catalogue de service ?](comment-contribuer-1/comment-contribuer-au-catalogue-de-service.md)
+* [Comment présenter un projet ?](comment-contribuer-1/comment-presenter-un-projet.md)
 
 ## Documentation de référence
 
