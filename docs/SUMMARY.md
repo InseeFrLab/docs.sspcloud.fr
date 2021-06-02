@@ -34,6 +34,7 @@
 ## Projets
 
 * [Datavisualisation: Mouvements de population autour du confinement de mars 2020](projets/lockdown-maps-r.md)
+* [V2 : Datavisualisation: Mouvements de population autour du confinement de mars 2020](projets/v2-datavisualisation-mouvements-de-population-autour-du-confinement-de-mars-2020.md)
 * [A complèter](projets/a-completer.md)
 
 ---
