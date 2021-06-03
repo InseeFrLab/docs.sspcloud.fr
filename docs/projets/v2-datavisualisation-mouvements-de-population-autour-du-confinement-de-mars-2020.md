@@ -17,7 +17,7 @@ Ce projet documente les mouvements de population autour du confinement de mars 2
 
 ## Les usages du datalab 
 
-Le projet a été réalisé avec Rstudio pour le traitement de données  et la visualisation. L'usage de Github a favorisé les échanges avec le CBS \(Institut de Statistiques Néerlandais\) mais aussi la réutilisation du code pour d'autres institutions et pays.
+Le projet a été réalisé avec Rstudio pour le traitement de données  et la visualisation. L'usage de Github a favorisé les échanges avec le CBS \(Institut de Statistiques Néerlandais\) mais aussi la réutilisation du code pour l'analyse de mouvement de population d'autres pays.
 
 À compléter...
 
