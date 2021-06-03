@@ -26,7 +26,7 @@ Tu ne prends aucun risque à "casser" quoi que ce soit.
 
 ### Étape 1: Créer un compte
 
-Configurez un compte GitBook sur [https://www.gitbook.com/](https://www.gitbook.com/) \(par e-mail ou Google, GitHub, etc. - cela n'a pas d'importance tant que vous vous souvenez de vos informations de connexion\).
+Configurez un compte GitBook sur [https://www.gitbook.com/](https://www.gitbook.com/). Il est préférable de créer votre compte GitBook en utilisant votre compte GitHub pour que les modifications puissent vous être attribuées [dans les sources](https://github.com/InseeFrLab/docs.sspcloud.fr/tree/master/docs).
 
 ### Étape 2 : Obtenir l'accès 
 
