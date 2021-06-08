@@ -15,11 +15,21 @@ Ce projet documente les mouvements de population autour du confinement de mars 2
 
 #### → Lien vers la [datavisualisation](https://inseefrlab.github.io/lockdown-maps-R/inflows_FR.html)
 
-## Les usages du datalab 
+## L'usage du datalab 
 
 Le projet a été réalisé avec Rstudio pour le traitement de données  et la visualisation. L'usage de Github a favorisé les échanges avec le CBS \(Institut de Statistiques Néerlandais\) mais aussi la réutilisation du code pour l'analyse de mouvement de population dans d'autres pays.
 
 À compléter...
+
+## Les données
+
+Téléchargement: [Données agrégées publiées en mai 2020](https://www.insee.fr/fr/statistiques/fichier/4635407/IA54_Donnees.xlsx): [Données de la dataviz \(données expérimentales\), publiées en avril 2021](https://www.insee.fr/fr/statistiques/fichier/5350073/mouvements_population_confinement_2020_csv.zip) \(référence pour les agrégats\)
+
+Voir également:[ Déplacements de population lors du confinement au printemps 2020 - Données expérimentales - Bases de données](https://insee.fr/fr/statistiques/5350073)
+
+### Précautions d'usages des données
+
+L’Insee considère ces résultats comme **expérimentaux**. Il faut souligner qu'il s'agit de statistiques expérimentales sujettes à des imprécisions du fait du type de données mobilisées et de leurs incertitudes inhérentes. De plus, ces nouvelles estimations réalisées au niveau de chaque couple département de résidence, département de présence, sont publiées arrondies à la centaine afin de permettre des ré-agrégations comme celles permettant de déployer l’outil de visualisation. Il est cependant préférable d'interpréter les croisements et aggrégations obtenues en arrondissant au millier de personnes. 
 
 ## En savoir plus sur le projet
 
