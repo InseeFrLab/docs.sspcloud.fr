@@ -31,6 +31,11 @@
 
 * [À compléter](tutoriels/a-completer.md)
 
+## Actualités
+
+* [ML Flow et MLOps](actualites/ml-flow-et-mlops.md)
+* [Atelier Kubernetes-SSP Cloud : Introduction et bonnes pratiques de déploiement Docker](actualites/atelier-kubernetes-ssp-cloud-introduction-et-bonnes-pratiques-de-deploiement-docker.md)
+
 ## Projets
 
 * [Datavisualisation: Mouvements de population autour du confinement de mars 2020](projets/datavisualisation-mouvements-de-population-autour-du-confinement-de-mars-2020.md)
