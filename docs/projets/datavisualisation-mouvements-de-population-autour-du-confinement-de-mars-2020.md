@@ -17,9 +17,7 @@ Ce projet documente les mouvements de population autour du confinement de mars 2
 
 ## L'usage du datalab 
 
-Le projet a été réalisé avec Rstudio pour le traitement de données  et la visualisation. L'usage de Github a favorisé les échanges avec le CBS \(Institut de Statistiques Néerlandais\) mais aussi la réutilisation du code pour l'analyse de mouvement de population dans d'autres pays.
-
-À compléter...
+Le projet a été réalisé avec Rstudio pour le traitement de données  et la visualisation. L'usage de Github a favorisé les échanges avec le CBS \(Institut de Statistiques Néerlandais\) mais aussi la réutilisation du code pour l'analyse de mouvement de population dans d'autres pays. De plus, la seconde exploitation a été grandement facilitée par le développement, lors de la première exploitation, d'un code reproductible sous la forme d'un proto-package \(ensemble de fonctions\) versionné avec Git.
 
 ## Les données
 
@@ -34,8 +32,4 @@ L’Insee considère ces résultats comme **expérimentaux**. Il faut souligner 
 ## En savoir plus sur le projet
 
 {% embed url="https://github.com/InseeFrLab/lockdown-maps-R" caption="Lien vers le repo Github" %}
-
-## Autres liens utiles 
-
-À compléter...
 
