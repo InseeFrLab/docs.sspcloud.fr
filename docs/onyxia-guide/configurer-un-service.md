@@ -6,7 +6,5 @@ description: >-
 
 # Configurer un service
 
-## À compléter
-
-
+## En cours d'écriture 🚧
 

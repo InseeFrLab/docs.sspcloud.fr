@@ -6,12 +6,12 @@
 
 ## Onyxia - Guide
 
-* [Lancer rapidement un service](onyxia-guide/lancer-un-service.md)
 * [Découverte du datalab](onyxia-guide/decouverte-du-datalab.md)
+* [Lancer rapidement un service](onyxia-guide/lancer-un-service.md)
 * [Importer des données](onyxia-guide/importer-des-donnees.md)
 * [Lancer un projet R avec le datalab](onyxia-guide/projet-de-demonstration-r-avec-onyxia.md)
-* [Configurer un service](onyxia-guide/configurer-un-service.md)
 * [Utiliser des secrets](onyxia-guide/utiliser-des-variables-denvironnement.md)
+* [Configurer un service](onyxia-guide/configurer-un-service.md)
 
 ## Comment contribuer ? <a id="comment-contribuer-1"></a>
 
