@@ -6,6 +6,7 @@
 ## Onyxia - Guide
 
 * [Lancer rapidement un service](onyxia-guide/lancer-un-service.md)
+* [Lancer un projet R avec le datalab](onyxia-guide/projet-de-demonstration-r-avec-onyxia.md)
 * [Importer des données](onyxia-guide/importer-des-donnees.md)
 * [Configurer un service](onyxia-guide/configurer-un-service.md)
 * [Utiliser des secrets](onyxia-guide/utiliser-des-variables-denvironnement.md)
@@ -24,7 +25,6 @@
 
 ## Exemples
 
-* [Projet de démonstration R avec Onyxia](exemples/projet-de-demonstration-r-avec-onyxia.md)
 * [À compléter](exemples/a-completer.md)
 
 ## Tutoriels
