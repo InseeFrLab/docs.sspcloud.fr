@@ -10,7 +10,7 @@ keywords: >-
 
 # Lancer un projet R avec le datalab
 
-Une courte démonstration pour utiliser R avec le [datalab SSP Cloud](https://datalab.sspcloud.fr).
+Une courte démonstration pour utiliser R avec le [datalab SSP Cloud](https://datalab.sspcloud.fr): travailler avec du code Git et des données hébergées sur [Mes Fichiers](https://datalab.sspcloud.fr/mes-fichiers) du datalab.
 
 ## Configuration de l'environnement
 
