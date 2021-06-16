@@ -10,6 +10,8 @@ description: >-
 
 Découvre facilement les premiers usages de la plateforme en suivant ce petit guide.
 
+{% page-ref page="onyxia-guide/lancer-un-service.md" %}
+
 ## Envie d'en découvrir un peu plus ?
 
 {% page-ref page="onyxia-guide/configurer-un-service.md" %}

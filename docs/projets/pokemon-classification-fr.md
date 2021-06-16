@@ -40,7 +40,9 @@ We can search data by their name, type, owner, etc. Figure-4 shows an example of
 
 ![](https://minio.lab.sspcloud.fr/pengfei/diffusion/pokemon/atlas_search_by_text.PNG)
 
-If the data steward has configured the classification meta-data, we can even search data by the pokemon generation. Figure-5 shows an example of search by pokemon generation. ![](https://minio.lab.sspcloud.fr/pengfei/diffusion/pokemon/atlas_search_by_class.png) **Figure-5:** - Search by pokemon generation
+If the data steward has configured the classification meta-data, we can even search data by the pokemon generation. Figure-5 shows an example of search by pokemon generation.  **Figure-5:** - Search by pokemon generation
+
+![](https://minio.lab.sspcloud.fr/pengfei/diffusion/pokemon/atlas_search_by_class.png)
 
 After we found the data, we can know all the metadata about the data such as name, location, owner, size, creation date, etc. Figure-6 shows an example of the pokemon data metadata. ![](https://minio.lab.sspcloud.fr/pengfei/diffusion/pokemon/atlas_data_detail.PNG)
 
