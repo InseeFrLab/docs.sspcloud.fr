@@ -21,7 +21,7 @@ Une courte démonstration pour utiliser R avec le [datalab SSP Cloud](https://da
   * password: `Votre mot de passe pour vos services` 
 
     Vous pouvez le trouver sur votre [compte](https://datalab.sspcloud.fr/mon-compte)  ou le copier depuis directement [Mes services](https://datalab.sspcloud.fr/my-services) en cliquant sur la clef
-* Dans votre RStudio, cloner et ouvrer ce projet:
+* Dans votre RStudio, clonez et ouvrez ce projet:
 
   ```text
   git2r::clone("https://github.com/RLesur/sspcloud-demo.git", "sspcloud-demo")
