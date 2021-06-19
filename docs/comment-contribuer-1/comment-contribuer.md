@@ -15,7 +15,7 @@ Chaque membre de la communauté peut devenir éditeur et proposer des modificati
 
 Pour contribuer à ce guide avec Gitbook, tu as deux choix :
 
-* Simplement poster ce message sur[ le canal Tchap](https://tchap.gouv.fr/#/room/#SSPCloudXDpAw6v:agent.finances.tchap.gouv.fr) : "Bonjour, j'aimerai rejoindre l'équipe d'organisation de **la documentation?"**. Un membre de la communauté t'enverra les accès.
+* Simplement poster ce message sur[ le canal Tchap](https://tchap.gouv.fr/#/room/#SSPCloudXDpAw6v:agent.finances.tchap.gouv.fr) : "Bonjour, j'aimerais rejoindre l'équipe d'organisation de **la documentation?"**. Un membre de la communauté t'enverra les accès.
 * Si tu es doué avec Github, tu peux aussi modifier ce guide directement [ici](https://github.com/InseeFrLab/docs.sspcloud.fr).
 
 {% hint style="info" %}
