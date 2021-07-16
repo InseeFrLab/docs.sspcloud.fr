@@ -22,7 +22,7 @@ Sur la plateforme, les variables d'environnement sont des secrets écrits dans [
 
 * Créez un nouveau dossier `+ Nouveau dossier`
 * Puis dans ce dossier, créez un nouveau secret `+ Nouveau secret`
-* Ouvrer votre secret 
+* Ouvrez votre secret 
 
 ![](../.gitbook/assets/toolbarsecret.png)
 
