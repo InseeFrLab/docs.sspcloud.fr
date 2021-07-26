@@ -7,4 +7,4 @@ description: >-
 
 # SPP Cloud : Webinaire de lancement
 
-{% include url="https://minio.lab.sspcloud.fr/f7sggu/diffusion/kubernetes.mp4" %}
+{% include url="https://minio.lab.sspcloud.fr/f7sggu/diffusion/kubernetes.mp4" poster="https://minio.lab.sspcloud.fr/projet-onyxia/assets/projectsImg/presKub.png" %}
