@@ -7,4 +7,6 @@ description: >-
 
 # SPP Cloud : Webinaire de lancement
 
-{% embed url="https://minio.lab.sspcloud.fr/f7sggu/diffusion/kubernetes.mp4" %}
+{% include image.html url="http://jekyllrb.com"
+max-width="200px" file="logo.png" alt="Jekyll logo"
+caption="This is the Jekyll logo." %}
