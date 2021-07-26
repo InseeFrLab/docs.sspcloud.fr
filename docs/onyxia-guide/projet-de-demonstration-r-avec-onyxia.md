@@ -18,9 +18,9 @@ Une courte démonstration pour utiliser R avec le [datalab SSP Cloud](https://da
 * Lancer et ouvrir un service RStudio
 * Se connecter avec les identifiants suivants:
   * user: `rstudio`
-  * password: `Votre mot de passe pour vos services` 
+  * password: `Votre mot de passe pour vos services`
 
-    Vous pouvez le trouver sur votre [compte](https://datalab.sspcloud.fr/mon-compte)  ou le copier depuis directement [Mes services](https://datalab.sspcloud.fr/my-services) en cliquant sur la clef
+    Vous pouvez le trouver sur votre [compte](https://datalab.sspcloud.fr/mon-compte) ou le copier depuis directement [Mes services](https://datalab.sspcloud.fr/my-services) en cliquant sur la clef
 * Dans votre RStudio, clonez et ouvrez ce projet:
 
   ```text
@@ -83,6 +83,4 @@ Pour exécuter ce pipeline :
 ```text
 source("datasaurus.R")
 ```
-
-
 

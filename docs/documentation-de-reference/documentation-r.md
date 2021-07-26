@@ -6,7 +6,7 @@ description: 'Documentation pour découvrir, apprendre et approfondir R'
 
 ## `utilitR` : une documentation utile pour `R`
 
-Documentation collaborative et au code source ouvert faite par des agents de l'**Insee** et du **Système Statistique Public**. 
+Documentation collaborative et au code source ouvert faite par des agents de l'**Insee** et du **Système Statistique Public**.
 
 * [Une documentation principale](https://www.book.utilitr.org/)
 * [Un guide des bonnes pratiques en `R` ](https://www.pratiques.utilitr.org/)
@@ -23,6 +23,4 @@ Le point d'accès principal: [www.utilitr.org](https://www.www.utilitr.org)
 * Bien programmer en `R`
 * Utiliser `Git`
 * Développer des packages
-
-
 

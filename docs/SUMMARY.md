@@ -34,16 +34,15 @@
 
 ## Actualités
 
-* [ML Flow et MLOps](actualites/ml-flow-et-mlops.md)
-* [Atelier Kubernetes-SSP Cloud : Introduction et bonnes pratiques de déploiement Docker](actualites/atelier-kubernetes-ssp-cloud-introduction-et-bonnes-pratiques-de-deploiement-docker.md)
-* [Webinaire de lancement SPP Cloud](actualites/webinaire-de-lancement-spp-cloud.md)
-* [L'infrastructure Kubernetes : wébinaire d'introduction](actualites/linfrastructure-kubernetes-webinaire-dintroduction.md)
+* [Introduction au MLOps : Présentation de ML Flow](actualites/introduction-au-mlops-presentation-de-ml-flow.md)
+* [Atelier Kubernetes : Introduction et bonnes pratiques du déploiement Docker avec le SSP Cloud](actualites/atelier-kubernetes-introduction-et-bonnes-pratiques-du-deploiement-docker-avec-le-ssp-cloud.md)
+* [SPP Cloud : Webinaire de lancement](actualites/spp-cloud-webinaire-de-lancement.md)
+* [L'infrastructure Kubernetes : webinaire d'introduction](actualites/linfrastructure-kubernetes-webinaire-dintroduction.md)
 
 ## Projets
 
 * [Datavisualisation: Mouvements de population autour du confinement de mars 2020](projets/datavisualisation-mouvements-de-population-autour-du-confinement-de-mars-2020.md)
-* [Pokemon Classification](projets/pokemon-classification.md)
-* [Pokemon ClassificationFR](projets/pokemon-classification-fr.md)
+* [MLOps et Random Forest Clustering : Démonstration de MLFlow avec les statistiques des Pokémons](projets/mlops-et-random-forest-clustering-demonstration-de-mlflow-avec-les-statistiques-des-pokemons.md)
 * [A complèter](projets/a-completer.md)
 
 ---
