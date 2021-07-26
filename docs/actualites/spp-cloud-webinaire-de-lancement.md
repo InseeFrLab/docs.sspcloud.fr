@@ -7,4 +7,4 @@ description: >-
 
 # SPP Cloud : Webinaire de lancement
 
-{% include image="https://minio.lab.sspcloud.fr/projet-onyxia/assets/projectsImg/presKub.png" %}
+{% embed image="https://minio.lab.sspcloud.fr/projet-onyxia/assets/projectsImg/presKub.png" %}
