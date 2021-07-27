@@ -1,13 +1,8 @@
 ---
-description: 'Pour modifier ou proposer du contenu (Projets, tutoriels, exemples,  etc.)'
+description: Comment utiliser et éditer Gitbook pour la documentation ?
 ---
 
-# Comment contribuer à la documentation?
-
-## 🤝 Pourquoi contribuer ?
-
-* Tu souhaites écrire un article, un tutoriel, une formation ou tout simplement créer une nouvelle page ?
-* Tu souhaites mettre à jour ou corriger du contenu sur ce guide ?
+# ​📄 Écrire du contenu documentaire avec Gitbook
 
 ## ✍ Comment devenir contributeur ? <a id="comment-devenir-contributeur"></a>
 
@@ -22,8 +17,6 @@ Pour contribuer à ce guide avec Gitbook, tu as deux choix :
 Tu ne prends aucun risque à "casser" quoi que ce soit.
 {% endhint %}
 
-## ​📄 Comment utiliser et éditer Gitbook pour la documentation ?
-
 ### Étape 1: Créer un compte
 
 Configurez un compte GitBook sur [https://www.gitbook.com/](https://www.gitbook.com/). Il est préférable de créer votre compte GitBook en utilisant votre compte GitHub pour que les modifications puissent vous être attribuées [dans les sources](https://github.com/InseeFrLab/docs.sspcloud.fr/tree/master/docs).
@@ -32,32 +25,33 @@ Configurez un compte GitBook sur [https://www.gitbook.com/](https://www.gitbook.
 
 Pour obtenir l'accès, poster un message sur[ le canal Tchap](https://tchap.gouv.fr/#/room/#SSPCloudXDpAw6v:agent.finances.tchap.gouv.fr) en demandant un accès à l'édition et l'écriture et suivez le lien qu'il vous sera transmis. Ce lien vous donnera un accès en édition aux documents publics SPP Cloud ainsi qu'à l'espace interne SPP Cloud .
 
-### 🚧 Étape 3 : Accédez à l'interface d'édition
+### 👷 Étape 3 : Accédez à l'interface d'édition
 
 [Cliquez sur ce lien](https://app.gitbook.com/@sspcloud/spaces) pour accéder à notre tableau de bord. Une fois sur notre tableau de bord, sélectionnez l'espace SPP Cloud ou créer un nouvel espace.
 
-![Tableau de bord SSP Cloud \(Gitbook\)](../.gitbook/assets/capture-de-cran-2021-06-02-a-18.43.30.png)
+![Tableau de bord SSP Cloud \(Gitbook\)](../../.gitbook/assets/capture-de-cran-2021-06-02-a-18.43.30.png)
 
 Vous aurez maintenant une barre latérale avec des options de brouillon. Cliquez sur n'importe quelle page et commencez à taper/éditer pour commencer un nouveau brouillon.
 
 Un brouillon peut contenir des modifications sur plusieurs pages. Vous pouvez également créer de nouvelles pages en passant la souris sur la barre latérale :
 
-![Cr&#xE9;er une nouvelle page \(Gitbook\)](../.gitbook/assets/capture-de-cran-2021-06-02-a-18.48.18.png)
+![Cr&#xE9;er une nouvelle page \(Gitbook\)](../../.gitbook/assets/capture-de-cran-2021-06-02-a-18.48.18.png)
 
 ### Étapes 4 : L'organisation des pages
 
 Concernant l'organisation des pages, nous avons construit le Gitbook de la façon suivante:
 
 * **Onyxia - Guide** pour tous les pas à pas de prise en main de la plateforme Onyxia
-* **Exemples** pour proposer des bouts de codes, des projets exploratoire, etc.
 * **Tutoriels** pour diverses aides, guides et formations
-* **Projets** pour présenter des cas d'usages du datalab et les services et fonctionnalités utilisées. [Comment présenter un projet ?](comment-presenter-un-projet.md)
+* **Démonstrations** pour proposer des bouts de codes, des projets exploratoire, etc.
+* **Actualités** pour écrire un article de blog ou présenter un évènement
+* **Projets** pour présenter des cas d'usages du datalab et les services et fonctionnalités utilisées. [Comment présenter un projet ?](../comment-presenter-un-projet.md)
 
 {% hint style="warning" %}
 Après avoir effectué une modification ou ajouter une page, pensez à décrire les modifications avec un court message en cliquant sur « Décrire ce brouillon » dans la section Brouillons de la barre latérale et en rédigeant une brève description :
 {% endhint %}
 
-![D&#xE9;crire les modifications avec un court message](../.gitbook/assets/capture-de-cran-2021-06-02-a-18.50.17.png)
+![D&#xE9;crire les modifications avec un court message](../../.gitbook/assets/capture-de-cran-2021-06-02-a-18.50.17.png)
 
 ### Étape 5 : Publication du contenu
 
@@ -73,6 +67,4 @@ Si vous tombez dans le cas 2, vous pouvez simplement publier votre brouillon en 
 ### Pour toutes les autres questions et information
 
 Consulter [la documentation GitBook](https://docs.gitbook.com/%20) et plus précisément pour les instructions de base de l'édition, voir [ici](https://docs.gitbook.com/content-editing/markdown). Si besoin d'aide, n'hésites pas à solliciter les membres du salon SSP Cloud \([sur Tchap\)](https://tchap.gouv.fr/#/room/#SSPCloudXDpAw6v:agent.finances.tchap.gouv.fr).
-
-## Comment référencer mon contenu sur la page documentaire?
 

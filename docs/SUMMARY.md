@@ -15,7 +15,9 @@
 
 ## Comment contribuer ? <a id="comment-contribuer-1"></a>
 
-* [Comment contribuer à la documentation?](comment-contribuer-1/comment-contribuer.md)
+* [🤝 Comment contribuer à la communauté?](comment-contribuer-1/comment-contribuer/README.md)
+  * [​📄 Écrire du contenu documentaire avec Gitbook](comment-contribuer-1/comment-contribuer/comment-utiliser-et-editer-gitbook-pour-la-documentation.md)
+  * [🔍 Référencer son contenu sur le site sspcloud.fr](comment-contribuer-1/comment-contribuer/referencer-son-contenu-sur-le-site-sspcloud.fr.md)
 * [Comment contribuer au catalogue de service ?](comment-contribuer-1/comment-contribuer-au-catalogue-de-service.md)
 * [Comment présenter un projet ?](comment-contribuer-1/comment-presenter-un-projet.md)
 
@@ -24,9 +26,10 @@
 * [Documentation R](documentation-de-reference/documentation-r.md)
 * [Documentation Gitlab](documentation-de-reference/documentation-gitlab.md)
 
-## Exemples
+## Démonstrations
 
-* [À compléter](exemples/a-completer.md)
+* [MLOps et Random Forest Clustering : Démonstration de MLFlow avec les statistiques des Pokémons](demonstrations/mlops-et-random-forest-clustering-demonstration-de-mlflow-avec-les-statistiques-des-pokemons.md)
+* [À compléter](demonstrations/a-completer.md)
 
 ## Tutoriels
 
@@ -42,7 +45,6 @@
 ## Projets
 
 * [Datavisualisation: Mouvements de population autour du confinement de mars 2020](projets/datavisualisation-mouvements-de-population-autour-du-confinement-de-mars-2020.md)
-* [MLOps et Random Forest Clustering : Démonstration de MLFlow avec les statistiques des Pokémons](projets/mlops-et-random-forest-clustering-demonstration-de-mlflow-avec-les-statistiques-des-pokemons.md)
 * [A complèter](projets/a-completer.md)
 
 ---

@@ -6,9 +6,5 @@ description: >-
 
 # L'infrastructure Kubernetes : webinaire d'introduction
 
-{% embed url="https://minio.lab.sspcloud.fr/f7sggu/diffusion/kubernetes.mp4" %}
-
-
-  
-
+{% embed url="https://minio.lab.sspcloud.fr/f7sggu/diffusion/kubernetes.mp4" caption="" %}
 

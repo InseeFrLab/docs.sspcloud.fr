@@ -20,7 +20,7 @@ Découvre facilement les premiers usages de la plateforme en suivant ce petit gu
 
 ## Envie de contribuer à la communauté?
 
-{% page-ref page="comment-contribuer-1/comment-contribuer.md" %}
+{% page-ref page="comment-contribuer-1/comment-contribuer/" %}
 
 
 
