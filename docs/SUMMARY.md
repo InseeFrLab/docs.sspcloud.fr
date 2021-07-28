@@ -17,9 +17,9 @@
 
 * [🤝 Comment contribuer à la communauté?](comment-contribuer-1/comment-contribuer/README.md)
   * [​📄 Écrire du contenu documentaire avec Gitbook](comment-contribuer-1/comment-contribuer/comment-utiliser-et-editer-gitbook-pour-la-documentation.md)
+  * [​🕹️​ Proposer une formation interactive grâce à Onyxia](comment-contribuer-1/comment-contribuer/proposer-une-formation-interactive-grace-a-onyxia.md)
   * [🔍 Référencer son contenu sur le site sspcloud.fr](comment-contribuer-1/comment-contribuer/referencer-son-contenu-sur-le-site-sspcloud.fr.md)
-* [Comment contribuer au catalogue de service ?](comment-contribuer-1/comment-contribuer-au-catalogue-de-service.md)
-* [Comment présenter un projet ?](comment-contribuer-1/comment-presenter-un-projet.md)
+  * [🔧​​ Contribuer au catalogue de service ?](comment-contribuer-1/comment-contribuer/comment-contribuer-au-catalogue-de-service.md)
 
 ## Documentation de référence
 
