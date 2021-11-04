@@ -19,8 +19,3 @@ Dans le formulaire de configuration, il y a l’onglet dédiées aux ressources 
 ## 🟠 Mon service me renvoie une erreur 403. 
 
 Une erreur 403 est liée à la protection réseau qu'on applique aux services. Les services créés à partir d'une certaine IP ne sont initialement accessibles que depuis cette IP.  Cette protection est gérée dans l'onglet « Security » avec la case à cocher « Enable IP protection ».
-
-## 🟠 Mon service me renvoie une erreur 403. 
-
-Une erreur 403 est liée à la protection réseau qu'on applique aux services. Les services créés à partir d'une certaine IP ne sont initialement accessibles que depuis cette IP. Cette protection est gérée dans l'onglet « Security » avec la case à cocher « Enable IP protection ».
-
