@@ -8,7 +8,5 @@ description: >-
 
 
 
-{% embed url="https://minio.lab.sspcloud.fr/f7sggu/diffusion/2021-04-06\_SSPCloud\_atelier-bonnes-pratiques-docker-deploiement-kubernetes.mp4" %}
-
-
+{% embed url="https://minio.lab.sspcloud.fr/f7sggu/diffusion/2021-04-06_SSPCloud_atelier-bonnes-pratiques-docker-deploiement-kubernetes.mp4" %}
 

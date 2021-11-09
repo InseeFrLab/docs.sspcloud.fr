@@ -1,7 +1,6 @@
 # Table of contents
 
 * [Communauté SSP Cloud](README.md)
-* [Untitled](untitled.md)
 * [Le datalab](https://datalab.sspcloud.fr)
 
 ## Onyxia - Guide
@@ -13,7 +12,7 @@
 * [Utiliser des secrets](onyxia-guide/utiliser-des-variables-denvironnement.md)
 * [Configurer un service](onyxia-guide/configurer-un-service.md)
 
-## Comment contribuer ? <a id="comment-contribuer-1"></a>
+## Comment contribuer ? <a href="comment-contribuer-1" id="comment-contribuer-1"></a>
 
 * [🤝 Comment contribuer à la communauté?](comment-contribuer-1/comment-contribuer/README.md)
   * [​📄 Écrire du contenu documentaire avec Gitbook](comment-contribuer-1/comment-contribuer/comment-utiliser-et-editer-gitbook-pour-la-documentation.md)
@@ -47,7 +46,6 @@
 * [Datavisualisation: Mouvements de population autour du confinement de mars 2020](projets/datavisualisation-mouvements-de-population-autour-du-confinement-de-mars-2020.md)
 * [A complèter](projets/a-completer.md)
 
----
+***
 
 * [FAQ](faq.md)
-
