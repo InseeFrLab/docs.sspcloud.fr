@@ -7,7 +7,7 @@ description: >-
 
 # Datavisualisation: Mouvements de population autour du confinement de mars 2020
 
-![Mouvements de population autour du confinement de mars 2020 en France](../.gitbook/assets/mouvements\_population\_confinement\_mars\_2020.png)
+![Mouvements de population autour du confinement de mars 2020 en France](../../.gitbook/assets/mouvements\_population\_confinement\_mars\_2020.png)
 
 ## Le projet en quelques mots
 

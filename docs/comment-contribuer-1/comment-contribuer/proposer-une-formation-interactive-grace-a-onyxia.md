@@ -17,7 +17,7 @@ Puis ajoutez un script qui sera exécuté au lancement du serveur Jupyter sur la
 
 Ensuite, rendez-vous dans le [catalogue de service](https://datalab.sspcloud.fr/catalog/inseefrlab-helm-charts-datascience) d'Onyxia, sélectionnez le service Jupyter et dans les configurations avancée, dans l'onglet `Init` , collez l'URL vers le script de lancement que vous venez d'écrire. oyez bien vigilants à utiliser une URL de type _raw_ vers votre script. Par exemple, avec le dépôt ci-dessus, l'URL est [https://raw.githubusercontent.com/jmbernabotto/MachineLearning/master/onyxia.sh](https://raw.githubusercontent.com/jmbernabotto/MachineLearning/master/onyxia.sh).&#x20;
 
-![Configurer un service Jupyter - Script d'initialisation](<../../.gitbook/assets/Frame 59.png>)
+![Configurer un service Jupyter - Script d'initialisation](../../../.gitbook/assets/frame-59.png)
 
 Vous pouvez alors copier le lien en cliquant sur l'icône en haut à droite et le conserver pour permettre un accès direct à votre formation.  Maintenant rendez visible et accessible votre tutoriel au sein de la communauté SSP Cloud:
 
@@ -34,7 +34,7 @@ Comme précédemment, le plus simple est d'héberger votre projet RStudio compre
 Ensuite, rendez-vous dans le [catalogue de service](https://datalab.sspcloud.fr/catalog/inseefrlab-helm-charts-datascience) d'Onyxia,  sélectionnez le service RStudio et dans l'onglet `Init` collez l'URL vers le script de lancement.\
 Soyez bien vigilants à utiliser une URL de type _raw_ vers votre script. Avec le dépôt précédent, l'URL est [https://raw.githubusercontent.com/RLesur/learnr-onixya/master/onyxia.sh](https://raw.githubusercontent.com/RLesur/learnr-onixya/master/onyxia.sh).
 
-![Configurer un service Rstudio - Script d'initialisation](<../../.gitbook/assets/Frame 60.png>)
+![Configurer un service Rstudio - Script d'initialisation](../../../.gitbook/assets/frame-60.png)
 
 Vous pouvez alors copier le lien en cliquant sur l'icône en haut à droite et le conserver pour permettre un accès direct à votre formation. Maintenant rendez visible et accessible votre tutoriel au sein de la communauté SSP Cloud:
 

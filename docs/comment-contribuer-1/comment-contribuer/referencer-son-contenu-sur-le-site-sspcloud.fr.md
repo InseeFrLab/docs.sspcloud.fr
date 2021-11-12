@@ -6,7 +6,7 @@ description: Comment référencer son contenu sur le site sspcloud.fr ?
 
 ## 🎓 Référencer une formation&#x20;
 
-![](../../.gitbook/assets/Formations.png)
+![](../../../.gitbook/assets/formations.png)
 
 [Le catalogue d'actualités et projets](https://spyrales.sspcloud.fr/trainings) est alimenté à partir du fichier `json` qui se trouve ci-dessous. Il est possible d'y référencer du contenu de type :‌
 
@@ -21,7 +21,7 @@ En pratique, il s'agit de créer de nouvelles entrées dans ce fichier avec les 
 
 ## 🗞 Référencer une actualité ou un projet
 
-![ https://spyrales.sspcloud.fr/trainings](../../.gitbook/assets/Projets.png)
+![ https://spyrales.sspcloud.fr/trainings](../../../.gitbook/assets/projets.png)
 
 [Le catalogue d'actualités et projets](https://spyrales.sspcloud.fr/trainings)  est alimenté à partir du fichier `json` qui se trouve ci-dessous.  Il est possible d'y référencer du contenu de type :&#x20;
 

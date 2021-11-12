@@ -29,13 +29,13 @@ Pour obtenir l'accès, poster un message sur[ le canal Tchap](https://tchap.gouv
 
 [Cliquez sur ce lien](https://app.gitbook.com/@sspcloud/spaces) pour accéder à notre tableau de bord. Une fois sur notre tableau de bord, sélectionnez l'espace SPP Cloud ou créer un nouvel espace.
 
-![Tableau de bord SSP Cloud (Gitbook)](../../.gitbook/assets/capture-de-cran-2021-06-02-a-18.43.30.png)
+![Tableau de bord SSP Cloud (Gitbook)](../../../.gitbook/assets/capture-de-cran-2021-06-02-a-18.43.30.png)
 
 Vous aurez maintenant une barre latérale avec des options de brouillon. Cliquez sur n'importe quelle page et commencez à taper/éditer pour commencer un nouveau brouillon.
 
 Un brouillon peut contenir des modifications sur plusieurs pages. Vous pouvez également créer de nouvelles pages en passant la souris sur la barre latérale :
 
-![Créer une nouvelle page (Gitbook)](../../.gitbook/assets/capture-de-cran-2021-06-02-a-18.48.18.png)
+![Créer une nouvelle page (Gitbook)](../../../.gitbook/assets/capture-de-cran-2021-06-02-a-18.48.18.png)
 
 ### 🚩Étapes 4 : L'organisation des pages
 
@@ -51,7 +51,7 @@ Concernant l'organisation des pages, nous avons construit le Gitbook de la faço
 Après avoir effectué une modification ou ajouter une page, pensez à décrire les modifications avec un court message en cliquant sur « Décrire ce brouillon » dans la section Brouillons de la barre latérale et en rédigeant une brève description :
 {% endhint %}
 
-![Décrire les modifications avec un court message](../../.gitbook/assets/capture-de-cran-2021-06-02-a-18.50.17.png)
+![Décrire les modifications avec un court message](../../../.gitbook/assets/capture-de-cran-2021-06-02-a-18.50.17.png)
 
 ### 🔄 Étape 5 : Publication du contenu
 
