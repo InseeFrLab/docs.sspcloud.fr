@@ -15,7 +15,7 @@ Le projet du Datalab Onyxia part du constat de difficultés communes rencontrée
 Face à ce constat, le Datalab Onyxia a été construit pour proposer une plateforme de mutualisation à plusieurs niveaux :&#x20;
 
 * partage d'une _infrastructure_ moderne, centrée autour du déploiement de services via des conteneurs, et dimensionnée pour les usages de _data science ;_
-* partage de _méthodes_, via une mutualisation des services de _data science_ proposées, auxquels chacun peut contribuer ;
+* partage de _méthodes_, via une mutualisation des services de _data science_ proposés, auxquels chacun peut contribuer ;
 * partage de _connaissances_, via des formations associées au Datalab ainsi que la constitution de commaunautés d'entraide centrées sur son utilisation.
 
 ## Principes fondamentaux
@@ -47,4 +47,4 @@ Le projet du Datalab Onyxia est résolument ouvert, à de multiples niveaux :&#x
 
 * le Datalab est accessible via son [interface Web](https://datalab.sspcloud.fr) à tous les agents du service public (via _AgentConnect_ ou une adresse mail en gouv.fr) ainsi qu'aux élèves des écoles de statistique liées à l'Insee (Cefil, Ensai, Ensae) ;
 * le code source ouvert et la modularité du projet rendent possible le déploiement d'une instance Onyxia personnalisée sur n'importe quelle infrastructure basée sur un _cluster_ Kubernetes ;
-* le projet est ouvert aux contributions extérieures, qu'elles concernent le catalogue des services, l'interface graphique ou l'agencement des briques logicielles qui le constituent ;
+* le projet est ouvert aux contributions extérieures, qu'elles concernent le catalogue des services, l'interface graphique ou l'agencement des briques logicielles qui le constituent.
