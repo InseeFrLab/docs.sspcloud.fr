@@ -65,4 +65,4 @@ Nous avons souhaité présenter à travers ce tutoriel l'usage standard des serv
 
 ## Support
 
-Le support et l'aide à l'utilisation du Datalab sont effectuées sur un [salon dédié](https://matrix.to/#/#SSPCloudXDpAw6v:agent.finances.tchap.gouv.fr) du service de messagerie instantanée interministériel [Tchap](https://www.tchap.gouv.fr). Toute question sur l'utilisation du Datalab ou suggestion d'amélioration y sont la bienvenue.vice chargé, cliquez sur `Ouvrir` pour accéder directement à votre service.
+Le support et l'aide à l'utilisation du Datalab sont effectuées sur un [salon dédié](https://matrix.to/#/#SSPCloudXDpAw6v:agent.finances.tchap.gouv.fr) du service de messagerie instantanée interministériel [Tchap](https://www.tchap.gouv.fr). Toute question sur l'utilisation du Datalab ou suggestion d'amélioration y sont les bienvenues.
