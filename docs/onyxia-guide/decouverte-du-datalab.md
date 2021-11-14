@@ -1,8 +1,8 @@
 ---
-description: Introduction et visite guidée du datalab.
+description: Présentation des grands principes du Datalab Onyxia
 ---
 
-# Découverte du datalab
+# Principes du datalab
 
 ## Une plateforme de mutualisation
 

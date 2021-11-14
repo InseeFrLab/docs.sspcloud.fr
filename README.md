@@ -16,8 +16,8 @@ Découvre facilement les premiers usages de la plateforme en suivant ce petit gu
 
 ## Envie d'en découvrir un peu plus ?
 
-{% content-ref url="docs/onyxia-guide/configurer-un-service.md" %}
-[configurer-un-service.md](docs/onyxia-guide/configurer-un-service.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 {% content-ref url="docs/onyxia-guide/utiliser-des-variables-denvironnement.md" %}
