@@ -35,7 +35,7 @@ La configuration précise des services du Datalab constitue un usage avancé et 
 
 ### Utiliser un service
 
-L'action de lancer un service amène automatiquement sur la page [Mes Services](https://datalab.sspcloud.fr/my-services), où sont listées toutes les instances en activité sur mon compte utilisateur.
+L'action de lancer un service amène automatiquement sur la page [Mes Services](https://datalab.sspcloud.fr/my-services), où sont listées toutes les instances en activité sur le compte de l'utilisateur.
 
 ![Instances en activité de services du Datalab](<../../.gitbook/assets/Screenshot from 2021-11-14 15-26-15.png>)
 
