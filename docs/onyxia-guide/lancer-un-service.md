@@ -46,7 +46,7 @@ Une fois le service lancé, un bouton `Ouvrir` apparaît qui permet l'accès au 
 Supprimer une instance d'un service s'effectue simplement en cliquant sur l'icône en forme de poubelle en dessous de l'instance.
 
 {% hint style="danger" %}
-La suppression d'une instance entraîne la suppression de toutes les données associées, et cette action est irrémédiable. Il est donc très important de s'assurer que les données ainsi que le code utilisés sont sauvegardés avant de supprimer l'instance. L'idéal est de procéder à des sauvegardes régulières des données et du code (cf. section Aller plus loin pour voir les services proposés à cette fin sur le Datalab).
+Pour certains services, la suppression d'une instance entraîne la suppression de toutes les données associées, et cette action est irrémédiable. Il est donc nécessaire de toujours bien lire le `README` associé à l'instance, qui précise les conséquences d'une suppression de l'instance. De manière générale, il est très important de s'assurer que les données ainsi que le code utilisés sont sauvegardés avant de supprimer l'instance. L'idéal est de [versionner son code avec Git](../../onyxia-guide/controle-de-version-avec-git.md) et de procéder à des sauvegardes régulières des données à l'aide du [système de stockage S3](importer-des-donnees.md).
 {% endhint %}
 
 {% hint style="danger" %}

@@ -4,20 +4,28 @@ description: >-
   la plateforme Onyxia et ses services.
 ---
 
-# Communauté SSP Cloud
+# 🧑🤝🧑 Communauté SSP Cloud
 
 ## Nouvel utilisateur du datalab?&#x20;
 
 Découvre facilement les premiers usages de la plateforme en suivant ce petit guide.
 
+{% content-ref url="docs/onyxia-guide/decouverte-du-datalab.md" %}
+[decouverte-du-datalab.md](docs/onyxia-guide/decouverte-du-datalab.md)
+{% endcontent-ref %}
+
 {% content-ref url="docs/onyxia-guide/lancer-un-service.md" %}
 [lancer-un-service.md](docs/onyxia-guide/lancer-un-service.md)
 {% endcontent-ref %}
 
+{% content-ref url="docs/onyxia-guide/projet-de-demonstration-r-avec-onyxia.md" %}
+[projet-de-demonstration-r-avec-onyxia.md](docs/onyxia-guide/projet-de-demonstration-r-avec-onyxia.md)
+{% endcontent-ref %}
+
 ## Envie d'en découvrir un peu plus ?
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="onyxia-guide/controle-de-version-avec-git.md" %}
+[controle-de-version-avec-git.md](onyxia-guide/controle-de-version-avec-git.md)
 {% endcontent-ref %}
 
 {% content-ref url="docs/onyxia-guide/utiliser-des-variables-denvironnement.md" %}
