@@ -72,9 +72,7 @@ Le jeton d'accès GitHub est disponible dans le terminal des différents service
 
 `git clone https://${GIT_PERSONAL_ACCESS_TOKEN}@github.com/<owner>/<repo>.git`
 
-où \<owner> et \<repo> sont à remplacer respectivement par le nom d'utilisateur et le nom du dépôt GitHub. Par exemple :&#x20;
-
-`git clone https://${GIT_PERSONAL_ACCESS_TOKEN}@github.com/InseeFrLab/onyxia.git`
+où \<owner> et \<repo> sont à remplacer respectivement par le nom d'utilisateur et le nom du dépôt GitHub.
 
 ### Via des interfaces graphiques intégrées
 
