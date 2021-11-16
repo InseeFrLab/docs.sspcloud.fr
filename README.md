@@ -14,8 +14,8 @@ Découvre facilement les premiers usages de la plateforme en suivant ce petit gu
 [decouverte-du-datalab.md](docs/onyxia-guide/decouverte-du-datalab.md)
 {% endcontent-ref %}
 
-{% content-ref url="docs/onyxia-guide/lancer-un-service.md" %}
-[lancer-un-service.md](docs/onyxia-guide/lancer-un-service.md)
+{% content-ref url="onyxia-guide/premiere-utilisation.md" %}
+[premiere-utilisation.md](onyxia-guide/premiere-utilisation.md)
 {% endcontent-ref %}
 
 {% content-ref url="docs/onyxia-guide/projet-de-demonstration-r-avec-onyxia.md" %}

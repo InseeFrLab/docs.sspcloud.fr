@@ -4,7 +4,7 @@ description: Découverte du Datalab Onyxia.
 
 # Première utilisation
 
-Bienvenue sur le Datalab Onyxia, plateforme de calcul et de mutualisation de services destinée aux _datascientists_ du service public. Ce tutoriel propose une visite guidée du Datalab pour être rapidement opérationnel sur la plateforme.
+Bienvenue sur le Datalab Onyxia, plateforme libre service mutualisée de traitement de données, destinée aux statisticiens et _data scientists _de l'Etat. Ce tutoriel propose une visite guidée du Datalab pour être rapidement opérationnel dans l'utilisation de ses services.
 
 {% hint style="warning" %}
 Les conditions d'utilisation du Datalab sont consultables à [cette adresse](https://sspcloud.fr/tos\_fr.md). Nous rappelons que le Datalab est destiné exclusivement au traitement de **données publiques et non-sensibles**. Des projets d'expérimentation mobilisant des données non ouvertes peuvent être menés en concertation avec l'équipe du Datalab, sous réserve de se conformer aux règles de sécurité spécifiques au projet.
@@ -14,13 +14,13 @@ Les conditions d'utilisation du Datalab sont consultables à [cette adresse](htt
 
 Le [catalogue de services](https://datalab.sspcloud.fr/catalog/inseefrlab-helm-charts-datascience) est au centre de l'utilisation du Datalab. Il propose un ensemble de services destinés aux traitements statistiques de données ainsi qu'à la gestion complète des projets de _data science_.
 
-![](<../../.gitbook/assets/Screenshot from 2021-11-14 15-03-50.png>)
+![](<../.gitbook/assets/Screenshot from 2021-11-14 15-03-50.png>)
 
 ### Lancer un service
 
 Pour lancer un service, il suffit de cliquer sur le bouton `Lancer` du service désiré.&#x20;
 
-![Illustration des options de configuration d'un service avec RStudio](<../../.gitbook/assets/Screenshot from 2021-11-14 15-09-30.png>)
+![Illustration des options de configuration d'un service avec RStudio](<../.gitbook/assets/Screenshot from 2021-11-14 15-09-30.png>)
 
 Une page centrée sur le service demandé s'ouvre alors, qui offre plusieurs possibilités :&#x20;
 
@@ -37,16 +37,16 @@ La configuration précise des services du Datalab constitue un usage avancé et 
 
 L'action de lancer un service amène automatiquement sur la page [Mes Services](https://datalab.sspcloud.fr/my-services), où sont listées toutes les instances en activité sur le compte de l'utilisateur.
 
-![Instances en activité de services du Datalab](<../../.gitbook/assets/Screenshot from 2021-11-14 15-26-15.png>)
+![Instances en activité de services du Datalab](<../.gitbook/assets/Screenshot from 2021-11-14 15-26-15.png>)
 
-Une fois le service lancé, un bouton `Ouvrir` apparaît qui permet l'accès au service. Un mot de passe -- et, selon les services, un nom d'utilisateur -- est généralement requis pour pouvoir utiliser le service. Ces informations sont disponibles dans le `README` associé au service, auquel on accède en cliquant sur le bouton du même nom.&#x20;
+Une fois le service lancé, un bouton `Ouvrir` apparaît qui permet l'accès au service. Un mot de passe — et, selon les services, un nom d'utilisateur — est généralement requis pour pouvoir utiliser le service. Ces informations sont disponibles dans le `README` associé au service, auquel on accède en cliquant sur le bouton du même nom.&#x20;
 
 ### Supprimer une instance
 
 Supprimer une instance d'un service s'effectue simplement en cliquant sur l'icône en forme de poubelle en dessous de l'instance.
 
 {% hint style="danger" %}
-Pour certains services, la suppression d'une instance entraîne la suppression de toutes les données associées, et cette action est irrémédiable. Il est donc nécessaire de toujours bien lire le `README` associé à l'instance, qui précise les conséquences d'une suppression de l'instance. De manière générale, il est très important de s'assurer que les données ainsi que le code utilisés sont sauvegardés avant de supprimer l'instance. L'idéal est de [versionner son code avec Git](../../onyxia-guide/controle-de-version-avec-git.md) et de procéder à des sauvegardes régulières des données à l'aide du [système de stockage S3](importer-des-donnees.md).
+Pour certains services, la suppression d'une instance entraîne la suppression de toutes les données associées, et cette action est irrémédiable. Il est donc nécessaire de toujours bien lire le `README` associé à l'instance, qui précise les conséquences d'une suppression de l'instance. De manière générale, il est très important de s'assurer que les données ainsi que le code utilisés sont sauvegardés avant de supprimer l'instance. L'idéal est de [versionner son code avec Git](controle-de-version-avec-git.md) et de procéder à des sauvegardes régulières des données à l'aide du [système de stockage S3](../docs/onyxia-guide/importer-des-donnees.md).
 {% endhint %}
 
 {% hint style="danger" %}
@@ -57,11 +57,11 @@ Les ressources mises à disposition pour l'execution des services sont partagée
 
 Nous avons souhaité présenter à travers ce tutoriel l'usage standard des services proposés sur le Datalab. Des usages plus avancés sont présentés dans d'autres pages de ce site documentaire :&#x20;
 
-* utilisation du contrôle de version (Git) avec le Datalab
+* [utilisation du contrôle de version (Git) avec le Datalab](controle-de-version-avec-git.md)
 * [utilisation du service de stockage de données S3](https://docs.sspcloud.fr/onyxia-guide/importer-des-donnees)
 * [gestion des secrets avec Vault](https://docs.sspcloud.fr/onyxia-guide/utiliser-des-variables-denvironnement)
 * travailler sur des projets collaboratifs
-* s'auto-former avec le Datalab
+* [s'auto-former avec le Datalab](https://www.sspcloud.fr/documentation)
 
 ## Support
 

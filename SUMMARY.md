@@ -6,7 +6,7 @@
 ## Onyxia - Guide
 
 * [Principes du datalab](docs/onyxia-guide/decouverte-du-datalab.md)
-* [Première utilisation](docs/onyxia-guide/lancer-un-service.md)
+* [Première utilisation](onyxia-guide/premiere-utilisation.md)
 * [Contrôle de version avec Git](onyxia-guide/controle-de-version-avec-git.md)
 * [Importer des données](docs/onyxia-guide/importer-des-donnees.md)
 * [Utiliser des secrets](docs/onyxia-guide/utiliser-des-variables-denvironnement.md)
