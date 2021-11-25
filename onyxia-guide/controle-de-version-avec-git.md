@@ -19,7 +19,7 @@ Cette considération de performance ne doit cependant pas être vue comme une co
 que dans le cadre de projets collaboratifs :&#x20;
 
 * le travail simultané sur un même projet est possible, sans risque de perte ;&#x20;
-* l'utilisateur peur partager ses modifications tout en bénéficiant de celles des autres ;
+* l'utilisateur peut partager ses modifications tout en bénéficiant de celles des autres ;
 * il devient possible de contribuer à des projets open-source, pour lesquels l'usage de Git est très largement standard.
 
 {% hint style="info" %}
@@ -30,7 +30,7 @@ Ce tutoriel vise à présenter comment le contrôle de version peut être facile
 
 ### Pourquoi GitHub ?
 
-Bien qu'une utilisation hors-ligne de Git soit possible, tout l'intérêt du contrôle de version réside dans la synchronisation de la copie local d'un projet (_clone_) avec un dépôt distant (_remote_). Différents services de forge logicielle permettent cette synchronisation des projets Git, dont les plus connus sont [GitHub ](https://github.com)et [GitLab](https://about.gitlab.com). Dans la mesure où le premier dispose aujourd'hui de beaucoup plus de visibilité — par exemple, les dépôts de l'Insee, [InseeFr ](https://github.com/InseeFrL)et [InseeFrLab](https://github.com/InseeFrLab), sont sur GitHub — le Datalab propose une intégration facilitée avec GitHub, que nous présentons à travers ce tutoriel.
+Bien qu'une utilisation hors-ligne de Git soit possible, tout l'intérêt du contrôle de version réside dans la synchronisation de la copie locale d'un projet (_clone_) avec un dépôt distant (_remote_). Différents services de forge logicielle permettent cette synchronisation des projets Git, dont les plus connus sont [GitHub ](https://github.com)et [GitLab](https://about.gitlab.com). Dans la mesure où le premier dispose aujourd'hui de beaucoup plus de visibilité — par exemple, les dépôts de l'Insee, [InseeFr ](https://github.com/InseeFrL)et [InseeFrLab](https://github.com/InseeFrLab), sont sur GitHub — le Datalab propose une intégration facilitée avec GitHub, que nous présentons à travers ce tutoriel.
 
 {% hint style="info" %}
 La suite du tutoriel nécessite de disposer d'un [compte GitHub](https://github.com/join).
@@ -83,5 +83,5 @@ Les principaux services de production de code disponibles sur le Datalab dispose
 * VSCode : VSCode propose nativement une interface graphique très bien intégrée avec Git et GitHub. Une [documentation détaillée ](https://code.visualstudio.com/docs/editor/versioncontrol)(en Anglais) présente les possibilités de l'outil.&#x20;
 
 {% hint style="warning" %}
-Les interfaces graphiques facilitent la prise en main de Git, mais ne remplacent jamais complètement l'usage de l'outil via un terminal du fait d'une intégration nécessairement imparfaite. Il est donc utile de se familliariser avec l'usage de Git via le terminal le plus tôt possible.
+Les interfaces graphiques facilitent la prise en main de Git, mais ne remplacent jamais complètement l'usage de l'outil via un terminal du fait d'une intégration nécessairement imparfaite. Il est donc utile de se familiariser avec l'usage de Git via le terminal le plus tôt possible.
 {% endhint %}
