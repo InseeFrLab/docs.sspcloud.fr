@@ -11,6 +11,7 @@
 * [Stockage de données](onyxia-guide/stockage-de-donnees.md)
 * [Gestion des secrets](onyxia-guide/gestion-des-secrets.md)
 * [Lancer un projet R avec le datalab](docs/onyxia-guide/projet-de-demonstration-r-avec-onyxia.md)
+* [FAQ](onyxia-guide/faq.md)
 
 ## Comment contribuer ? <a href="comment-contribuer-1" id="comment-contribuer-1"></a>
 
@@ -28,11 +29,6 @@
 ## Démonstrations
 
 * [MLOps et Random Forest Clustering : Démonstration de MLFlow avec les statistiques des Pokémons](docs/demonstrations/mlops-et-random-forest-clustering-demonstration-de-mlflow-avec-les-statistiques-des-pokemons.md)
-* [À compléter](docs/demonstrations/a-completer.md)
-
-## Tutoriels
-
-* [À compléter](docs/tutoriels/a-completer.md)
 
 ## Actualités
 
@@ -44,8 +40,3 @@
 ## Projets
 
 * [Datavisualisation: Mouvements de population autour du confinement de mars 2020](docs/projets/datavisualisation-mouvements-de-population-autour-du-confinement-de-mars-2020.md)
-* [A complèter](docs/projets/a-completer.md)
-
-***
-
-* [FAQ](docs/faq.md)
