@@ -24,12 +24,12 @@ Découvre facilement les premiers usages de la plateforme en suivant ce petit gu
 
 ## Envie d'en découvrir un peu plus ?
 
-{% content-ref url="onyxia-guide/controle-de-version-avec-git.md" %}
-[controle-de-version-avec-git.md](onyxia-guide/controle-de-version-avec-git.md)
+{% content-ref url="onyxia-guide/controle-de-version.md" %}
+[controle-de-version.md](onyxia-guide/controle-de-version.md)
 {% endcontent-ref %}
 
-{% content-ref url="docs/onyxia-guide/utiliser-des-variables-denvironnement.md" %}
-[utiliser-des-variables-denvironnement.md](docs/onyxia-guide/utiliser-des-variables-denvironnement.md)
+{% content-ref url="onyxia-guide/gestion-des-secrets.md" %}
+[gestion-des-secrets.md](onyxia-guide/gestion-des-secrets.md)
 {% endcontent-ref %}
 
 ## Envie de contribuer à la communauté?

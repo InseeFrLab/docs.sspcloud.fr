@@ -46,7 +46,7 @@ Une fois le service lancé, un bouton `Ouvrir` apparaît qui permet l'accès au 
 Supprimer une instance d'un service s'effectue simplement en cliquant sur l'icône en forme de poubelle en dessous de l'instance.
 
 {% hint style="danger" %}
-Pour certains services, la suppression d'une instance entraîne la suppression de toutes les données associées, et cette action est irrémédiable. Il est donc nécessaire de toujours bien lire le `README` associé à l'instance, qui précise les conséquences d'une suppression de l'instance. De manière générale, il est très important de s'assurer que les données ainsi que le code utilisés sont sauvegardés avant de supprimer l'instance. L'idéal est de [versionner son code avec Git](controle-de-version-avec-git.md) et de procéder à des sauvegardes régulières des données à l'aide du [système de stockage S3](../docs/onyxia-guide/importer-des-donnees.md).
+Pour certains services, la suppression d'une instance entraîne la suppression de toutes les données associées, et cette action est irrémédiable. Il est donc nécessaire de toujours bien lire le `README` associé à l'instance, qui précise les conséquences d'une suppression de l'instance. De manière générale, il est très important de s'assurer que les données ainsi que le code utilisés sont sauvegardés avant de supprimer l'instance. L'idéal est de [versionner son code avec Git](controle-de-version.md) et de procéder à des sauvegardes régulières des données à l'aide du [système de stockage S3](stockage-de-donnees.md).
 {% endhint %}
 
 {% hint style="danger" %}
@@ -57,9 +57,9 @@ Les ressources mises à disposition pour l'execution des services sont partagée
 
 Nous avons souhaité présenter à travers ce tutoriel l'usage standard des services proposés sur le Datalab. Des usages plus avancés sont présentés dans d'autres pages de ce site documentaire :&#x20;
 
-* [utilisation du contrôle de version (Git) avec le Datalab](controle-de-version-avec-git.md)
-* [utilisation du service de stockage de données S3](https://docs.sspcloud.fr/onyxia-guide/importer-des-donnees)
-* [gestion des secrets avec Vault](https://docs.sspcloud.fr/onyxia-guide/utiliser-des-variables-denvironnement)
+* versionner son code avec Git
+* stocker ses données avec MinIO
+* gérer ses secrets avec Vault
 * travailler sur des projets collaboratifs
 * [s'auto-former avec le Datalab](https://www.sspcloud.fr/documentation)
 

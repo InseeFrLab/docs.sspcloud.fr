@@ -7,9 +7,9 @@
 
 * [Principes du datalab](docs/onyxia-guide/decouverte-du-datalab.md)
 * [Première utilisation](onyxia-guide/premiere-utilisation.md)
-* [Contrôle de version avec Git](onyxia-guide/controle-de-version-avec-git.md)
-* [Importer des données](docs/onyxia-guide/importer-des-donnees.md)
-* [Utiliser des secrets](docs/onyxia-guide/utiliser-des-variables-denvironnement.md)
+* [Contrôle de version](onyxia-guide/controle-de-version.md)
+* [Stockage de données](onyxia-guide/stockage-de-donnees.md)
+* [Gestion des secrets](onyxia-guide/gestion-des-secrets.md)
 * [Lancer un projet R avec le datalab](docs/onyxia-guide/projet-de-demonstration-r-avec-onyxia.md)
 
 ## Comment contribuer ? <a href="comment-contribuer-1" id="comment-contribuer-1"></a>
