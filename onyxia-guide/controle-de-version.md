@@ -4,7 +4,7 @@ description: >-
   GitHub
 ---
 
-# Contrôle de version avec Git
+# Contrôle de version
 
 ## Pourquoi utiliser le contrôle de version ?
 
@@ -22,7 +22,7 @@ que dans le cadre de projets collaboratifs :&#x20;
 * l'utilisateur peut partager ses modifications tout en bénéficiant de celles des autres ;
 * il devient possible de contribuer à des projets open-source, pour lesquels l'usage de Git est très largement standard.
 
-{% hint style="info" %}
+{% hint style="warning" %}
 Ce tutoriel vise à présenter comment le contrôle de version peut être facilement implémenté grâce aux outils présents sur le Datalab. Il ne présente pas le fonctionnement de Git et présuppose donc une certaine familiarité avec l'outil. De nombreuses ressources en ligne peuvent servir d'introduction ; l'utilisateur de R pourra par exemple consulter [ce guide](https://linogaliana.gitlab.io/collaboratif/git.html) et l'utilisateur de Python ce [chapitre de cours](https://linogaliana-teaching.netlify.app/course/git/). Une formation complète à Git sera bientôt proposée dans l'[espace formation ](https://www.sspcloud.fr/documentation)du Datalab.
 {% endhint %}
 
@@ -32,7 +32,7 @@ Ce tutoriel vise à présenter comment le contrôle de version peut être facile
 
 Bien qu'une utilisation hors-ligne de Git soit possible, tout l'intérêt du contrôle de version réside dans la synchronisation de la copie locale d'un projet (_clone_) avec un dépôt distant (_remote_). Différents services de forge logicielle permettent cette synchronisation des projets Git, dont les plus connus sont [GitHub ](https://github.com)et [GitLab](https://about.gitlab.com). Dans la mesure où le premier dispose aujourd'hui de beaucoup plus de visibilité — par exemple, les dépôts de l'Insee, [InseeFr ](https://github.com/InseeFrL)et [InseeFrLab](https://github.com/InseeFrLab), sont sur GitHub — le Datalab propose une intégration facilitée avec GitHub, que nous présentons à travers ce tutoriel.
 
-{% hint style="info" %}
+{% hint style="warning" %}
 La suite du tutoriel nécessite de disposer d'un [compte GitHub](https://github.com/join).
 {% endhint %}
 
@@ -56,7 +56,7 @@ Il est recommandé d'ajouter ses jetons d'accès à un gestionnaire de mots de p
 
 ![Ajouter un jeton d'accès GitHub à un compte utilisateur sur le Datalab](<../.gitbook/assets/git (1).PNG>)
 
-{% hint style="info" %}
+{% hint style="warning" %}
 Attention à bien utiliser dans les "Informations du compte" l'adresse mail associée à votre compte GitHub, c'est elle qui permet de lier effectivement les _commits _que vous effectuerez à votre compte GitHub.
 {% endhint %}
 
