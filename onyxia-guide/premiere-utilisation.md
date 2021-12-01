@@ -4,7 +4,7 @@ description: Découverte du Datalab Onyxia.
 
 # Première utilisation
 
-Bienvenue sur le Datalab Onyxia, plateforme libre service mutualisée de traitement de données, destinée aux statisticiens et _data scientists _de l'Etat. Ce tutoriel propose une visite guidée du Datalab pour être rapidement opérationnel dans l'utilisation de ses services.
+Bienvenue sur le Datalab Onyxia, plateforme libre service mutualisée de traitement de données, destinée aux statisticiens et _data scientists_ de l'Etat. Ce tutoriel propose une visite guidée du Datalab pour être rapidement opérationnel dans l'utilisation de ses services.
 
 {% hint style="warning" %}
 Les conditions d'utilisation du Datalab sont consultables à [cette adresse](https://sspcloud.fr/tos\_fr.md). Nous rappelons que le Datalab est destiné exclusivement au traitement de **données publiques et non-sensibles**. Des projets d'expérimentation mobilisant des données non ouvertes peuvent être menés en concertation avec l'équipe du Datalab, sous réserve de se conformer aux règles de sécurité spécifiques au projet.
@@ -57,9 +57,9 @@ Les ressources mises à disposition pour l'execution des services sont partagée
 
 Nous avons souhaité présenter à travers ce tutoriel l'usage standard des services proposés sur le Datalab. Des usages plus avancés sont présentés dans d'autres pages de ce site documentaire :&#x20;
 
-* versionner son code avec Git
-* stocker ses données avec MinIO
-* gérer ses secrets avec Vault
+* [versionner son code avec Git](controle-de-version.md)
+* [stocker ses données avec MinIO](stockage-de-donnees.md)
+* [gérer ses secrets avec Vault](gestion-des-secrets.md)
 * travailler sur des projets collaboratifs
 * [s'auto-former avec le Datalab](https://www.sspcloud.fr/documentation)
 
