@@ -6,17 +6,25 @@ description: Présentation des grands principes du Datalab Onyxia
 
 ## Une plateforme de mutualisation
 
-Le projet du Datalab Onyxia part du constat de difficultés communes rencontrées par les _datascientists_ dans le secteur public :
+Le projet Onyxia part du constat de difficultés communes rencontrées par les _datascientists_ dans le secteur public :
 
 * des agents souvent isolés, du fait de la relative rareté des compétences _data_ dans l'administration ;
 * des infrastructures inadaptées, aussi bien en matière de ressources que de technologies, qui constituent un frein à l'innovation ;
 * une difficulté à passer de l'expérimentation à la mise en production, du fait de multiples séparations (séparation physique, langage de développement, modes de travail) entre les directions métier et la production informatique.
 
-Face à ce constat, le Datalab Onyxia a été construit pour proposer une plateforme de mutualisation à plusieurs niveaux :&#x20;
+Face à ce constat, le Datalab SSPCloud a été construit pour proposer une plateforme de mutualisation à plusieurs niveaux :&#x20;
 
 * partage d'une _infrastructure_ moderne, centrée autour du déploiement de services via des conteneurs, et dimensionnée pour les usages de _data science ;_
 * partage de _méthodes_, via une mutualisation des services de _data science_ proposés, auxquels chacun peut contribuer ;
 * partage de _connaissances_, via des formations associées au Datalab ainsi que la constitution de commaunautés d'entraide centrées sur son utilisation.
+
+{% hint style="info" %}
+Onyxia, Datalab SSP Cloud : quelles différences ?
+
+
+
+[Onyxia ](https://github.com/InseeFrLab/onyxia.git)est un projet open-source qui propose une plateforme de services de _data science_, accessible via une application Web. Le [Datalab SSP Cloud ](https://datalab.sspcloud.fr/home)est une instance du projet Onyxia, hébergée à l'Insee.
+{% endhint %}
 
 ## Principes fondamentaux
 

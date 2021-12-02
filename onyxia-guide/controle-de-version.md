@@ -37,14 +37,14 @@ La suite du tutoriel nécessite de disposer d'un [compte GitHub](https://github.
 {% endhint %}
 
 {% hint style="info" %}
-Si l'utilisation du Datalab avec la plateforme GitHub est facilitée, elle n'est en aucun cas obligatoire : il reste tout à fait possible d'utiliser la forge logicielle de son choix pour la synchronisation des projets. Une [forge basée sur GitLab ](https://git.lab.sspcloud.fr)est notamment mise à disposition des utilisateurs du Datalab.h
+Si l'utilisation du Datalab avec la plateforme GitHub est facilitée, elle n'est en aucun cas obligatoire : il reste tout à fait possible d'utiliser la forge logicielle de son choix pour la synchronisation des projets. Une [forge basée sur GitLab ](https://git.lab.sspcloud.fr)est notamment mise à disposition des utilisateurs du Datalab.
 {% endhint %}
 
 ### Créer un jeton d'accès (_token_)
 
 La synchronisation avec un dépôt distant nécessite une authentification auprès de GitHub. Celle-ci s'effectue à l'aide d'un jeton d'accès personnel, qui doit être généré à partir du compte GitHub de l'utilisateur. Le service de génération est accessible à [cette adresse](https://github.com/settings/tokens). La [documentation GitHub ](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)(en Anglais) propose des illustrations pour guider le processus.
 
-Pour générer un jeton, il est nécessaire de choisir un nom de jeton, un délai d'expiration et des droits d'accès (_scope_). Il est recommandé de choisir un délai court (30 jours) et un accès restreint (_repo _seulement) afin de limiter les risques de sécurité en cas de diffusion malveillante du jeton.&#x20;
+Pour générer un jeton, il est nécessaire de choisir un nom de jeton, un délai d'expiration et des droits d'accès (_scope_). Il est recommandé de choisir un délai court (30 jours) et un accès restreint (_repo_ seulement) afin de limiter les risques de sécurité en cas de diffusion malveillante du jeton.&#x20;
 
 ![Configuration recommandée pour la génération d'un jeton d'accès GitHub](<../.gitbook/assets/token (1).PNG>)
 
@@ -57,18 +57,18 @@ Il est recommandé d'ajouter ses jetons d'accès à un gestionnaire de mots de p
 ![Ajouter un jeton d'accès GitHub à un compte utilisateur sur le Datalab](<../.gitbook/assets/git (1).PNG>)
 
 {% hint style="warning" %}
-Attention à bien utiliser dans les "Informations du compte" l'adresse mail associée à votre compte GitHub, c'est elle qui permet de lier effectivement les _commits _que vous effectuerez à votre compte GitHub.
+Attention à bien utiliser dans les "Informations du compte" l'adresse mail associée à votre compte GitHub, c'est elle qui permet de lier effectivement les _commits_ que vous effectuerez à votre compte GitHub.
 {% endhint %}
 
 ## Utiliser Git avec les services du Datalab
 
-Git est préconfiguré pour fonctionner nativement avec les différents services pertinents du Datalab. A l'ouverture d'un service, il est possible de configurer certains éléments. Si l'on a ajouté un jeton d'accès GitHub à son compte sur le Datalab, ce dernier est pré-configuré. Il est par ailleurs possible d'indiquer l'URL **complète **d'un _Repository _Git (ex : [https://github.com/InseeFrLab/onyxia](https://github.com/InseeFrLab/onyxia)), qui sera alors cloné à l'initialisation dans l'espace de travail de l'instance.
+Git est préconfiguré pour fonctionner nativement avec les différents services pertinents du Datalab. A l'ouverture d'un service, il est possible de configurer certains éléments. Si l'on a ajouté un jeton d'accès GitHub à son compte sur le Datalab, ce dernier est pré-configuré. Il est par ailleurs possible d'indiquer l'URL **complète** d'un _Repository_ Git (ex : [https://github.com/InseeFrLab/onyxia](https://github.com/InseeFrLab/onyxia)), qui sera alors cloné à l'initialisation dans l'espace de travail de l'instance.
 
 ![Configuration de Git à l'ouverture d'un service](../.gitbook/assets/rstudio.PNG)
 
 ### Via le terminal
 
-Le jeton d'accès GitHub est disponible dans le terminal des différents services via la variable d'environnement `$GIT_PERSONAL_ACCESS_TOKEN`. Afin d'éviter de devoir s'authentifier à chaque opération impliquant le dépôt distant (_clone_, _push _& _pull_), il est recommandé de cloner celui-ci en incluant le jeton d'accès dans le lien HTTPS, à l'aide de la commande suivante :
+Le jeton d'accès GitHub est disponible dans le terminal des différents services via la variable d'environnement `$GIT_PERSONAL_ACCESS_TOKEN`. Afin d'éviter de devoir s'authentifier à chaque opération impliquant le dépôt distant (_clone_, _push_ & _pull_), il est recommandé de cloner celui-ci en incluant le jeton d'accès dans le lien HTTPS, à l'aide de la commande suivante :
 
 `git clone https://${GIT_PERSONAL_ACCESS_TOKEN}@github.com/<owner>/<repo>.git`
 
