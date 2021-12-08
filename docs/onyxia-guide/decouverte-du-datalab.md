@@ -1,8 +1,8 @@
 ---
-description: Présentation des grands principes du Datalab Onyxia
+description: Présentation des grands principes du Datalab
 ---
 
-# Principes du datalab
+# Principes du Datalab
 
 ## Une plateforme de mutualisation
 

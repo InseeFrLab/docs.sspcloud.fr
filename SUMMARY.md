@@ -5,7 +5,7 @@
 
 ## Onyxia - Guide
 
-* [Principes du datalab](docs/onyxia-guide/decouverte-du-datalab.md)
+* [Principes du Datalab](docs/onyxia-guide/decouverte-du-datalab.md)
 * [Première utilisation](onyxia-guide/premiere-utilisation.md)
 * [Contrôle de version](onyxia-guide/controle-de-version.md)
 * [Stockage de données](onyxia-guide/stockage-de-donnees.md)
@@ -13,7 +13,7 @@
 * [Lancer un projet R avec le datalab](docs/onyxia-guide/projet-de-demonstration-r-avec-onyxia.md)
 * [FAQ](onyxia-guide/faq.md)
 
-## Comment contribuer ? <a href="comment-contribuer-1" id="comment-contribuer-1"></a>
+## Comment contribuer ? <a href="#comment-contribuer-1" id="comment-contribuer-1"></a>
 
 * [🤝 Comment contribuer à la communauté?](docs/comment-contribuer-1/comment-contribuer/README.md)
   * [​📄 Écrire du contenu documentaire avec Gitbook](docs/comment-contribuer-1/comment-contribuer/comment-utiliser-et-editer-gitbook-pour-la-documentation.md)
