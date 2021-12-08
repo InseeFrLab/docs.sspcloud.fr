@@ -1,22 +1,22 @@
 ---
 description: >-
-  Tutoriel pour utiliser des secrets en tant que variables d’environnement avec
-  le datalab SSP Cloud.
+  Tutoriel pour utiliser des secrets comme variables d’environnement dans les
+  services du Datalab.
 ---
 
-# Utiliser des secrets
+# Gestion des secrets
 
 ### Les variables d'environnement&#x20;
 
-Il arrive parfois que certaines informations doivent être mise à disposition d'un grand nombre d'applications ou ne peuvent pas figurer en clair dans votre code. L'utilisation de **variables d'environnement **permet de pouvoir accéder à ces informations depuis n'importe quel service.
+Il arrive que certaines informations doivent être mise à disposition d'un grand nombre d'applications, ou ne doivent pas figurer en clair dans votre code (jetons d'accès, mots de passe, etc.). L'utilisation de **variables d'environnement** permet de pouvoir accéder à ces informations depuis n'importe quel service.
 
-Au lancement d'un service, plusieurs variables d'environnement sont déjà injecté automatiquement - des informations concernant GitLab et Minio (stockage de données) notamment.&#x20;
+Au lancement d'un service, plusieurs variables d'environnement sont déjà injectées automatiquement — par exemple, les tokens d'accès à [GitHub ](controle-de-version.md)et [MinIO](stockage-de-donnees.md).
 
-![](../../.gitbook/assets/secret.png)
+![](../.gitbook/assets/secret.png)
 
 ### Création et gestion de secrets
 
-Sur la plateforme, les variables d'environnement sont des secrets écrits dans [Vault](https://www.vaultproject.io) (le coffre fort du datalab) et sont chiffrées. Cela vous permettra d'y stocker des jetons, des identifiants et des mots de passe. La page [Mes secrets](https://datalab.sspcloud.fr/my-secrets/) prends la forme d'un explorateur de fichiers où vous pouvez trier et hiérarchiser vos variables dans des dossiers.
+Sur la plateforme, les variables d'environnement sont des secrets écrits dans [Vault](https://www.vaultproject.io) (le coffre fort du Datalab) et sont chiffrées. Cela vous permet d'y stocker des jetons, des identifiants et des mots de passe. La page [Mes secrets](https://datalab.sspcloud.fr/my-secrets/) prends la forme d'un explorateur de fichiers où vous pouvez trier et hiérarchiser vos variables dans des dossiers.
 
 #### Pour commencer :
 
@@ -24,19 +24,19 @@ Sur la plateforme, les variables d'environnement sont des secrets écrits dans [
 * Puis dans ce dossier, créez un nouveau secret `+ Nouveau secret`
 * Ouvrez votre secret&#x20;
 
-![](../../.gitbook/assets/toolbarsecret.png)
+![](../.gitbook/assets/toolbarsecret.png)
 
 Chaque secret peut contenir plusieurs variables, composés de paires de clés-valeurs.
 
 * &#x20;`+ Ajouter une variable`
 
-![](../../.gitbook/assets/secrettable.png)
+![](../.gitbook/assets/secrettable.png)
 
 {% hint style="info" %}
-Les clés (nom de la variable) commencent toujours (`$`) et contiennent uniquement des lettres, des chiffres et le caractère de soulignement (`_`). Par convention, les clefs s'écrivent en MAJUSCULE.
+Les clés (nom de la variable) commencent toujours par`$`et contiennent uniquement des lettres, des chiffres et le caractère de soulignement (`_`). Par convention, les clefs s'écrivent en MAJUSCULE.
 {% endhint %}
 
-* &#x20;Remplissez le champ du nom de la clef puis sa valeur
+* &#x20;Remplissez le champ du nom de la clef puis sa valeur.
 
 ### Convertir des secrets en variables d'environnement
 
@@ -45,11 +45,19 @@ Une fois votre secret édité, avec ses différentes variables, vous êtes prêt
 * Copiez le chemin du secret en cliquant sur le bouton `Utiliser dans un service`
 * Puis au moment de la configuration de votre service, allez dans l'onglet `Vault`et collez le chemin du secret dans le champ dédié
 
-![](../../.gitbook/assets/servicesconfig.png)
+![](../.gitbook/assets/servicesconfig.png)
 
 * Créez et ouvrez votre service
-* Pour vérifier que vos variables ont bien été injecté, utiliser les commandes suivantes dans le terminal de votre service : Pour voir toutes les variables: `env` Pour chercher une variable spécifique: `echo $MA_VARIABLE` ou `env | grep MAVARIABLE`
 
-### Valeur résolue
+Pour vérifier que vos variables d'environnement ont bien été crées, vous pouvez lancer les commandes suivantes dans le terminal du service :
 
-Une variable peut en référencer une autre. Par exemple, vous avez défini la variable `$PRENOM=boby`, vous pouvez alors définir une nouvelle variable `$NOM_COMPLET="$PRENOM"lestatisticien` qui aura comme valeur résolue`bobylestatisticien`.
+```bash
+# Lister toutes les variables d'environnement disponibles
+env 
+
+# Afficher la valeur d'une variable d'environnement
+echo $MA_VARIABLE 
+
+# Trouver toutes les variables d'environnement qui contiennent un pattern donné
+env | grep -i "<PATTERN>"
+```
