@@ -20,7 +20,7 @@ Le [catalogue de services](https://datalab.sspcloud.fr/catalog/inseefrlab-helm-c
 
 Pour lancer un service, il suffit de cliquer sur le bouton `Lancer` du service désiré.&#x20;
 
-![Illustration des options de configuration d'un service avec RStudio](<../.gitbook/assets/Screenshot from 2021-11-14 15-09-30.png>)
+![](<../.gitbook/assets/Screenshot from 2021-11-14 15-09-30.png>)
 
 Une page centrée sur le service demandé s'ouvre alors, qui offre plusieurs possibilités :&#x20;
 
@@ -37,7 +37,7 @@ La configuration précise des services du Datalab constitue un usage avancé et 
 
 L'action de lancer un service amène automatiquement sur la page [Mes Services](https://datalab.sspcloud.fr/my-services), où sont listées toutes les instances en activité sur le compte de l'utilisateur.
 
-![Instances en activité de services du Datalab](<../.gitbook/assets/Screenshot from 2021-11-14 15-26-15.png>)
+![](<../.gitbook/assets/Screenshot from 2021-11-14 15-26-15.png>)
 
 Une fois le service lancé, un bouton `Ouvrir` apparaît qui permet l'accès au service. Un mot de passe — et, selon les services, un nom d'utilisateur — est généralement requis pour pouvoir utiliser le service. Ces informations sont disponibles dans le `README` associé au service, auquel on accède en cliquant sur le bouton du même nom.&#x20;
 
