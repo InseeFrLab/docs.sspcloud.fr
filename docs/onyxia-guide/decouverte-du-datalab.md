@@ -6,7 +6,7 @@ description: Présentation des grands principes du Datalab
 
 ## Une plateforme de mutualisation
 
-Le projet Onyxia part du constat de difficultés communes rencontrées par les _datascientists_ dans le secteur public :
+Le projet Onyxia part du constat de difficultés communes rencontrées par les _datascientists_ du secteur public :
 
 * des agents souvent isolés, du fait de la relative rareté des compétences _data_ dans l'administration ;
 * des infrastructures inadaptées, aussi bien en matière de ressources que de technologies, qui constituent un frein à l'innovation ;
