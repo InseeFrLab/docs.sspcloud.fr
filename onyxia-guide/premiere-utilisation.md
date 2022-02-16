@@ -14,13 +14,13 @@ Les conditions d'utilisation du Datalab sont consultables à [cette adresse](htt
 
 Le [catalogue de services](https://datalab.sspcloud.fr/catalog/inseefrlab-helm-charts-datascience) est au centre de l'utilisation du Datalab. Il propose un ensemble de services destinés aux traitements statistiques de données ainsi qu'à la gestion complète des projets de _data science_.
 
-![](<../.gitbook/assets/Screenshot from 2021-11-14 15-03-50.png>)
+![](../.gitbook/assets/catalogue.png)
 
 ### Lancer un service
 
 Pour lancer un service, il suffit de cliquer sur le bouton `Lancer` du service désiré.&#x20;
 
-![](<../.gitbook/assets/Screenshot from 2021-11-14 15-09-30.png>)
+![](../.gitbook/assets/lancer-un-service.png)
 
 Une page centrée sur le service demandé s'ouvre alors, qui offre plusieurs possibilités :&#x20;
 
@@ -37,7 +37,7 @@ La configuration précise des services du Datalab constitue un usage avancé et 
 
 L'action de lancer un service amène automatiquement sur la page [Mes Services](https://datalab.sspcloud.fr/my-services), où sont listées toutes les instances en activité sur le compte de l'utilisateur.
 
-![](<../.gitbook/assets/Screenshot from 2021-11-14 15-26-15.png>)
+![](../.gitbook/assets/utiliser-un-service.png)
 
 Une fois le service lancé, un bouton `Ouvrir` apparaît qui permet l'accès au service. Un mot de passe — et, selon les services, un nom d'utilisateur — est généralement requis pour pouvoir utiliser le service. Ces informations sont disponibles dans le `README` associé au service, auquel on accède en cliquant sur le bouton du même nom.&#x20;
 
