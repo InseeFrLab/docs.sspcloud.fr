@@ -4,7 +4,7 @@
 
 L'équipe du projet Onyxia a le plaisir d'annoncer le lancement des rendez-vous communautaires Onyxia, baptisés **Onyxia Scale'Up**. Ces rendez-vous mensuels se tiendront tous les deuxièmes vendredis de chaque mois de 10h30 à 12h.
 
-### Prochaines dates :
+### Prochaines dates
 
 **#1 : Suivre et déployer une formation sur Onyxia.**\
 11 Mars 2022 - 10h30 à 12h
@@ -14,6 +14,10 @@ L'équipe du projet Onyxia a le plaisir d'annoncer le lancement des rendez-vous 
 
 **#3 : Intégration et gestion d’API avec Onyxia.**\
 13 Mai 2022 - 10h30 à 12h
+
+### Modalités de connexion
+
+Chaque rendez-vous sera diffusé en ligne sous la forme d'une conférence Zoom. Le lien de connexion sera annoncé à l'avance sur le [channel Tchap SSP Cloud](https://matrix.to/#/#SSPCloudXDpAw6v:agent.finances.tchap.gouv.fr). N'hésitez pas à nous contacter à l'adresse innovation@insee.fr si vous n'avez pas pu vous procurer ce lien.
 
 ## Scale'Up #1 : Suivre et déployer une formation sur Onyxia
 
