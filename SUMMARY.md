@@ -32,6 +32,7 @@
 
 ## Actualités
 
+* [Onyxia Scale'Up : Les rendez-vous communautaires Onyxia](actualites/onyxia-scaleup-les-rendez-vous-communautaires-onyxia.md)
 * [Introduction au MLOps : Présentation de ML Flow](docs/actualites/introduction-au-mlops-presentation-de-ml-flow.md)
 * [Atelier Kubernetes : Introduction et bonnes pratiques du déploiement Docker avec le SSP Cloud](docs/actualites/atelier-kubernetes-introduction-et-bonnes-pratiques-du-deploiement-docker-avec-le-ssp-cloud.md)
 * [SPP Cloud : Webinaire de lancement](docs/actualites/spp-cloud-webinaire-de-lancement.md)
