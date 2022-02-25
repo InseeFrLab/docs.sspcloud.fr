@@ -19,7 +19,7 @@ L'équipe du projet Onyxia a le plaisir d'annoncer le lancement des rendez-vous 
 
 La plateforme Onyxia est l’espace idéal pour **se former aux différents langages statistiques** (comme R ou Python), découvrir de **nouveaux outils** et s'initier aux **bonnes pratiques**. Onyxia dispose d'ores et déjà d'un large catalogue de formations, en constante évolution, que nous vous ferons découvrir à travers une démonstration.
 
-Chaque utilisateur peut aussi **devenir concepteur de formations** et proposer du contenu pédagogique pour enrichir le catalogue existant. **Pierre Lamarche** (Insee - DSDS) et **Lino Galiana**  (Insee - DESE) présenteront respectivement l'offre de formation R et Python, et vous montreront en particulier comment tirer parti d'Onyxia pour proposer des formations interactives et engageantes.
+Chaque utilisateur peut aussi **devenir concepteur de formations** et proposer du contenu pédagogique pour enrichir le catalogue existant. **Pierre Lamarche** (Insee - DSDS) et **Lino Galiana**  (Insee - DESE) présenteront respectivement l'**offre de formation R et Python**, et vous montreront en particulier comment tirer parti d'Onyxia pour **proposer des formations interactives et engageantes**.
 
 ## Les rendez-vous Onyxia Scale'Up
 
