@@ -10,10 +10,10 @@ L'équipe du projet Onyxia a le plaisir d'annoncer le lancement des rendez-vous 
 11 Mars 2022 - 10h30 à 12h
 
 **#2 : Déployer facilement une application Shiny avec Onyxia.**\
-08 Avril 2022 - 10h30 à 12h (Durée : 1h30)
+08 Avril 2022 - 10h30 à 12h
 
 **#3 : Intégration et gestion d’API avec Onyxia.**\
-13 Mai 2022 - 10h30 à 12h (Durée : 1h30)
+13 Mai 2022 - 10h30 à 12h
 
 ## Scale'Up #1 : Suivre et déployer une formation sur Onyxia
 
