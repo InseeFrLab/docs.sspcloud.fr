@@ -24,7 +24,7 @@ Nous vous présenterons d’abord les **templates** que nous développons de man
 
 Si le déploiement d’application vous intéresse ou si vous avez déjà rencontré des difficultés avec ce framework, cette session sera l'occasion d’échanger sur ces questions.
 
-### Replay des rendez-vous passés
+## Replay des rendez-vous passés
 
 **#1 : Suivre et déployer une formation sur Onyxia.**\
 11 Mars 2022 - 10h30 à 12h
