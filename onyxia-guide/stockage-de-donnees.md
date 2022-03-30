@@ -62,8 +62,10 @@ En Python, l'interaction avec un système de fichiers compatible S3 est rendu po
 Pour cette raison et parce que S3Fs est utilisée par défaut par la librairie [pandas ](https://pandas.pydata.org)pour gérer les connections S3, nous allons présenter la gestion du stockage sur MinIO via Python à travers cette librairie.
 
 ```python
-import s3fs
 import os
+
+import s3fs
+import pandas
 ```
 
 ```python
