@@ -6,9 +6,6 @@ L'équipe du projet Onyxia a le plaisir d'annoncer le lancement des rendez-vous 
 
 ### Prochaines dates
 
-**#2 : Déployer une application Shiny avec Onyxia.**\
-08 Avril 2022 - 10h30 à 12h
-
 **#3 : Intégration et gestion d’API avec Onyxia.**\
 13 Mai 2022 - 10h30 à 12h
 
@@ -16,15 +13,18 @@ L'équipe du projet Onyxia a le plaisir d'annoncer le lancement des rendez-vous 
 
 Chaque rendez-vous sera diffusé en ligne sous la forme d'une conférence Zoom. Le lien de connexion sera annoncé à l'avance sur le [canal Tchap SSP Cloud](https://matrix.to/#/#SSPCloudXDpAw6v:agent.finances.tchap.gouv.fr). N'hésitez pas à nous contacter à l'adresse innovation@insee.fr si vous n'avez pas pu vous procurer ce lien.
 
-## Scale'Up #2 : **Déployer une application Shiny avec Onyxia**
+## Scale'Up #2 : **Intégration et gestion d’API avec Onyxia**
 
-Le framework R Shiny permet aux utilisateurs de R de concevoir facilement des interfaces web interactives basées sur des données. Onyxia met à disposition de chacun les outils permettant de **déployer, maintenir et faire évoluer une application Shiny**.&#x20;
 
-Nous vous présenterons d’abord les **templates** que nous développons de manière collaborative afin de simplifier ce processus, en l’illustrant par une **démonstration live d’un déploiement**. Sebastien Novella (PSAR Marseille) nous montrera ensuite comment **déployer une application Shiny de manière industrialisée** avec Onyxia et les frameworks **Golem** et **Shinyproxy**.&#x20;
-
-Si le déploiement d’application vous intéresse ou si vous avez déjà rencontré des difficultés avec ce framework, cette session sera l'occasion d’échanger sur ces questions.
 
 ## Replay des rendez-vous passés
+
+**#2 : Déployer une application Shiny avec Onyxia.**\
+08 Avril 2022 - 10h30 à 12h
+
+{% embed url="https://minio.lab.sspcloud.fr/projet-onyxia/diffusion/scaleup/20220408-shiny_deployment.mp4" %}
+
+
 
 **#1 : Suivre et déployer une formation sur Onyxia.**\
 11 Mars 2022 - 10h30 à 12h
