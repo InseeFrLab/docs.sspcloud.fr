@@ -13,7 +13,7 @@ L'équipe du projet Onyxia a le plaisir d'annoncer le lancement des rendez-vous 
 
 Chaque rendez-vous sera diffusé en ligne sous la forme d'une conférence Zoom. Le lien de connexion sera annoncé à l'avance sur le [canal Tchap SSP Cloud](https://matrix.to/#/#SSPCloudXDpAw6v:agent.finances.tchap.gouv.fr). N'hésitez pas à nous contacter à l'adresse innovation@insee.fr si vous n'avez pas pu vous procurer ce lien.
 
-## Scale'Up #2 : **Intégration et gestion d’API avec Onyxia**
+## Scale'Up #3 : **Intégration et gestion d’API avec Onyxia**
 
 
 
