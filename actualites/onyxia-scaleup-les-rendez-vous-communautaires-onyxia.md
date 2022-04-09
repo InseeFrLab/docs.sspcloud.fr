@@ -29,7 +29,7 @@ Chaque rendez-vous sera diffusé en ligne sous la forme d'une conférence Zoom. 
 **#1 : Suivre et déployer une formation sur Onyxia.**\
 11 Mars 2022 - 10h30 à 12h
 
-{% embed url="https://minio.lab.sspcloud.fr/f7sggu/diffusion/scaleup/20220311-formations.mp4" %}
+{% embed url="https://minio.lab.sspcloud.fr/projet-onyxia/diffusion/scaleup/20220311-formations.mp4" %}
 L'enregistrement de la session #1
 {% endembed %}
 
