@@ -1,6 +1,6 @@
 # Table of contents
 
-* [🧑🤝🧑 Communauté SSP Cloud](README.md)
+* [🧑🤝🧑 🧑🤝🧑 Communauté SSP Cloud](README.md)
 * [Le datalab](https://datalab.sspcloud.fr)
 
 ## Onyxia - Guide
