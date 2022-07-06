@@ -1,7 +1,7 @@
 ---
 description: >-
   Toutes les ressources pour aider les membres de la communauté à s'approprier
-  la plateforme Onyxia et ses services.
+  la plateforme Onyxia et ses services!
 ---
 
 # 🧑🤝🧑 Communauté SSP Cloud
