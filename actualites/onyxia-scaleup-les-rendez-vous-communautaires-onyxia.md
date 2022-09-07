@@ -6,14 +6,16 @@ L'équipe du projet Onyxia a le plaisir d'annoncer le lancement des rendez-vous 
 
 ### Prochaines dates
 
-**#4 : Visualisation de données avec les services d'Onyxia.**\
-10 Juin 2022 - 10h30 à 12h
-
 ### Modalités de connexion
 
 Chaque rendez-vous sera diffusé en ligne sous la forme d'une conférence Zoom. Le lien de connexion sera annoncé à l'avance sur le [canal Tchap SSP Cloud](https://matrix.to/#/#SSPCloudXDpAw6v:agent.finances.tchap.gouv.fr). N'hésitez pas à nous contacter à l'adresse innovation@insee.fr si vous n'avez pas pu vous procurer ce lien.
 
 ## Replay des rendez-vous passés
+
+**#4 : Visualisation de données avec les services d'Onyxia.**\
+10 Juin 2022 - 10h30 à 12h
+
+{% embed url="https://minio.lab.sspcloud.fr/projet-onyxia/diffusion/scaleup/20220610-dataviz.mp4" %}
 
 **#3 : Création, déploiement et gestion d'une API.**\
 13 Mai 2022 - 10h30 à 12h
