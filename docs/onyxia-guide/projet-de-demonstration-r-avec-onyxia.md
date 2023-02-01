@@ -11,7 +11,7 @@ Une courte démonstration pour utiliser R avec le [datalab SSP Cloud](https://da
 * Ouvrir le [catalogue de service](https://datalab.sspcloud.fr/my-lab/catalogue/inseefrlab-helm-charts-datascience)
 * Lancer et ouvrir un service RStudio
 * Se connecter avec les identifiants suivants:
-  * user: `rstudio`
+  * user: `onyxia`
   *   password: `Votre mot de passe pour vos services`
 
       Vous pouvez le trouver sur votre [compte](https://datalab.sspcloud.fr/mon-compte) ou le copier depuis directement [Mes services](https://datalab.sspcloud.fr/my-services) en cliquant sur la clef
