@@ -20,6 +20,7 @@ Dans le formulaire de configuration, il y a l’onglet dédiées aux ressources 
 
 Une erreur 403 est liée à la protection réseau qu'on applique aux services. Les services créés à partir d'une certaine IP ne sont initialement accessibles que depuis cette IP.  Cette protection est gérée dans l'onglet « Security » avec la case à cocher « Enable IP protection ».
 
+
 ## 🟠 Puis-je partager un service avec quelqu'un d'autre ?
 
 Oui, il y a deux possibilités :
@@ -32,4 +33,20 @@ La création de groupes se fait en écrivant aux administrateurs sur Tchap (en p
 Il suffit de lui communiquer l'URL (type https://user-aaaaaaaaaaaaaa-xxxxxxx-x.user.lab.sspcloud.fr/), ainsi que le mot de passe du service.
 Le nom d'utilisateur reste **Onyxia**. Attention, il est recommandé de changer le mot de passe du service lors de son lancement (onglet *Security*) pour ne pas le faire fuiter.
 Il faudra aussi décocher *Enable IP protection* et *Enable network policy* dans l'onglet *Security*.
-Une seule personne à la fois peut se connecter à un service RStudio.
+Une seule personne à la fois peut se connecter à un service RStudio.  
+
+## 🟠 Comment obtenir des logs sur le lancement de mon service ?
+
+Cette manipulation nécessite l'usage d'un terminal dans un service RStudio, Jupyter... Il faut d'abord trouver le nom de son *pod* Kubernetes :
+
+```
+kubectl get pod
+```
+
+Par exemple rstudio-xxxxxx-x ou jupyter-python-xxxxxx-x.
+Pour ensuite afficher les logs de ce pod :
+
+```
+kubectl logs rstudio-xxxxxx-x
+```
+
