@@ -11,7 +11,6 @@
 * [Stockage de données](onyxia-guide/stockage-de-donnees.md)
 * [Gestion des secrets](onyxia-guide/gestion-des-secrets.md)
 * [Lancer un projet R avec le datalab](docs/onyxia-guide/projet-de-demonstration-r-avec-onyxia.md)
-* [Configuration des services](docs/onyxia-guide/configuration-des-services.md)
 * [FAQ](onyxia-guide/faq.md)
 
 ## Comment contribuer ? <a href="#comment-contribuer-1" id="comment-contribuer-1"></a>
