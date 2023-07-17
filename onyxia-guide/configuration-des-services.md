@@ -35,6 +35,20 @@ Pour apprendre à utiliser cet onglet, voir la [page dédiée](stockage-de-donne
 
 ## Kubernetes
 
+Cette section a été présentée dans l'[atelier Kubernetes](../actualites/atelier-kubernetes-introduction-et-bonnes-pratiques-du-deploiement-docker-avec-le-ssp-cloud) à 1:18:00.
+
+### Enabled
+
+Si la case est cochée, le service pourra dialoguer avec le _master_ Kubernetes.
+Ainsi, on pourra exécuter des commandes `kubectl` dans un terminal du service.
+
+### Role
+
+On peut choisir le niveau de rôle qu'aura le service :
++ _view_ : `kubectl get pods` fonctionnera, mais pas `kubectl delete pod vscode-XXXX`
++ _edit_
++ _admin_ : `kubectl delete pod vscode-XXXX` ou `kubectl apply -f XXXX.yml` fonctionnent
+  
 ## Init
 
 ### PersonalInit
