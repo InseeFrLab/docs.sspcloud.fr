@@ -6,8 +6,8 @@ website:
   title: "SSP Cloud - Documentation"
   navbar:
     left:
-      - href: onyxia-guide/decouverte-du-datalab.md
-        text: Discover the Datalab  
+      - href: docs/principles.md
+        text: Principles of the Datalab  
     right:
       - href: ../fr
         text: French
