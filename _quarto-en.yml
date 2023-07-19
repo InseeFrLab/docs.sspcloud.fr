@@ -7,7 +7,13 @@ website:
   navbar:
     left:
       - href: docs/principles.qmd
-        text: Principles of the Datalab  
+        text: Principes of the Datalab
+      - href: docs/discover.qmd
+        text: Discover the Datalab
+      - href: docs/version-control.qmd
+        text: Version control
+      - href: docs/secrets.qmd
+        text: Secrets
     right:
       - href: ../fr
         text: French

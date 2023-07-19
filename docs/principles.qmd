@@ -16,13 +16,11 @@ Face à ce constat, le Datalab SSPCloud a été construit pour proposer une plat
 * partage de _méthodes_, via une mutualisation des services de _data science_ proposés, auxquels chacun peut contribuer ;
 * partage de _connaissances_, via des formations associées au Datalab ainsi que la constitution de commaunautés d'entraide centrées sur son utilisation.
 
-{% hint style="info" %}
+::: {.callout-note}
 Onyxia, Datalab SSP Cloud : quelles différences ?
 
-
-
 [Onyxia ](https://github.com/InseeFrLab/onyxia.git)est un projet open-source qui propose une plateforme de services de _data science_, accessible via une application Web. Le [Datalab SSP Cloud ](https://datalab.sspcloud.fr/home)est une instance du projet Onyxia, hébergée à l'Insee.
-{% endhint %}
+:::
 
 ## Principes fondamentaux
 
@@ -41,11 +39,11 @@ Le Datalab est accessible via une [interface utilisateur](https://datalab.sspclo
 * un catalogue de services et d'outils pour accompagner les projets de _data science ;_
 * une plateforme de formation et de documentation pour faciliter l'_onboarding_ sur les technologies proposées.
 
-![Briques fondamentales du Datalab Onyxia](img/onyxia-components.png)
+![Briques fondamentales du Datalab Onyxia](img/components.png)
 
 Le catalogue de services est pensé de manière à accomoder l'essentiel des usages des _data scientists_, du développement en _self-service_ à la mise en production de traitements ou d'application. L'ensemble du cycle de vie d'un projet _data_ est ainsi couvert, et le catalogue des services est régulièrement étendu pour répondre aux nouveaux besoins des utilisateurs.
 
-![Un catalogue de services complet pour les projets de data science](img/onyxia-catalog.png)
+![Un catalogue de services complet pour les projets de data science](img/catalog-high-level.png)
 
 ## Un projet ouvert
 
@@ -83,9 +81,11 @@ In response to these challenges, Datalab SSPCloud was built to offer a collabora
 * Sharing methods through the mutualization of data science services offered, to which everyone can contribute.
 * Sharing knowledge through Datalab-related training and the formation of user communities focused on its utilization.
 
-{% hint style="info" %} Onyxia, Datalab SSP Cloud: What are the differences?
+::: {.callout-note}
+Onyxia, Datalab SSP Cloud: What are the differences?
 
-[Onyxia](https://github.com/InseeFrLab/onyxia.git) is an open-source project that provides a web application for accessing data science services. The [Datalab SSP Cloud](https://datalab.sspcloud.fr/home) is an instance of the Onyxia project hosted at Insee. {% endhint %}
+[Onyxia](https://github.com/InseeFrLab/onyxia.git) is an open-source project that provides a web application for accessing data science services. The [Datalab SSP Cloud](https://datalab.sspcloud.fr/home) is an instance of the Onyxia project hosted at Insee.
+:::
 
 ## Fundamental principles
 
@@ -104,11 +104,11 @@ Datalab can be accessed through a modern and responsive [user interface](https:/
 * A service and tool catalog to support data science projects.
 * A training and documentation platform to facilitate onboarding onto the offered technologies.
 
-![Fundamental building blocks of Datalab Onyxia](img/onyxia-components.png)
+![Fundamental building blocks of Datalab Onyxia](img/components.png)
 
 The service catalog is designed to accommodate the essential needs of data scientists, from self-service development to production deployment of processes or applications. The entire data project lifecycle is covered, and the catalog of services is regularly expanded to meet users' new requirements.
 
-![A comprehensive service catalog for data science projects](img/onyxia-catalog.png)
+![A comprehensive service catalog for data science projects](img/catalog-high-level.png)
 
 ## An open project
 

@@ -8,6 +8,12 @@ website:
     left:
       - href: docs/principles.qmd
         text: Principes du Datalab
+      - href: docs/discover.qmd
+        text: Premiers pas avec le Datalab
+      - href: docs/version-control.qmd
+        text: Contrôle de version
+      - href: docs/secrets.qmd
+        text: Gestion des secrets
     right:
       - href: ../fr
         text: French
