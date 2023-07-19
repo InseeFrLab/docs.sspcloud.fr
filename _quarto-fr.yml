@@ -1,0 +1,23 @@
+project:
+  type: website
+  output-dir: ./_site/fr
+
+website:
+  title: "SSP Cloud - Documentation"
+  navbar:
+    left:
+      - href: onyxia-guide/decouverte-du-datalab.qmd
+        text: Découverte du Datalab
+    right:
+      - href: ../fr
+        text: French
+      - href: ../en
+        text: English
+
+lang: fr
+
+format:
+  html:
+    theme: darkly
+    css: styles.css
+    toc: true
