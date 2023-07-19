@@ -108,7 +108,7 @@ Once the service is launched, an `Open` button appears, allowing access to the s
 Deleting an instance of a service is done simply by clicking on the trash can icon below the instance.
 
 ::: {.callout-caution} 
-For some services, deleting an instance will also delete all associated data, and this action is irreversible. Therefore, it is essential to always read the `README` associated with the instance, which specifies the consequences of deleting the instance. In general, it is crucial to ensure that the data and code used are backed up before deleting the instance. Ideally, [version your code with Git](version-control.md) and regularly back up the data using the [S3 storage system](data-storage.md). 
+For some services, deleting an instance will also delete all associated data, and this action is irreversible. Therefore, it is essential to always read the `README` associated with the instance, which specifies the consequences of deleting the instance. In general, it is crucial to ensure that the data and code used are backed up before deleting the instance. Ideally, [version your code with Git](/docs/version-control.html) and regularly back up the data using MinIO (S3 storage system). 
 :::
 
 ::: {.callout-caution} 

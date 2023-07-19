@@ -10,7 +10,7 @@ Le projet Onyxia part du constat de difficultés communes rencontrées par les _
 * des infrastructures inadaptées, aussi bien en matière de ressources que de technologies, qui constituent un frein à l'innovation ;
 * une difficulté à passer de l'expérimentation à la mise en production, du fait de multiples séparations (séparation physique, langage de développement, modes de travail) entre les directions métier et la production informatique.
 
-Face à ce constat, le Datalab SSPCloud a été construit pour proposer une plateforme de mutualisation à plusieurs niveaux :&#x20;
+Face à ce constat, le Datalab SSPCloud a été construit pour proposer une plateforme de mutualisation à plusieurs niveaux :
 
 * partage d'une _infrastructure_ moderne, centrée autour du déploiement de services via des conteneurs, et dimensionnée pour les usages de _data science ;_
 * partage de _méthodes_, via une mutualisation des services de _data science_ proposés, auxquels chacun peut contribuer ;
@@ -24,7 +24,7 @@ Onyxia, Datalab SSP Cloud : quelles différences ?
 
 ## Principes fondamentaux
 
-L'architecture du Datalab est basée sur un ensemble de principes fondamentaux :&#x20;
+L'architecture du Datalab est basée sur un ensemble de principes fondamentaux :
 
 * une production orientée _data science_, en proposant une infrastructure dimensionnée à la plupart des usages et un catalogue de services couvrant l'ensemble du cycle de vie des projets _data_ ;
 * des choix qui favorisent l'autonomie des usagers, en évitant tout enfermement propriétaire et en permettant l'accès aux couches basses de l'infrastructure pour couvrir les besoins avancés et spécifiques ;
@@ -33,7 +33,7 @@ L'architecture du Datalab est basée sur un ensemble de principes fondamentaux :
 
 ## Offre de services
 
-Le Datalab est accessible via une [interface utilisateur](https://datalab.sspcloud.fr/home) moderne et réactive, centrée sur l'expérience utilisateur. Celle-ci constitue le liant technique entre les différentes composantes d'Onyxia :&#x20;
+Le Datalab est accessible via une [interface utilisateur](https://datalab.sspcloud.fr/home) moderne et réactive, centrée sur l'expérience utilisateur. Celle-ci constitue le liant technique entre les différentes composantes d'Onyxia :
 
 * des technologies open-source qui constituent l'état de l'art du déploiement et de l'orchestration de conteneurs, du stockage et de la sécurité ;
 * un catalogue de services et d'outils pour accompagner les projets de _data science ;_
@@ -47,7 +47,7 @@ Le catalogue de services est pensé de manière à accomoder l'essentiel des usa
 
 ## Un projet ouvert
 
-Le projet du Datalab Onyxia est résolument ouvert, à de multiples niveaux :&#x20;
+Le projet du Datalab Onyxia est résolument ouvert, à de multiples niveaux :
 
 * le Datalab est accessible via son [interface Web](https://datalab.sspcloud.fr) à tous les agents du service public (via _AgentConnect_ ou une adresse mail en gouv.fr) ainsi qu'aux élèves des écoles de statistique liées à l'Insee (Cefil, Ensai, Ensae) ;
 * le code source ouvert et la modularité du projet rendent possible le déploiement d'une instance Onyxia personnalisée sur n'importe quelle infrastructure basée sur un _cluster_ Kubernetes ;
