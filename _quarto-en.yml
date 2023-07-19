@@ -6,7 +6,7 @@ website:
   title: "SSP Cloud - Documentation"
   navbar:
     left:
-      - href: docs/principles.md
+      - href: docs/principles.qmd
         text: Principles of the Datalab  
     right:
       - href: ../fr
