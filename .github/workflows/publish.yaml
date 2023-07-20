@@ -16,5 +16,7 @@ jobs:
         uses: quarto-dev/quarto-actions/setup@v2
       - name: Publish to GitHub Pages (and render)
         uses: quarto-dev/quarto-actions/publish@v2
+        env: 
+          QUARTO_PROFILE: "fr,en"
         with:
           target: gh-pages
