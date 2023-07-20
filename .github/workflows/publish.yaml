@@ -20,8 +20,8 @@ jobs:
           quarto render --profile en
       - name: Publish
         run: |
-          git config --global user.email "${{ inputs.GITHUB_EMAIL }}"
-          git config --global user.name "${{ inputs.GITHUB_USERNAME }}"
+          git config --global user.email quarto-github-actions-publish@example.com
+          git config --global user.name "Quarto GHA Workflow Runner"
           git add -Af .
           git commit --allow-empty -m "Built site for gh-pages"
           git push --force origin HEAD:gh-pages
