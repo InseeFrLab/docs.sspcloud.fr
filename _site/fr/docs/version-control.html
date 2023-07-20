@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.433">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>SSP Cloud - Documentation – version-control</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "Pas de résultats",
+    "search-matching-documents-text": "documents trouvés",
+    "search-copy-link-title": "Copier le lien vers la recherche",
+    "search-hide-matches-text": "Cacher les correspondances additionnelles",
+    "search-more-match-text": "correspondance de plus dans ce document",
+    "search-more-matches-text": "correspondances de plus dans ce document",
+    "search-clear-button-title": "Effacer",
+    "search-detached-cancel-button-title": "Annuler",
+    "search-submit-button-title": "Envoyer",
+    "search-label": "Recherche"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">SSP Cloud - Documentation</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Recherche"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Basculer la navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../docs/principles.html" rel="" target="">
+ <span class="menu-text">Principes du Datalab</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../docs/discover.html" rel="" target="">
+ <span class="menu-text">Premiers pas avec le Datalab</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="../docs/version-control.html" rel="" target="" aria-current="page">
+ <span class="menu-text">Contrôle de version</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../docs/secrets.html" rel="" target="">
+ <span class="menu-text">Gestion des secrets</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../fr" rel="" target="">
+ <span class="menu-text">French</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../en" rel="" target="">
+ <span class="menu-text">English</span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Sur cette page</h2>
+   
+  <ul>
+  <li><a href="#contrôle-de-version" id="toc-contrôle-de-version" class="nav-link active" data-scroll-target="#contrôle-de-version">Contrôle de version</a>
+  <ul class="collapse">
+  <li><a href="#pourquoi-utiliser-le-contrôle-de-version" id="toc-pourquoi-utiliser-le-contrôle-de-version" class="nav-link" data-scroll-target="#pourquoi-utiliser-le-contrôle-de-version">Pourquoi utiliser le contrôle de version ?</a></li>
+  <li><a href="#intégration-de-github-avec-le-datalab" id="toc-intégration-de-github-avec-le-datalab" class="nav-link" data-scroll-target="#intégration-de-github-avec-le-datalab">Intégration de GitHub avec le Datalab</a>
+  <ul class="collapse">
+  <li><a href="#pourquoi-github" id="toc-pourquoi-github" class="nav-link" data-scroll-target="#pourquoi-github">Pourquoi GitHub ?</a></li>
+  <li><a href="#créer-un-jeton-daccès-token" id="toc-créer-un-jeton-daccès-token" class="nav-link" data-scroll-target="#créer-un-jeton-daccès-token">Créer un jeton d’accès (<em>token</em>)</a></li>
+  <li><a href="#ajouter-le-jeton-daccès-au-datalab" id="toc-ajouter-le-jeton-daccès-au-datalab" class="nav-link" data-scroll-target="#ajouter-le-jeton-daccès-au-datalab">Ajouter le jeton d’accès au Datalab</a></li>
+  </ul></li>
+  <li><a href="#utiliser-git-avec-les-services-du-datalab" id="toc-utiliser-git-avec-les-services-du-datalab" class="nav-link" data-scroll-target="#utiliser-git-avec-les-services-du-datalab">Utiliser Git avec les services du Datalab</a>
+  <ul class="collapse">
+  <li><a href="#via-le-terminal" id="toc-via-le-terminal" class="nav-link" data-scroll-target="#via-le-terminal">Via le terminal</a></li>
+  <li><a href="#via-des-interfaces-graphiques-intégrées" id="toc-via-des-interfaces-graphiques-intégrées" class="nav-link" data-scroll-target="#via-des-interfaces-graphiques-intégrées">Via des interfaces graphiques intégrées</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+
+<section id="contrôle-de-version" class="level1">
+<h1>Contrôle de version</h1>
+<section id="pourquoi-utiliser-le-contrôle-de-version" class="level2">
+<h2 class="anchored" data-anchor-id="pourquoi-utiliser-le-contrôle-de-version">Pourquoi utiliser le contrôle de version ?</h2>
+<p>Le Datalab est une plateforme mutualisée : les ressources utilisées par les services sont partagées entre les différents utilisateurs. A ce titre, les services du Datalab fonctionnent sur le modèle des conteneurs éphémères : dans un usage standard, l’utilisateur lance un service, réalise des traitements de données, sauvegarde le code qui a permis de réaliser ces traitements, et supprime l’instance du service. Cette sauvegarde du code est grandement facilitée par l’usage du contrôle de version.</p>
+<p>Cette considération de performance ne doit cependant pas être vue comme une contrainte : le contrôle de version est une bonne pratique essentielle de développement. Les bénéfices sont nombreux, aussi bien à titre individuel : </p>
+<ul>
+<li>le projet local est synchronisé avec un serveur distant, rendant la perte de code quasi impossible ; </li>
+<li>l’historique complet des choix et modifications effectuées sur le projet est conservé ;</li>
+<li>l’utilisateur peut parcourir cet historique pour rechercher les modifications qui ont pu créer des erreurs, et décider à tout moment de revenir à une version précédente du projet, ou bien de certains fichiers.</li>
+</ul>
+<p>que dans le cadre de projets collaboratifs : </p>
+<ul>
+<li>le travail simultané sur un même projet est possible, sans risque de perte ; </li>
+<li>l’utilisateur peut partager ses modifications tout en bénéficiant de celles des autres ;</li>
+<li>il devient possible de contribuer à des projets open-source, pour lesquels l’usage de Git est très largement standard.</li>
+</ul>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Avertissement
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Ce tutoriel vise à présenter comment le contrôle de version peut être facilement implémenté grâce aux outils présents sur le Datalab. Il ne présente pas le fonctionnement de Git et présuppose donc une certaine familiarité avec l’outil. De nombreuses ressources en ligne peuvent servir d’introduction ; l’utilisateur de R pourra par exemple consulter <a href="https://linogaliana.gitlab.io/collaboratif/git.html">ce guide</a> et l’utilisateur de Python ce <a href="https://linogaliana-teaching.netlify.app/course/git/">chapitre de cours</a>. Une formation complète à Git sera bientôt proposée dans l’<a href="https://www.sspcloud.fr/documentation">espace formation</a>du Datalab.</p>
+</div>
+</div>
+</section>
+<section id="intégration-de-github-avec-le-datalab" class="level2">
+<h2 class="anchored" data-anchor-id="intégration-de-github-avec-le-datalab">Intégration de GitHub avec le Datalab</h2>
+<section id="pourquoi-github" class="level3">
+<h3 class="anchored" data-anchor-id="pourquoi-github">Pourquoi GitHub ?</h3>
+<p>Bien qu’une utilisation hors-ligne de Git soit possible, tout l’intérêt du contrôle de version réside dans la synchronisation de la copie locale d’un projet (<em>clone</em>) avec un dépôt distant (<em>remote</em>). Différents services de forge logicielle permettent cette synchronisation des projets Git, dont les plus connus sont <a href="https://github.com">GitHub</a>et <a href="https://about.gitlab.com">GitLab</a>. Dans la mesure où le premier dispose aujourd’hui de beaucoup plus de visibilité — par exemple, les dépôts de l’Insee, <a href="https://github.com/InseeFrL">InseeFr</a>et <a href="https://github.com/InseeFrLab">InseeFrLab</a>, sont sur GitHub — le Datalab propose une intégration facilitée avec GitHub, que nous présentons à travers ce tutoriel.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Avertissement
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>La suite du tutoriel nécessite de disposer d’un <a href="https://github.com/join">compte GitHub</a>.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Si l’utilisation du Datalab avec la plateforme GitHub est facilitée, elle n’est en aucun cas obligatoire : il reste tout à fait possible d’utiliser la forge logicielle de son choix pour la synchronisation des projets. Une <a href="https://git.lab.sspcloud.fr">forge basée sur GitLab</a>est notamment mise à disposition des utilisateurs du Datalab.</p>
+</div>
+</div>
+</section>
+<section id="créer-un-jeton-daccès-token" class="level3">
+<h3 class="anchored" data-anchor-id="créer-un-jeton-daccès-token">Créer un jeton d’accès (<em>token</em>)</h3>
+<p>La synchronisation avec un dépôt distant nécessite une authentification auprès de GitHub. Celle-ci s’effectue à l’aide d’un jeton d’accès personnel, qui doit être généré à partir du compte GitHub de l’utilisateur. Le service de génération est accessible à <a href="https://github.com/settings/tokens">cette adresse</a>. La <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token">documentation GitHub</a>(en Anglais) propose des illustrations pour guider le processus.</p>
+<p>Pour générer un jeton, il est nécessaire de choisir un nom de jeton, un délai d’expiration et des droits d’accès (<em>scope</em>). Il est recommandé de choisir un délai court (30 jours) et un accès restreint (<em>repo</em> seulement) afin de limiter les risques de sécurité en cas de diffusion malveillante du jeton. </p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/github-token.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Configuration recommandée pour la génération d’un jeton d’accès GitHub</figcaption>
+</figure>
+</div>
+<p>Une fois le jeton généré, ce dernier apparaît à l’écran. Un jeton ne peut être visualisé qu’une seule fois ; en cas de perte, il faudra en générer un nouveau. </p>
+</section>
+<section id="ajouter-le-jeton-daccès-au-datalab" class="level3">
+<h3 class="anchored" data-anchor-id="ajouter-le-jeton-daccès-au-datalab">Ajouter le jeton d’accès au Datalab</h3>
+<p>Il est recommandé d’ajouter ses jetons d’accès à un gestionnaire de mots de passe. Le jeton peut également être ajouté à la configuration “Services externes” du compte utilisateur sur le Datalab, ce qui permet au jeton d’être directement accessible au sein des services proposés sur la plateforme.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/onyxia-git-token.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Ajouter un jeton d’accès GitHub à un compte utilisateur sur le Datalab</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Avertissement
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Attention à bien utiliser dans les “Informations du compte” l’adresse mail associée à votre compte GitHub, c’est elle qui permet de lier effectivement les <em>commits</em> que vous effectuerez à votre compte GitHub.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="utiliser-git-avec-les-services-du-datalab" class="level2">
+<h2 class="anchored" data-anchor-id="utiliser-git-avec-les-services-du-datalab">Utiliser Git avec les services du Datalab</h2>
+<p>Git est préconfiguré pour fonctionner nativement avec les différents services pertinents du Datalab. A l’ouverture d’un service, il est possible de configurer certains éléments. Si l’on a ajouté un jeton d’accès GitHub à son compte sur le Datalab, ce dernier est pré-configuré. Il est par ailleurs possible d’indiquer l’URL <strong>complète</strong> d’un <em>Repository</em> Git (ex : <a href="https://github.com/InseeFrLab/onyxia">https://github.com/InseeFrLab/onyxia</a>), qui sera alors cloné à l’initialisation dans l’espace de travail de l’instance.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/rstudio-git-config.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Configuration de Git à l’ouverture d’un service</figcaption>
+</figure>
+</div>
+<section id="via-le-terminal" class="level3">
+<h3 class="anchored" data-anchor-id="via-le-terminal">Via le terminal</h3>
+<p>Le jeton d’accès GitHub est disponible dans le terminal des différents services via la variable d’environnement <code>$GIT_PERSONAL_ACCESS_TOKEN</code>. Afin d’éviter de devoir s’authentifier à chaque opération impliquant le dépôt distant (<em>clone</em>, <em>push</em> &amp; <em>pull</em>), il est recommandé de cloner celui-ci en incluant le jeton d’accès dans le lien HTTPS, à l’aide de la commande suivante :</p>
+<p><code>git clone https://${GIT_PERSONAL_ACCESS_TOKEN}@github.com/&lt;owner&gt;/&lt;repo&gt;.git</code></p>
+<p>où &lt;owner&gt; et &lt;repo&gt; sont à remplacer respectivement par le nom d’utilisateur et le nom du dépôt GitHub.</p>
+</section>
+<section id="via-des-interfaces-graphiques-intégrées" class="level3">
+<h3 class="anchored" data-anchor-id="via-des-interfaces-graphiques-intégrées">Via des interfaces graphiques intégrées</h3>
+<p>Les principaux services de production de code disponibles sur le Datalab disposent d’une interface graphique pour faciliter l’utilisation de Git : </p>
+<ul>
+<li>RStudio : RStudio propose une interface graphique pour Git native et assez complète. La <a href="https://www.book.utilitr.org/03_fiches_thematiques/fiche_git_utilisation">documentation utilitR</a> présente son fonctionnement en détail ;</li>
+<li>Jupyter : le plugin <a href="https://github.com/jupyterlab/jupyterlab-git">jupyterlab-git</a>permet un interfaçage (assez sommaire) de Jupyter avec Git ;</li>
+<li>VSCode : VSCode propose nativement une interface graphique très bien intégrée avec Git et GitHub. Une <a href="https://code.visualstudio.com/docs/editor/versioncontrol">documentation détaillée</a>(en Anglais) présente les possibilités de l’outil. </li>
+</ul>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Avertissement
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Les interfaces graphiques facilitent la prise en main de Git, mais ne remplacent jamais complètement l’usage de l’outil via un terminal du fait d’une intégration nécessairement imparfaite. Il est donc utile de se familiariser avec l’usage de Git via le terminal le plus tôt possible.</p>
+</div>
+</div>
+
+
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copié");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copié");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

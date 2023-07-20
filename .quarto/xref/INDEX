@@ -1,0 +1,20 @@
+{
+  "index.qmd": {
+    "index.html": "d791a355"
+  },
+  "docs/configure.qmd": {
+    "configure.html": "5bcc5a2a"
+  },
+  "docs/discover.qmd": {
+    "discover.html": "d2483004"
+  },
+  "docs/principles.qmd": {
+    "principles.html": "d87e55cd"
+  },
+  "docs/secrets.qmd": {
+    "secrets.html": "638c1969"
+  },
+  "docs/version-control.qmd": {
+    "version-control.html": "cd7591ee"
+  }
+}
