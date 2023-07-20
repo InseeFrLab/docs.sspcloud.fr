@@ -14,9 +14,14 @@ jobs:
         uses: actions/checkout@v3
       - name: Set up quarto
         uses: quarto-dev/quarto-actions/setup@v2
-      - name: Publish to GitHub Pages (and render)
-        uses: quarto-dev/quarto-actions/publish@v2
-        env: 
-          QUARTO_PROFILE: "fr,en"
-        with:
-          target: gh-pages
+      - name: Render
+        run: |
+          quarto render --profile fr
+          quarto render --profile en
+      - name: Publish
+        run: |
+          git config --global user.email "${{ inputs.GITHUB_EMAIL }}"
+          git config --global user.name "${{ inputs.GITHUB_USERNAME }}"
+          git add -Af .
+          git commit --allow-empty -m "Built site for gh-pages"
+          git push --force origin HEAD:gh-pages
