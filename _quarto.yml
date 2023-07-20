@@ -1,5 +1,14 @@
 project:
   type: website
+  output-dir: ./_site
   render: 
-    - index.qmd
-    - docs/*.qmd
+    - docs/**/*.qmd
+
+website:
+  title: "SSP Cloud - Documentation"
+
+format:
+  html:
+    theme: darkly
+    css: styles.css
+    toc: true
