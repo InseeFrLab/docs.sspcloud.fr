@@ -16,8 +16,7 @@ jobs:
         uses: quarto-dev/quarto-actions/setup@v2
       - name: Render
         run: |
-          quarto render --profile fr
-          quarto render --profile en
+          quarto render
       - name: Publish
         run: |
           git config --global user.email quarto-github-actions-publish@example.com
