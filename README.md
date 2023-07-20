@@ -1,1 +1,0 @@
-# 🧑🤝🧑 Documentation du SSP Cloud
