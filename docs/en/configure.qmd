@@ -74,7 +74,7 @@ If checked, the service is only accessible from a single IP. Uncheck it if you w
 
 ## Git
 
-To learn how to use this tab, see the [dedicated page](/docs/version-control.html).
+To learn how to use this tab, see the [dedicated page](/docs/en/version-control.html).
 
 ::: {.callout-warning} 
 It is not possible to automatically clone a private project from a private instance (i.e., other than gitlab.com and github.com). To do so, you will need to use a shell script as indicated [here](#init). 
@@ -116,4 +116,4 @@ https://github.com/InseeFrLab/docs.sspcloud.fr.git
 
 ### Vault
 
-To learn how to use this tab, see the [dedicated page](/docs/secrets.html).
+To learn how to use this tab, see the [dedicated page](/docs/en/secrets.html).

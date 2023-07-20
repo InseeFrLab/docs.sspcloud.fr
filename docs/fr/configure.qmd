@@ -82,7 +82,7 @@ Si coché, le service n'est accessible que par une seule IP, à décocher si l'o
 
 ## Git
 
-Pour apprendre à utiliser cet onglet, voir la [page dédiée](/docs/version-control.html).
+Pour apprendre à utiliser cet onglet, voir la [page dédiée](/docs/fr/version-control.html).
 
 ::: {.callout-warning} 
 Il n'est pas possible de cloner automatiquement un projet privé d'une instance privée (c'est-à-dire autre que gitlab.com et github.com).
@@ -124,4 +124,4 @@ https://github.com/InseeFrLab/docs.sspcloud.fr.git
 
 ### Vault 
 
-Pour apprendre à utiliser cet onglet, voir la [page dédiée](/docs/secrets.html).
+Pour apprendre à utiliser cet onglet, voir la [page dédiée](/docs/fr/secrets.html).
