@@ -14,13 +14,7 @@ jobs:
         uses: actions/checkout@v3
       - name: Set up quarto
         uses: quarto-dev/quarto-actions/setup@v2
-      - name: Render
-        run: |
-          quarto render
-      - name: Publish
-        run: |
-          git config --global user.email quarto-github-actions-publish@example.com
-          git config --global user.name "Quarto GHA Workflow Runner"
-          git add -Af .
-          git commit --allow-empty -m "Built site for gh-pages"
-          git push --force origin HEAD:gh-pages
+      - name: Publish to GitHub Pages (and render)
+        uses: quarto-dev/quarto-actions/publish@v2
+        with:
+          target: gh-pages
