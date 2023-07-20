@@ -1,0 +1,29 @@
+project:
+  type: website
+  output-dir: ./_site/en
+
+website:
+  title: "SSP Cloud - Documentation"
+  navbar:
+    left:
+      - href: docs/principles.qmd
+        text: Principes of the Datalab
+      - href: docs/discover.qmd
+        text: Discover the Datalab
+      - href: docs/version-control.qmd
+        text: Version control
+      - href: docs/secrets.qmd
+        text: Secrets
+    right:
+      - href: ../fr
+        text: French
+      - href: ../en
+        text: English
+
+lang: en
+
+format:
+  html:
+    theme: darkly
+    css: styles.css
+    toc: true
