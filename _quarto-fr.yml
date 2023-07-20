@@ -1,6 +1,6 @@
 project:
   type: website
-  output-dir: ./_site/fr
+  output-dir: ./_site
 
 website:
   title: "SSP Cloud - Documentation"
