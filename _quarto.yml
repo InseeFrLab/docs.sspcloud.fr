@@ -6,6 +6,10 @@ project:
 
 website:
   title: "SSP Cloud - Documentation"
+  navbar:
+    left:
+      - href: docs/fr/discover.html
+        text: Découverte du Datalab
 
 format:
   html:
