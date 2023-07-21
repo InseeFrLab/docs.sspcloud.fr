@@ -8,4 +8,5 @@ website:
 
 format:
   html:
+    theme: darkly
     css: styles.css
