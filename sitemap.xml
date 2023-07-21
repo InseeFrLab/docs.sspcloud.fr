@@ -2,42 +2,50 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://github.com/InseeFrLab/docs.sspcloud.fr/docs/fr/version-control.html</loc>
-    <lastmod>2023-07-20T14:41:07.582Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/InseeFrLab/docs.sspcloud.fr/docs/fr/principles.html</loc>
-    <lastmod>2023-07-20T14:41:06.574Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/InseeFrLab/docs.sspcloud.fr/docs/fr/configure.html</loc>
-    <lastmod>2023-07-20T14:41:05.674Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/InseeFrLab/docs.sspcloud.fr/docs/en/secrets.html</loc>
-    <lastmod>2023-07-20T14:41:04.658Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/InseeFrLab/docs.sspcloud.fr/docs/en/discover.html</loc>
-    <lastmod>2023-07-20T14:41:03.770Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/InseeFrLab/docs.sspcloud.fr/docs/en/configure.html</loc>
-    <lastmod>2023-07-20T14:41:02.954Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/InseeFrLab/docs.sspcloud.fr/docs/en/principles.html</loc>
-    <lastmod>2023-07-20T14:41:04.230Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/InseeFrLab/docs.sspcloud.fr/docs/en/version-control.html</loc>
-    <lastmod>2023-07-20T14:41:05.222Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/InseeFrLab/docs.sspcloud.fr/docs/fr/discover.html</loc>
-    <lastmod>2023-07-20T14:41:06.114Z</lastmod>
+    <lastmod>2023-07-21T17:45:01.670Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/InseeFrLab/docs.sspcloud.fr/docs/fr/secrets.html</loc>
-    <lastmod>2023-07-20T14:41:06.990Z</lastmod>
+    <lastmod>2023-07-21T17:45:00.334Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/InseeFrLab/docs.sspcloud.fr/docs/fr/discover.html</loc>
+    <lastmod>2023-07-21T17:44:59.514Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/InseeFrLab/docs.sspcloud.fr/docs/en/version-control.html</loc>
+    <lastmod>2023-07-21T17:44:58.678Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/InseeFrLab/docs.sspcloud.fr/docs/en/secrets.html</loc>
+    <lastmod>2023-07-21T17:44:57.414Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/InseeFrLab/docs.sspcloud.fr/docs/en/discover.html</loc>
+    <lastmod>2023-07-21T17:44:56.637Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/InseeFrLab/docs.sspcloud.fr/docs/en/configure.html</loc>
+    <lastmod>2023-07-21T17:44:55.901Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/InseeFrLab/docs.sspcloud.fr/docs/en/principles.html</loc>
+    <lastmod>2023-07-21T17:44:57.049Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/InseeFrLab/docs.sspcloud.fr/docs/en/storage.html</loc>
+    <lastmod>2023-07-21T17:44:58.178Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/InseeFrLab/docs.sspcloud.fr/docs/fr/configure.html</loc>
+    <lastmod>2023-07-21T17:44:59.106Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/InseeFrLab/docs.sspcloud.fr/docs/fr/principles.html</loc>
+    <lastmod>2023-07-21T17:44:59.938Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/InseeFrLab/docs.sspcloud.fr/docs/fr/storage.html</loc>
+    <lastmod>2023-07-21T17:45:01.154Z</lastmod>
   </url>
 </urlset>
