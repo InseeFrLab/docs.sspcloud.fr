@@ -1,0 +1,193 @@
+# Data Storage
+
+## Principles
+
+The file storage solution associated with the Datalab is [MinIO](https://min.io), an object storage system based on the cloud, compatible with Amazon's S3 API. In practice, this has several advantages:
+
+* Stored files are easily accessible from anywhere: a file can be accessed directly through a simple URL, which can be shared.
+* It is possible to access stored files directly within the data science services (R, Python, etc.) offered on the Datalab, without the need to copy the files locally beforehand, greatly improving analysis reproducibility.
+
+## Managing Your Data
+
+### Importing Data
+
+The [My Files](https://datalab.sspcloud.fr/mes-fichiers/) page of the Datalab takes the form of a file explorer showing the different buckets to which the user has access.
+
+Each user has a personal bucket by default to store their files. Within this bucket, two options are possible:
+
+* "**Create a directory**": Creates a directory within the current bucket/directory hierarchically, similar to a traditional file system.
+* "**Upload a file**": Uploads one or more files to the current directory.
+
+::: {.callout-note} 
+The graphical interface for data storage on the Datalab is still under construction. As a result, it may have some responsiveness issues. For frequent file storage operations, it may be preferable to interact with MinIO via the terminal. 
+:::
+
+### Sharing Data
+
+By clicking on a file in their personal bucket, the user can access its characteristics page. On this page, it is possible to **change the sharing status of the file**. Changing the status of the file from "private" to "public" provides a **sharing link**, which can then be shared to allow others to download the file. The "public" status only grants read access to other users; modifying or deleting personal files by others is not possible.
+
+To simplify the sharing of multiple files for training purposes, for example, it is possible to create a **"sharing" folder** within the user's personal bucket. By default, all files present in this folder have a public sharing status.
+
+::: {.callout-note} 
+For collaborative projects, it may be useful for different participants to have access to a shared storage space. For this purpose, shared buckets can be created on MinIO. If you want to use the Datalab for open data projects, feel free to contact us via the channels specified on the page "[Première utilisation](premiere-utilisation.md)." 
+:::
+
+::: {.callout-warning} 
+According to the [terms of use](https://www.sspcloud.fr/tos_fr.md), only open data or non-sensitive data can be stored on the Datalab. Having a file with a "private" sharing status is not sufficient to guarantee perfect confidentiality. 
+:::
+
+## Using Data in a Service
+
+The access credentials required to access data on MinIO are pre-configured in the different services of the Datalab, accessible in the form of [environment variables](gestion-des-secrets.md). This greatly facilitates importing and exporting files from the services.
+
+::: {.callout-warning} 
+Access to MinIO storage is possible via a personal access token, valid for 7 days and automatically regenerated at regular intervals on the SSP Cloud. When a token expires, services created before the expiration date (using the previous token) can no longer access the storage, and the affected service will be marked in red on the [My Services](https://datalab.sspcloud.fr/my-services) page. Therefore, it is essential to regularly renew running services, making sure to backup your code and data beforehand. 
+:::
+
+### Configuration
+
+::: {.panel-tabset}
+
+#### R
+
+In R, interaction with an S3-compatible file system is made possible by the `aws.s3` library.
+
+```r
+library(aws.s3)
+```
+
+#### Python
+
+In Python, interaction with an S3-compatible file system is made possible by two libraries:
+
+* [Boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html), a library created and maintained by Amazon.
+* [S3Fs](https://s3fs.readthedocs.io/en/latest/), a library that allows interaction with stored files similar to a classic filesystem.
+
+For this reason, and because S3Fs is used by default by the [pandas](https://pandas.pydata.org) library to handle S3 connections, we will present storage management on MinIO through Python using this library.
+
+```python
+import os
+import s3fs
+
+# Create filesystem object
+S3_ENDPOINT_URL = "https://" + os.environ["AWS_S3_ENDPOINT"]
+fs = s3fs.S3FileSystem(client_kwargs={'endpoint_url': S3_ENDPOINT_URL})
+```
+
+:::
+
+**Listing Files in a Bucket**
+
+::: {.panel-tabset}
+
+#### R
+
+```r
+aws.s3::get_bucket("donnees-insee", region = "")
+```
+
+#### Python
+
+```python
+fs.ls("donnees-insee")
+```
+
+:::
+
+**Importing Data**
+
+::: {.panel-tabset}
+
+#### R
+
+```r
+BUCKET <- "donnees-insee"
+FILE_KEY_S3 <- "diffusion/BPE/2019/BPE_ENS.csv"
+
+df <- 
+  aws.s3::s3read_using(
+    FUN = readr::read_delim,
+    # Put FUN options here
+    delim = ";",
+    object = FILE_KEY_S3,
+    bucket = BUCKET,
+    opts = list("region" = "")
+  )
+```
+
+#### Python
+
+The S3Fs package allows interacting with files stored on MinIO as if they were local files. Therefore, the syntax is very familiar to Python users. For example, to import/export tabular data using `pandas`:
+
+```python
+import pandas as pd
+
+BUCKET = "donnees-insee"
+FILE_KEY_S3 = "diffusion/BPE/2019/BPE_ENS.csv"
+FILE_PATH_S3 = BUCKET + "/" + FILE_KEY_S3
+
+with fs.open(FILE_PATH_S3, mode="rb") as file_in:
+    df_bpe = pd.read_csv(file_in, sep=";")
+```
+
+:::
+
+**Exporting Data to MinIO**
+
+::: {.panel-tabset}
+
+#### R
+
+```r
+BUCKET_OUT = "<mon_bucket>"
+FILE_KEY_OUT_S3 = "mon_dossier/BPE_ENS.csv"
+
+aws.s3::s3write_using(
+    df,
+    FUN = readr::write_csv,
+    object = FILE_KEY_OUT_S3,
+    bucket = BUCKET_OUT,
+    opts = list("region" = "")
+)
+```
+
+#### Python
+
+```python
+BUCKET_OUT = "<mon_bucket>"
+FILE_KEY_OUT_S3 = "mon_dossier/BPE_ENS.csv"
+FILE_PATH_OUT_S3 = BUCKET_OUT + "/" + FILE_KEY_OUT_S3
+
+with fs.open(FILE_PATH_OUT_S3, 'w') as file_out:
+    df_bpe.to_csv(file_out)
+```
+
+:::
+
+::: {.callout-warning} 
+S3Fs also provides functions to download/export files from the local Python session's filesystem. However, **copying files locally into the service is generally not a good practice**: it limits analysis reproducibility and becomes quickly impossible with large data volumes. Therefore, it is better to get into the habit of importing data directly into Python as files. 
+:::
+
+### The MinIO Client
+
+MinIO offers a command-line client that allows interacting with the storage system like a traditional UNIX filesystem. This client is installed by default and accessible via a terminal in the different services of the Datalab.
+
+The Datalab storage is accessible via the alias `s3`. For example, to list files in a personal bucket:
+
+```bash
+mc ls s3/donnees-insee
+```
+
+And to copy a file from MinIO to the local service:
+
+```bash
+mc cp s3/donnees-insee/diffusion/BPE/2019/BPE_ENS.csv ./BPE_ENS.csv
+```
+
+::: {.callout-note} 
+The MinIO client provides basic UNIX commands, such as ls, cat, cp, etc. The complete list is available in the [client documentation](https://docs.min.io/docs/minio-client-complete-guide.html). 
+:::
+
+::: {.callout-warning} 
+Manipulating large files on MinIO is costly because stored files are immutable. As a result, renaming or moving a file involves deleting the original file and recreating it with new metadata. It is essential to plan the data structure of projects beforehand. 
+:::
