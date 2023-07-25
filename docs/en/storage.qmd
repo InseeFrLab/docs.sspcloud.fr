@@ -18,7 +18,9 @@ Each user has a personal bucket by default to store their files. Within this buc
 * "**Create a directory**": Creates a directory in the current bucket/directory hierarchically, similar to a traditional file system.
 * "**Upload a file**": Uploads one or multiple files to the current directory.
 
-::: {.callout-note} The graphical interface for data storage in Datalab is still under construction. As such, it may experience responsiveness issues. For frequent operations on file storage, it may be preferable to interact with MinIO via the terminal. :::
+::: {.callout-note} 
+The graphical interface for data storage in Datalab is still under construction. As such, it may experience responsiveness issues. For frequent operations on file storage, it may be preferable to interact with MinIO via the terminal. 
+:::
 
 ### Sharing Data
 
@@ -26,9 +28,13 @@ By clicking on a file in their personal bucket, the user can access its characte
 
 To simplify the sharing of multiple files for, say, a training session, it is possible to create a **"distribution" folder** in the user's personal bucket. By default, all files present in this folder have a public distribution status.
 
-::: {.callout-note} For collaborative projects, it can be beneficial for different participants to have access to a shared storage space. It is possible to create shared buckets on MinIO for this purpose. Feel free to contact us via the channels specified on the "[First Use](premiere-utilisation.md)" page if you wish to work on open data projects on Datalab. :::
+::: 
+{.callout-note} For collaborative projects, it can be beneficial for different participants to have access to a shared storage space. It is possible to create shared buckets on MinIO for this purpose. Feel free to contact us via the channels specified on the "[First Use](premiere-utilisation.md)" page if you wish to work on open data projects on Datalab. 
+:::
 
-::: {.callout-warning} In accordance with the [terms of use](https://www.sspcloud.fr/tos_fr.md), only *open data*\-type or non-sensitive data can be stored on Datalab. Having a file with a "private" distribution status does not guarantee perfect confidentiality. :::
+::: {.callout-warning} 
+In accordance with the [terms of use](https://www.sspcloud.fr/tos_fr.md), only *open data*\-type or non-sensitive data can be stored on Datalab. Having a file with a "private" distribution status does not guarantee perfect confidentiality. 
+:::
 
 ## Using Data Stored on MinIO
 
@@ -142,7 +148,9 @@ To copy data from a MinIO bucket to the local service:
 mc cp s3/donnees-insee/diffusion/BPE/2019/BPE_ENS.csv ./BPE_ENS.csv
 ```
 
-::: {.callout-warning} **Copying files to the local service is generally not a good practice**: it limits the reproducibility of analyses and becomes quickly impossible with large volumes of data. Therefore, it is preferable to get into the habit of importing data directly into `R`/`Python`. :::
+::: {.callout-warning} 
+**Copying files to the local service is generally not a good practice**: it limits the reproducibility of analyses and becomes quickly impossible with large volumes of data. Therefore, it is preferable to get into the habit of importing data directly into `R`/`Python`. 
+:::
 
 :::
 
