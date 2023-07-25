@@ -114,88 +114,39 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h1>Data Storage</h1>
 <section id="principles" class="level2">
 <h2 class="anchored" data-anchor-id="principles">Principles</h2>
-<p>The file storage solution associated with the Datalab is <a href="https://min.io">MinIO</a>, an object storage system based on the cloud, compatible with Amazon’s S3 API. In practice, this has several advantages:</p>
+<p>The file storage solution associated with Datalab is <a href="https://min.io">MinIO</a>, an object storage system based on the cloud, compatible with Amazon’s S3 API. In practice, this has several advantages:</p>
 <ul>
-<li>Stored files are easily accessible from anywhere: a file can be accessed directly through a simple URL, which can be shared.</li>
-<li>It is possible to access stored files directly within the data science services (R, Python, etc.) offered on the Datalab, without the need to copy the files locally beforehand, greatly improving analysis reproducibility.</li>
+<li>Stored files are easily accessible from anywhere: a file can be accessed directly via a simple URL, which can be shared.</li>
+<li>It is possible to access the stored files directly within the data science services (R, Python, etc.) offered on Datalab, without the need to copy the files locally beforehand, greatly improving the reproducibility of analyses.</li>
 </ul>
 </section>
 <section id="managing-your-data" class="level2">
 <h2 class="anchored" data-anchor-id="managing-your-data">Managing Your Data</h2>
 <section id="importing-data" class="level3">
 <h3 class="anchored" data-anchor-id="importing-data">Importing Data</h3>
-<p>The <a href="https://datalab.sspcloud.fr/mes-fichiers/">My Files</a> page of the Datalab takes the form of a file explorer showing the different buckets to which the user has access.</p>
+<p>The <a href="https://datalab.sspcloud.fr/mes-fichiers/">My Files</a> page in Datalab takes the form of a file explorer showing the different buckets (repositories) to which the user has access.</p>
 <p>Each user has a personal bucket by default to store their files. Within this bucket, two options are possible:</p>
 <ul>
-<li>“<strong>Create a directory</strong>”: Creates a directory within the current bucket/directory hierarchically, similar to a traditional file system.</li>
-<li>“<strong>Upload a file</strong>”: Uploads one or more files to the current directory.</li>
+<li>“<strong>Create a directory</strong>”: Creates a directory in the current bucket/directory hierarchically, similar to a traditional file system.</li>
+<li>“<strong>Upload a file</strong>”: Uploads one or multiple files to the current directory.</li>
 </ul>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>The graphical interface for data storage on the Datalab is still under construction. As a result, it may have some responsiveness issues. For frequent file storage operations, it may be preferable to interact with MinIO via the terminal.</p>
-</div>
-</div>
+<p>::: {.callout-note} The graphical interface for data storage in Datalab is still under construction. As such, it may experience responsiveness issues. For frequent operations on file storage, it may be preferable to interact with MinIO via the terminal. :::</p>
 </section>
 <section id="sharing-data" class="level3">
 <h3 class="anchored" data-anchor-id="sharing-data">Sharing Data</h3>
-<p>By clicking on a file in their personal bucket, the user can access its characteristics page. On this page, it is possible to <strong>change the sharing status of the file</strong>. Changing the status of the file from “private” to “public” provides a <strong>sharing link</strong>, which can then be shared to allow others to download the file. The “public” status only grants read access to other users; modifying or deleting personal files by others is not possible.</p>
-<p>To simplify the sharing of multiple files for training purposes, for example, it is possible to create a <strong>“sharing” folder</strong> within the user’s personal bucket. By default, all files present in this folder have a public sharing status.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>For collaborative projects, it may be useful for different participants to have access to a shared storage space. For this purpose, shared buckets can be created on MinIO. If you want to use the Datalab for open data projects, feel free to contact us via the channels specified on the page “<a href="premiere-utilisation.md">Première utilisation</a>.”</p>
-</div>
-</div>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Warning
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>According to the <a href="https://www.sspcloud.fr/tos_fr.md">terms of use</a>, only open data or non-sensitive data can be stored on the Datalab. Having a file with a “private” sharing status is not sufficient to guarantee perfect confidentiality.</p>
-</div>
-</div>
+<p>By clicking on a file in their personal bucket, the user can access its characteristics page. On this page, it is possible to <strong>change the distribution status of the file</strong>. Changing the status of the file from “private” to “public” generates a <strong>distribution link</strong>, which can then be shared for downloading the file. The “public” status only grants read rights to other users, and modifying or deleting other users’ personal files is not possible.</p>
+<p>To simplify the sharing of multiple files for, say, a training session, it is possible to create a <strong>“distribution” folder</strong> in the user’s personal bucket. By default, all files present in this folder have a public distribution status.</p>
+<p>::: {.callout-note} For collaborative projects, it can be beneficial for different participants to have access to a shared storage space. It is possible to create shared buckets on MinIO for this purpose. Feel free to contact us via the channels specified on the “<a href="premiere-utilisation.md">First Use</a>” page if you wish to work on open data projects on Datalab. :::</p>
+<p>::: {.callout-warning} In accordance with the <a href="https://www.sspcloud.fr/tos_fr.md">terms of use</a>, only <em>open data</em>-type or non-sensitive data can be stored on Datalab. Having a file with a “private” distribution status does not guarantee perfect confidentiality. :::</p>
 </section>
 </section>
-<section id="using-data-in-a-service" class="level2">
-<h2 class="anchored" data-anchor-id="using-data-in-a-service">Using Data in a Service</h2>
-<p>The access credentials required to access data on MinIO are pre-configured in the different services of the Datalab, accessible in the form of <a href="gestion-des-secrets.md">environment variables</a>. This greatly facilitates importing and exporting files from the services.</p>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Warning
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Access to MinIO storage is possible via a personal access token, valid for 7 days and automatically regenerated at regular intervals on the SSP Cloud. When a token expires, services created before the expiration date (using the previous token) can no longer access the storage, and the affected service will be marked in red on the <a href="https://datalab.sspcloud.fr/my-services">My Services</a> page. Therefore, it is essential to regularly renew running services, making sure to backup your code and data beforehand.</p>
-</div>
-</div>
+<section id="using-data-stored-on-minio" class="level2">
+<h2 class="anchored" data-anchor-id="using-data-stored-on-minio">Using Data Stored on MinIO</h2>
+<p>The access credentials needed to access data on MinIO are pre-configured in the various Datalab services, accessible in the form of <a href="gestion-des-secrets.md">environment variables</a>. This greatly facilitates importing and exporting files from the services.</p>
 <section id="configuration" class="level3">
 <h3 class="anchored" data-anchor-id="configuration">Configuration</h3>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">R</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Python</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">R</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Python</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">mc</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <p>In R, interaction with an S3-compatible file system is made possible by the <code>aws.s3</code> library.</p>
@@ -207,7 +158,7 @@ Warning
 <li><a href="https://boto3.amazonaws.com/v1/documentation/api/latest/index.html">Boto3</a>, a library created and maintained by Amazon.</li>
 <li><a href="https://s3fs.readthedocs.io/en/latest/">S3Fs</a>, a library that allows interaction with stored files similar to a classic filesystem.</li>
 </ul>
-<p>For this reason, and because S3Fs is used by default by the <a href="https://pandas.pydata.org">pandas</a> library to handle S3 connections, we will present storage management on MinIO through Python using this library.</p>
+<p>For this reason, and because S3Fs is used by default by the <a href="https://pandas.pydata.org">pandas</a> library to manage S3 connections, we will present how to manage storage on MinIO via Python using this library.</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> os</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> s3fs</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -215,11 +166,15 @@ Warning
 <span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>S3_ENDPOINT_URL <span class="op">=</span> <span class="st">"https://"</span> <span class="op">+</span> os.environ[<span class="st">"AWS_S3_ENDPOINT"</span>]</span>
 <span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>fs <span class="op">=</span> s3fs.S3FileSystem(client_kwargs<span class="op">=</span>{<span class="st">'endpoint_url'</span>: S3_ENDPOINT_URL})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<p>MinIO offers a command-line client (<code>mc</code>) that allows interaction with the storage system in a manner similar to a classic UNIX filesystem. This client is installed by default and accessible via a terminal in the various Datalab services.</p>
+<p>The MinIO client offers basic UNIX commands such as ls, cat, cp, etc. The complete list is available in the <a href="https://docs.min.io/docs/minio-client-complete-guide.html">client documentation</a>.</p>
 </div>
 </div>
-<p><strong>Listing Files in a Bucket</strong></p>
+</div>
+<p><strong>Listing the files in a bucket</strong></p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">R</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">Python</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">R</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">Python</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false">mc</a></li></ul>
 <div class="tab-content">
 <div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
 <div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>aws.s3<span class="sc">::</span><span class="fu">get_bucket</span>(<span class="st">"donnees-insee"</span>, <span class="at">region =</span> <span class="st">""</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -227,112 +182,84 @@ Warning
 <div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
 <div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>fs.ls(<span class="st">"donnees-insee"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
+<p>The Datalab storage is accessible via the alias <code>s3</code>. For example, to list the files in the bucket <code>donnees-insee</code>:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">mc</span> ls s3/donnees-insee</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </div>
 </div>
 <p><strong>Importing Data</strong></p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true">R</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false">Python</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true">R</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false">Python</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-3" role="tab" aria-controls="tabset-3-3" aria-selected="false">mc</a></li></ul>
 <div class="tab-content">
 <div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
-<div class="sourceCode" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>BUCKET <span class="ot">&lt;-</span> <span class="st">"donnees-insee"</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>FILE_KEY_S3 <span class="ot">&lt;-</span> <span class="st">"diffusion/BPE/2019/BPE_ENS.csv"</span></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> </span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  aws.s3<span class="sc">::</span><span class="fu">s3read_using</span>(</span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">FUN =</span> readr<span class="sc">::</span>read_delim,</span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Put FUN options here</span></span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">delim =</span> <span class="st">";"</span>,</span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">object =</span> FILE_KEY_S3,</span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">bucket =</span> BUCKET,</span>
-<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">opts =</span> <span class="fu">list</span>(<span class="st">"region"</span> <span class="ot">=</span> <span class="st">""</span>)</span>
-<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>BUCKET <span class="ot">&lt;-</span> <span class="st">"donnees-insee"</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>FILE_KEY_S3 <span class="ot">&lt;-</span> <span class="st">"diffusion/BPE/2019/BPE_ENS.csv"</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> </span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>  aws.s3<span class="sc">::</span><span class="fu">s3read_using</span>(</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">FUN =</span> readr<span class="sc">::</span>read_delim,</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Put FUN options here</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">delim =</span> <span class="st">";"</span>,</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">object =</span> FILE_KEY_S3,</span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">bucket =</span> BUCKET,</span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">opts =</span> <span class="fu">list</span>(<span class="st">"region"</span> <span class="ot">=</span> <span class="st">""</span>)</span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
-<p>The S3Fs package allows interacting with files stored on MinIO as if they were local files. Therefore, the syntax is very familiar to Python users. For example, to import/export tabular data using <code>pandas</code>:</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>BUCKET <span class="op">=</span> <span class="st">"donnees-insee"</span></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>FILE_KEY_S3 <span class="op">=</span> <span class="st">"diffusion/BPE/2019/BPE_ENS.csv"</span></span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>FILE_PATH_S3 <span class="op">=</span> BUCKET <span class="op">+</span> <span class="st">"/"</span> <span class="op">+</span> FILE_KEY_S3</span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> fs.<span class="bu">open</span>(FILE_PATH_S3, mode<span class="op">=</span><span class="st">"rb"</span>) <span class="im">as</span> file_in:</span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>    df_bpe <span class="op">=</span> pd.read_csv(file_in, sep<span class="op">=</span><span class="st">";"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>The S3Fs package allows you to interact with files stored on MinIO as if they were local files. The syntax is therefore very familiar to Python users. For example, to import/export tabular data via <code>pandas</code>:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>BUCKET <span class="op">=</span> <span class="st">"donnees-insee"</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>FILE_KEY_S3 <span class="op">=</span> <span class="st">"diffusion/BPE/2019/BPE_ENS.csv"</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>FILE_PATH_S3 <span class="op">=</span> BUCKET <span class="op">+</span> <span class="st">"/"</span> <span class="op">+</span> FILE_KEY_S3</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> fs.<span class="bu">open</span>(FILE_PATH_S3, mode<span class="op">=</span><span class="st">"rb"</span>) <span class="im">as</span> file_in:</span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>    df_bpe <span class="op">=</span> pd.read_csv(file_in, sep<span class="op">=</span><span class="st">";"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="tabset-3-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-3-tab">
+<p>To copy data from a MinIO bucket to the local service:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="ex">mc</span> cp s3/donnees-insee/diffusion/BPE/2019/BPE_ENS.csv ./BPE_ENS.csv</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>::: {.callout-warning} <strong>Copying files to the local service is generally not a good practice</strong>: it limits the reproducibility of analyses and becomes quickly impossible with large volumes of data. Therefore, it is preferable to get into the habit of importing data directly into <code>R</code>/<code>Python</code>. :::</p>
 </div>
 </div>
 </div>
 <p><strong>Exporting Data to MinIO</strong></p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true">R</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false">Python</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true">R</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false">Python</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-3" role="tab" aria-controls="tabset-4-3" aria-selected="false">mc</a></li></ul>
 <div class="tab-content">
 <div id="tabset-4-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-4-1-tab">
-<div class="sourceCode" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>BUCKET_OUT <span class="ot">=</span> <span class="st">"&lt;mon_bucket&gt;"</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>FILE_KEY_OUT_S3 <span class="ot">=</span> <span class="st">"mon_dossier/BPE_ENS.csv"</span></span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>aws.s3<span class="sc">::</span><span class="fu">s3write_using</span>(</span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>    df,</span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">FUN =</span> readr<span class="sc">::</span>write_csv,</span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">object =</span> FILE_KEY_OUT_S3,</span>
-<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">bucket =</span> BUCKET_OUT,</span>
-<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">opts =</span> <span class="fu">list</span>(<span class="st">"region"</span> <span class="ot">=</span> <span class="st">""</span>)</span>
-<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>BUCKET_OUT <span class="ot">=</span> <span class="st">"&lt;my_bucket&gt;"</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>FILE_KEY_OUT_S3 <span class="ot">=</span> <span class="st">"my_folder/BPE_ENS.csv"</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>aws.s3<span class="sc">::</span><span class="fu">s3write_using</span>(</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>    df,</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">FUN =</span> readr<span class="sc">::</span>write_csv,</span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">object =</span> FILE_KEY_OUT_S3,</span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">bucket =</span> BUCKET_OUT,</span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">opts =</span> <span class="fu">list</span>(<span class="st">"region"</span> <span class="ot">=</span> <span class="st">""</span>)</span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div id="tabset-4-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-2-tab">
-<div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>BUCKET_OUT <span class="op">=</span> <span class="st">"&lt;mon_bucket&gt;"</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>FILE_KEY_OUT_S3 <span class="op">=</span> <span class="st">"mon_dossier/BPE_ENS.csv"</span></span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>FILE_PATH_OUT_S3 <span class="op">=</span> BUCKET_OUT <span class="op">+</span> <span class="st">"/"</span> <span class="op">+</span> FILE_KEY_OUT_S3</span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> fs.<span class="bu">open</span>(FILE_PATH_OUT_S3, <span class="st">'w'</span>) <span class="im">as</span> file_out:</span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>    df_bpe.to_csv(file_out)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>BUCKET_OUT <span class="op">=</span> <span class="st">"&lt;my_bucket&gt;"</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>FILE_KEY_OUT_S3 <span class="op">=</span> <span class="st">"my_folder/BPE_ENS.csv"</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>FILE_PATH_OUT_S3 <span class="op">=</span> BUCKET_OUT <span class="op">+</span> <span class="st">"/"</span> <span class="op">+</span> FILE_KEY_OUT_S3</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> fs.<span class="bu">open</span>(FILE_PATH_OUT_S3, <span class="st">'w'</span>) <span class="im">as</span> file_out:</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>    df_bpe.to_csv(file_out)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="tabset-4-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-3-tab">
+<p>To copy data from the local service to a bucket on MinIO:</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="ex">mc</span> cp local/path/to/my/file.csv s3/<span class="op">&lt;</span>my_bucket<span class="op">&gt;</span>/remote/path/to/my/file.csv</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Warning
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>S3Fs also provides functions to download/export files from the local Python session’s filesystem. However, <strong>copying files locally into the service is generally not a good practice</strong>: it limits analysis reproducibility and becomes quickly impossible with large data volumes. Therefore, it is better to get into the habit of importing data directly into Python as files.</p>
-</div>
-</div>
-</section>
-<section id="the-minio-client" class="level3">
-<h3 class="anchored" data-anchor-id="the-minio-client">The MinIO Client</h3>
-<p>MinIO offers a command-line client that allows interacting with the storage system like a traditional UNIX filesystem. This client is installed by default and accessible via a terminal in the different services of the Datalab.</p>
-<p>The Datalab storage is accessible via the alias <code>s3</code>. For example, to list files in a personal bucket:</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="ex">mc</span> ls s3/donnees-insee</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>And to copy a file from MinIO to the local service:</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="ex">mc</span> cp s3/donnees-insee/diffusion/BPE/2019/BPE_ENS.csv ./BPE_ENS.csv</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>The MinIO client provides basic UNIX commands, such as ls, cat, cp, etc. The complete list is available in the <a href="https://docs.min.io/docs/minio-client-complete-guide.html">client documentation</a>.</p>
-</div>
-</div>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Warning
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Manipulating large files on MinIO is costly because stored files are immutable. As a result, renaming or moving a file involves deleting the original file and recreating it with new metadata. It is essential to plan the data structure of projects beforehand.</p>
-</div>
-</div>
+<p><strong>Renewing Expired Access Tokens</strong></p>
+<p>Access to MinIO storage is possible via a personal access token, which is valid for 24 hours and automatically regenerated at regular intervals on SSP Cloud. When a token has expired, services created before the expiration date (using the previous token) can no longer access storage, and the affected service will appear in red on the <a href="https://datalab.sspcloud.fr/my-services">My Services</a> page. In this case, there are two options:</p>
+<ul>
+<li>Open a new service on Datalab, which will have a default, up-to-date token.</li>
+<li>Manually replace expired tokens with new ones. Scripts indicating how to do this for different MinIO uses (<code>R</code>/<code>Python</code>/<code>mc</code>) are available <a href="https://datalab.sspcloud.fr/account/storage">here</a>. Simply choose the relevant script and execute it in your current working environment.</li>
+</ul>
 
 
 </section>
