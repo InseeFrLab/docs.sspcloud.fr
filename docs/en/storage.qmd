@@ -7,6 +7,8 @@ The file storage solution associated with Datalab is [MinIO](https://min.io), an
 * Stored files are easily accessible from anywhere: a file can be accessed directly via a simple URL, which can be shared.
 * It is possible to access the stored files directly within the data science services (R, Python, etc.) offered on Datalab, without the need to copy the files locally beforehand, greatly improving the reproducibility of analyses.
 
+![MinIO Schema](../img/minio.svg)
+
 ## Managing Your Data
 
 ### Importing Data
