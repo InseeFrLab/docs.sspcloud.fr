@@ -36,13 +36,9 @@ Dans le cadre de projets collaboratifs, il peut être intéressant pour les diff
 Conformément aux [conditions d'utilisation](https://www.sspcloud.fr/tos\_fr.md), seuls des données de type _open data_ ou ne présentant aucune sensibilité peuvent être stockées sur le Datalab. Le fait qu'un fichier ait un statut de diffusion "privé" ne suffit pas à garantir une parfaite confidentialité.
 :::
 
-## Utiliser des données dans un service
+## Utiliser des données stockées sur MinIO
 
 Les identifiants d'accès nécessaires pour accéder à des données sur MinIO sont pré-configurés dans les différents services du Datalab, accessibles sous la forme de [variables d'environnement](gestion-des-secrets.md). Ainsi, l'import et l'export de fichiers à partir des services est grandement facilité.
-
-::: {.callout-warning}
-L'accès au stockage MinIO est possible via un _token_ (jeton d'accès) personnel, valide 7 jours, et automatiquement régénéré à échéances régulières sur le SSP Cloud. Lorsqu'un token a expiré, les services créés avant la date d'expiration (avec le précédent token) ne peuvent plus accéder au stockage ; le service concerné apparaît alors marqué en rouge dans la page [Mes Services](https://datalab.sspcloud.fr/my-services). Il est donc primordial de renouveler régulièrement les services en cours d'exécution, en prenant soin de sauvegarder au préalable son code et ses données.
-:::
 
 ### Configuration
 
@@ -74,6 +70,12 @@ S3_ENDPOINT_URL = "https://" + os.environ["AWS_S3_ENDPOINT"]
 fs = s3fs.S3FileSystem(client_kwargs={'endpoint_url': S3_ENDPOINT_URL})
 ```
 
+#### mc
+
+MinIO propose un client en ligne de commande (`ùc`) qui permet d’interagir avec le système de stockage à la manière d'un _filesystem_ UNIX classique. Ce client est installé par défaut et accessible via un terminal dans les différents services du Datalab.
+
+Le client MinIO propose les commandes UNIX de base, telles que ls, cat, cp, etc. La liste complète est disponible dans la [documentation du client](https://docs.min.io/docs/minio-client-complete-guide.html).
+
 :::
 
 **Lister les fichiers d'un *bucket***
@@ -90,6 +92,14 @@ aws.s3::get_bucket("donnees-insee", region = "")
 
 ```python
 fs.ls("donnees-insee")
+```
+
+#### mc
+
+Le stockage du Datalab est accessible via l'alias `s3`. Par exemple, pour lister les fichiers du bucket `donnees-insee` :
+
+```bash
+mc ls s3/donnees-insee
 ```
 
 :::
@@ -130,6 +140,18 @@ with fs.open(FILE_PATH_S3, mode="rb") as file_in:
     df_bpe = pd.read_csv(file_in, sep=";")
 ```
 
+#### mc
+
+Pour copier les données d'un bucket sur MinIO vers le service local :
+
+```bash
+mc cp s3/donnees-insee/diffusion/BPE/2019/BPE_ENS.csv ./BPE_ENS.csv
+```
+
+::: {.callout-warning}
+**Copier les fichiers dans le service local n'est généralement pas une bonne pratique** : cela limite la reproductibilité des analyses, et devient rapidement impossible avec des volumes importants de données. Il est donc préférable de prendre l'habitude d'importer les données comme des fichiers directement dans `R`/`Python`.
+:::
+
 :::
 
 **Exporter des données vers MinIO**
@@ -162,32 +184,18 @@ with fs.open(FILE_PATH_OUT_S3, 'w') as file_out:
     df_bpe.to_csv(file_out)
 ```
 
-:::
+#### mc
 
-::: {.callout-warning}
-S3Fs propose également des fonctions pour télécharger/exporter des fichiers à partir du _filesystem_ local de la session Python. Cependant, **copier les fichiers en local dans le service n'est généralement pas une bonne pratique** : cela limite la reproductibilité des analyses, et devient rapidement impossible avec des volumes importants de données. Il est donc préférable de prendre l'habitude d'importer les données comme des fichiers directement dans Python.
-:::
-
-### Le client MinIO
-
-MinIO propose un client en ligne de commande qui permet d’interagir avec le système de stockage à la manière d'un _filesystem_ UNIX classique. Ce client est installé par défaut et accessible via un terminal dans les différents services du Datalab.
-
-Le stockage du Datalab est accessible via l'alias `s3`. Par exemple, pour lister les fichiers de son _bucket_ personnel :
+Pour copier les données du service local vers un bucket sur MinIO:
 
 ```bash
-mc ls s3/donnees-insee
+mc cp chemin/local/vers/mon/fichier.csv s3/<mon_bucket>/chemin/distant/vers/mon/fichier.csv
 ```
 
-Et pour copier un fichier depuis MinIO vers le service local :
-
-```bash
-mc cp s3/donnees-insee/diffusion/BPE/2019/BPE_ENS.csv ./BPE_ENS.csv
-```
-
-::: {.callout-note}
-Le client MinIO propose les commandes UNIX de base, telles que ls, cat, cp, etc. La liste complète est disponible dans la [documentation du client](https://docs.min.io/docs/minio-client-complete-guide.html).
 :::
 
-::: {.callout-warning}
-La manipulation de fichiers volumineux sur MinIO est une opération coûteuse car les fichiers stockés sont immuables. Ainsi, renommer ou déplacer un fichier implique une suppression du fichier original et une recréation du fichier avec de nouvelles métadonnées. Il est donc important de réfléchir en amont à la structure de données des projets.
-:::
+**Renouveler des jetons d'accès (*tokens) périmés**
+
+L'accès au stockage MinIO est possible via un _token_ (jeton d'accès) personnel, valide 24h, et automatiquement régénéré à échéances régulières sur le SSP Cloud. Lorsqu'un token a expiré, les services créés avant la date d'expiration (avec le précédent token) ne peuvent plus accéder au stockage ; le service concerné apparaît alors marqué en rouge dans la page [Mes Services](https://datalab.sspcloud.fr/my-services). Dans ce cas, deux possibilités :
+- ouvrir un nouveau service sur le Datalab, qui aura par défaut un nouveau token à jour
+- remplacer manuellement les jetons périmés par des nouveaux. Des scripts indiquant la manière de faire pour les différentes utilisations de MinIO (`R`/`Python`/`mc`) sont disponibles [ici](https://datalab.sspcloud.fr/account/storage). Il suffit de choisir le script pertinent et de l'exécuter dans son environnement de travail courant.
