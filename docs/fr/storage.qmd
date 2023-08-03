@@ -80,7 +80,7 @@ Le client MinIO propose les commandes UNIX de base, telles que ls, cat, cp, etc.
 
 :::
 
-**Lister les fichiers d'un *bucket***
+### Lister les fichiers d'un *bucket*
 
 ::: {.panel-tabset}
 
@@ -106,7 +106,7 @@ mc ls s3/donnees-insee
 
 :::
 
-**Importer des données**
+### Importer des données
 
 ::: {.panel-tabset}
 
@@ -156,7 +156,7 @@ mc cp s3/donnees-insee/diffusion/BPE/2019/BPE_ENS.csv ./BPE_ENS.csv
 
 :::
 
-**Exporter des données vers MinIO**
+### Exporter des données vers MinIO
 
 ::: {.panel-tabset}
 
@@ -196,7 +196,7 @@ mc cp chemin/local/vers/mon/fichier.csv s3/<mon_bucket>/chemin/distant/vers/mon/
 
 :::
 
-**Renouveler des jetons d'accès (*tokens) périmés**
+### Renouveler des jetons d'accès (*tokens*) périmés
 
 L'accès au stockage MinIO est possible via un _token_ (jeton d'accès) personnel, valide 24h, et automatiquement régénéré à échéances régulières sur le SSP Cloud. Lorsqu'un token a expiré, les services créés avant la date d'expiration (avec le précédent token) ne peuvent plus accéder au stockage ; le service concerné apparaît alors marqué en rouge dans la page [Mes Services](https://datalab.sspcloud.fr/my-services). Dans ce cas, deux possibilités :
 - ouvrir un nouveau service sur le Datalab, qui aura par défaut un nouveau token à jour

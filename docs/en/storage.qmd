@@ -9,9 +9,9 @@ The file storage solution associated with Datalab is [MinIO](https://min.io), an
 
 ![MinIO Schema](../img/minio.svg)
 
-## Managing Your Data
+## Managing your data
 
-### Importing Data
+### Importing data
 
 The [My Files](https://datalab.sspcloud.fr/mes-fichiers/) page in Datalab takes the form of a file explorer showing the different buckets (repositories) to which the user has access.
 
@@ -24,7 +24,7 @@ Each user has a personal bucket by default to store their files. Within this buc
 The graphical interface for data storage in Datalab is still under construction. As such, it may experience responsiveness issues. For frequent operations on file storage, it may be preferable to interact with MinIO via the terminal. 
 :::
 
-### Sharing Data
+### Sharing data
 
 By clicking on a file in their personal bucket, the user can access its characteristics page. On this page, it is possible to **change the distribution status of the file**. Changing the status of the file from "private" to "public" generates a **distribution link**, which can then be shared for downloading the file. The "public" status only grants read rights to other users, and modifying or deleting other users' personal files is not possible.
 
@@ -38,7 +38,7 @@ For collaborative projects, it can be beneficial for different participants to h
 In accordance with the [terms of use](https://www.sspcloud.fr/tos_fr.md), only *open data*\-type or non-sensitive data can be stored on Datalab. Having a file with a "private" distribution status does not guarantee perfect confidentiality. 
 :::
 
-## Using Data Stored on MinIO
+## Using data stored on MinIO
 
 The access credentials needed to access data on MinIO are pre-configured in the various Datalab services, accessible in the form of [environment variables](gestion-des-secrets.md). This greatly facilitates importing and exporting files from the services.
 
@@ -80,7 +80,7 @@ The MinIO client offers basic UNIX commands such as ls, cat, cp, etc. The comple
 
 :::
 
-**Listing the files in a bucket**
+### Listing the files in a bucket
 
 ::: {.panel-tabset}
 
@@ -106,7 +106,7 @@ mc ls s3/donnees-insee
 
 :::
 
-**Importing Data**
+### Importing data in a service
 
 ::: {.panel-tabset}
 
@@ -156,7 +156,7 @@ mc cp s3/donnees-insee/diffusion/BPE/2019/BPE_ENS.csv ./BPE_ENS.csv
 
 :::
 
-**Exporting Data to MinIO**
+### Exporting data to MinIO
 
 ::: {.panel-tabset}
 
@@ -196,7 +196,7 @@ mc cp local/path/to/my/file.csv s3/<my_bucket>/remote/path/to/my/file.csv
 
 :::
 
-**Renewing Expired Access Tokens**
+### Renewing expired access tokens
 
 Access to MinIO storage is possible via a personal access token, which is valid for 24 hours and automatically regenerated at regular intervals on SSP Cloud. When a token has expired, services created before the expiration date (using the previous token) can no longer access storage, and the affected service will appear in red on the [My Services](https://datalab.sspcloud.fr/my-services) page. In this case, there are two options:
 
