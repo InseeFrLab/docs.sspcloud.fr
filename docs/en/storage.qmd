@@ -30,8 +30,8 @@ By clicking on a file in their personal bucket, the user can access its characte
 
 To simplify the sharing of multiple files for, say, a training session, it is possible to create a **"distribution" folder** in the user's personal bucket. By default, all files present in this folder have a public distribution status.
 
-::: 
-{.callout-note} For collaborative projects, it can be beneficial for different participants to have access to a shared storage space. It is possible to create shared buckets on MinIO for this purpose. Feel free to contact us via the channels specified on the "[First Use](premiere-utilisation.md)" page if you wish to work on open data projects on Datalab. 
+::: {.callout-note} 
+For collaborative projects, it can be beneficial for different participants to have access to a shared storage space. It is possible to create shared buckets on MinIO for this purpose. Feel free to contact us via the channels specified on the "[First Use](premiere-utilisation.md)" page if you wish to work on open data projects on Datalab. 
 :::
 
 ::: {.callout-warning} 
