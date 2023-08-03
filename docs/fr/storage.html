@@ -214,7 +214,9 @@ Warning
 </div>
 </div>
 </div>
-<p><strong>Lister les fichiers d’un <em>bucket</em></strong></p>
+</section>
+<section id="lister-les-fichiers-dun-bucket" class="level3">
+<h3 class="anchored" data-anchor-id="lister-les-fichiers-dun-bucket">Lister les fichiers d’un <em>bucket</em></h3>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">R</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">Python</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false">mc</a></li></ul>
 <div class="tab-content">
@@ -230,7 +232,9 @@ Warning
 </div>
 </div>
 </div>
-<p><strong>Importer des données</strong></p>
+</section>
+<section id="importer-des-données-1" class="level3">
+<h3 class="anchored" data-anchor-id="importer-des-données-1">Importer des données</h3>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true">R</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false">Python</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-3" role="tab" aria-controls="tabset-3-3" aria-selected="false">mc</a></li></ul>
 <div class="tab-content">
@@ -278,7 +282,9 @@ Warning
 </div>
 </div>
 </div>
-<p><strong>Exporter des données vers MinIO</strong></p>
+</section>
+<section id="exporter-des-données-vers-minio" class="level3">
+<h3 class="anchored" data-anchor-id="exporter-des-données-vers-minio">Exporter des données vers MinIO</h3>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true">R</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false">Python</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-3" role="tab" aria-controls="tabset-4-3" aria-selected="false">mc</a></li></ul>
 <div class="tab-content">
@@ -308,7 +314,9 @@ Warning
 </div>
 </div>
 </div>
-<p>**Renouveler des jetons d’accès (*tokens) périmés**</p>
+</section>
+<section id="renouveler-des-jetons-daccès-tokens-périmés" class="level3">
+<h3 class="anchored" data-anchor-id="renouveler-des-jetons-daccès-tokens-périmés">Renouveler des jetons d’accès (<em>tokens</em>) périmés</h3>
 <p>L’accès au stockage MinIO est possible via un <em>token</em> (jeton d’accès) personnel, valide 24h, et automatiquement régénéré à échéances régulières sur le SSP Cloud. Lorsqu’un token a expiré, les services créés avant la date d’expiration (avec le précédent token) ne peuvent plus accéder au stockage ; le service concerné apparaît alors marqué en rouge dans la page <a href="https://datalab.sspcloud.fr/my-services">Mes Services</a>. Dans ce cas, deux possibilités : - ouvrir un nouveau service sur le Datalab, qui aura par défaut un nouveau token à jour - remplacer manuellement les jetons périmés par des nouveaux. Des scripts indiquant la manière de faire pour les différentes utilisations de MinIO (<code>R</code>/<code>Python</code>/<code>mc</code>) sont disponibles <a href="https://datalab.sspcloud.fr/account/storage">ici</a>. Il suffit de choisir le script pertinent et de l’exécuter dans son environnement de travail courant.</p>
 
 

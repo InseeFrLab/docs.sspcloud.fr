@@ -127,9 +127,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </section>
 <section id="managing-your-data" class="level2">
-<h2 class="anchored" data-anchor-id="managing-your-data">Managing Your Data</h2>
+<h2 class="anchored" data-anchor-id="managing-your-data">Managing your data</h2>
 <section id="importing-data" class="level3">
-<h3 class="anchored" data-anchor-id="importing-data">Importing Data</h3>
+<h3 class="anchored" data-anchor-id="importing-data">Importing data</h3>
 <p>The <a href="https://datalab.sspcloud.fr/mes-fichiers/">My Files</a> page in Datalab takes the form of a file explorer showing the different buckets (repositories) to which the user has access.</p>
 <p>Each user has a personal bucket by default to store their files. Within this bucket, two options are possible:</p>
 <ul>
@@ -151,7 +151,7 @@ Note
 </div>
 </section>
 <section id="sharing-data" class="level3">
-<h3 class="anchored" data-anchor-id="sharing-data">Sharing Data</h3>
+<h3 class="anchored" data-anchor-id="sharing-data">Sharing data</h3>
 <p>By clicking on a file in their personal bucket, the user can access its characteristics page. On this page, it is possible to <strong>change the distribution status of the file</strong>. Changing the status of the file from “private” to “public” generates a <strong>distribution link</strong>, which can then be shared for downloading the file. The “public” status only grants read rights to other users, and modifying or deleting other users’ personal files is not possible.</p>
 <p>To simplify the sharing of multiple files for, say, a training session, it is possible to create a <strong>“distribution” folder</strong> in the user’s personal bucket. By default, all files present in this folder have a public distribution status.</p>
 <div class="callout callout-style-default callout-note callout-titled">
@@ -183,7 +183,7 @@ Warning
 </section>
 </section>
 <section id="using-data-stored-on-minio" class="level2">
-<h2 class="anchored" data-anchor-id="using-data-stored-on-minio">Using Data Stored on MinIO</h2>
+<h2 class="anchored" data-anchor-id="using-data-stored-on-minio">Using data stored on MinIO</h2>
 <p>The access credentials needed to access data on MinIO are pre-configured in the various Datalab services, accessible in the form of <a href="gestion-des-secrets.md">environment variables</a>. This greatly facilitates importing and exporting files from the services.</p>
 <section id="configuration" class="level3">
 <h3 class="anchored" data-anchor-id="configuration">Configuration</h3>
@@ -214,7 +214,9 @@ Warning
 </div>
 </div>
 </div>
-<p><strong>Listing the files in a bucket</strong></p>
+</section>
+<section id="listing-the-files-in-a-bucket" class="level3">
+<h3 class="anchored" data-anchor-id="listing-the-files-in-a-bucket">Listing the files in a bucket</h3>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">R</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">Python</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false">mc</a></li></ul>
 <div class="tab-content">
@@ -230,7 +232,9 @@ Warning
 </div>
 </div>
 </div>
-<p><strong>Importing Data</strong></p>
+</section>
+<section id="importing-data-in-a-service" class="level3">
+<h3 class="anchored" data-anchor-id="importing-data-in-a-service">Importing data in a service</h3>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true">R</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false">Python</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-3" role="tab" aria-controls="tabset-3-3" aria-selected="false">mc</a></li></ul>
 <div class="tab-content">
@@ -278,7 +282,9 @@ Warning
 </div>
 </div>
 </div>
-<p><strong>Exporting Data to MinIO</strong></p>
+</section>
+<section id="exporting-data-to-minio" class="level3">
+<h3 class="anchored" data-anchor-id="exporting-data-to-minio">Exporting data to MinIO</h3>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true">R</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false">Python</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-3" role="tab" aria-controls="tabset-4-3" aria-selected="false">mc</a></li></ul>
 <div class="tab-content">
@@ -308,7 +314,9 @@ Warning
 </div>
 </div>
 </div>
-<p><strong>Renewing Expired Access Tokens</strong></p>
+</section>
+<section id="renewing-expired-access-tokens" class="level3">
+<h3 class="anchored" data-anchor-id="renewing-expired-access-tokens">Renewing expired access tokens</h3>
 <p>Access to MinIO storage is possible via a personal access token, which is valid for 24 hours and automatically regenerated at regular intervals on SSP Cloud. When a token has expired, services created before the expiration date (using the previous token) can no longer access storage, and the affected service will appear in red on the <a href="https://datalab.sspcloud.fr/my-services">My Services</a> page. In this case, there are two options:</p>
 <ul>
 <li>Open a new service on Datalab, which will have a default, up-to-date token.</li>
