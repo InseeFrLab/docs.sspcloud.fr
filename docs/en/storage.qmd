@@ -31,7 +31,7 @@ By clicking on a file in their personal bucket, the user can access its characte
 To simplify the sharing of multiple files for, say, a training session, it is possible to create a **"distribution" folder** in the user's personal bucket. By default, all files present in this folder have a public distribution status.
 
 ::: {.callout-note} 
-For collaborative projects, it can be beneficial for different participants to have access to a shared storage space. It is possible to create shared buckets on MinIO for this purpose. Feel free to contact us via the channels specified on the "[First Use](premiere-utilisation.md)" page if you wish to work on open data projects on Datalab. 
+For collaborative projects, it can be beneficial for different participants to have access to a shared storage space. It is possible to create shared buckets on MinIO for this purpose. Feel free to contact us via the channels specified on the "[First Use](discover.qmd)" page if you wish to work on open data projects on Datalab. 
 :::
 
 ::: {.callout-warning} 
@@ -40,7 +40,7 @@ In accordance with the [terms of use](https://www.sspcloud.fr/tos_fr.md), only *
 
 ## Using data stored on MinIO
 
-The access credentials needed to access data on MinIO are pre-configured in the various Datalab services, accessible in the form of [environment variables](gestion-des-secrets.md). This greatly facilitates importing and exporting files from the services.
+The access credentials needed to access data on MinIO are pre-configured in the various Datalab services, accessible in the form of [environment variables](secrets.qmd). This greatly facilitates importing and exporting files from the services.
 
 ### Configuration
 
