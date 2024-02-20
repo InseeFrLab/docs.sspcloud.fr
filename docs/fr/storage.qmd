@@ -196,8 +196,10 @@ mc cp chemin/local/vers/mon/fichier.csv s3/<mon_bucket>/chemin/distant/vers/mon/
 
 :::
 
-### Renouveler des jetons d'accès (*tokens*) périmés
+## Renouveler des jetons d'accès (*tokens*) périmés
 
-L'accès au stockage MinIO est possible via un _token_ (jeton d'accès) personnel, valide 24h, et automatiquement régénéré à échéances régulières sur le SSP Cloud. Lorsqu'un token a expiré, les services créés avant la date d'expiration (avec le précédent token) ne peuvent plus accéder au stockage ; le service concerné apparaît alors marqué en rouge dans la page [Mes Services](https://datalab.sspcloud.fr/my-services). Dans ce cas, deux possibilités :
-- ouvrir un nouveau service sur le Datalab, qui aura par défaut un nouveau token à jour
+L'accès au stockage MinIO est possible via un _token_ (jeton d'accès) personnel, valide 7 jours, et automatiquement régénéré à échéances régulières sur le SSP Cloud. Lorsqu'un token a expiré, les services créés avant la date d'expiration (avec le précédent token) ne peuvent plus accéder au stockage ; le service concerné apparaît alors marqué en rouge dans la page [Mes Services](https://datalab.sspcloud.fr/my-services). Dans ce cas, deux possibilités :
+
+- ouvrir un nouveau service sur le Datalab, qui aura par défaut un nouveau token à jour ;
+
 - remplacer manuellement les jetons périmés par des nouveaux. Des scripts indiquant la manière de faire pour les différentes utilisations de MinIO (`R`/`Python`/`mc`) sont disponibles [ici](https://datalab.sspcloud.fr/account/storage). Il suffit de choisir le script pertinent et de l'exécuter dans son environnement de travail courant.

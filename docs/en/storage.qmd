@@ -198,7 +198,8 @@ mc cp local/path/to/my/file.csv s3/<my_bucket>/remote/path/to/my/file.csv
 
 ### Renewing expired access tokens
 
-Access to MinIO storage is possible via a personal access token, which is valid for 24 hours and automatically regenerated at regular intervals on SSP Cloud. When a token has expired, services created before the expiration date (using the previous token) can no longer access storage, and the affected service will appear in red on the [My Services](https://datalab.sspcloud.fr/my-services) page. In this case, there are two options:
+Access to MinIO storage is possible via a personal access token, which is valid for 7 days and automatically regenerated at regular intervals on SSP Cloud. When a token has expired, services created before the expiration date (using the previous token) can no longer access storage, and the affected service will appear in red on the [My Services](https://datalab.sspcloud.fr/my-services) page. In this case, there are two options:
 
-* Open a new service on Datalab, which will have a default, up-to-date token.
-* Manually replace expired tokens with new ones. Scripts indicating how to do this for different MinIO uses (`R`/`Python`/`mc`) are available [here](https://datalab.sspcloud.fr/account/storage). Simply choose the relevant script and execute it in your current working environment.
+- Open a new service on Datalab, which will have a default, up-to-date token.
+
+- Manually replace expired tokens with new ones. Scripts indicating how to do this for different MinIO uses (`R`/`Python`/`mc`) are available [here](https://datalab.sspcloud.fr/account/storage). Simply choose the relevant script and execute it in your current working environment.
