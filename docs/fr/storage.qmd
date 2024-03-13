@@ -13,7 +13,7 @@ La solution de stockage de fichiers associée au Datalab est [MinIO](https://min
 
 ### Importer des données
 
-La page [Mes fichiers](https://datalab.sspcloud.fr/mes-fichiers/) du Datalab prend la forme d'un explorateur de fichiers présentant les différents _buckets_ (dépôts) auxquels l’utilisateur a accès.
+La page [Mes fichiers](https://datalab.sspcloud.fr/my-files/) du Datalab prend la forme d'un explorateur de fichiers présentant les différents _buckets_ (dépôts) auxquels l’utilisateur a accès.
 
 Chaque utilisateur dispose par défaut d'un _bucket_ personnel pour stocker ses fichiers. Au sein de ce _bucket_, deux options sont possibles :
 
