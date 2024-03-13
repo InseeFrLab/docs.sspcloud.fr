@@ -17,7 +17,7 @@ que dans le cadre de projets collaboratifs :
 * il devient possible de contribuer à des projets open-source, pour lesquels l'usage de Git est très largement standard.
 
 ::: {.callout-warning}
-Ce tutoriel vise à présenter comment le contrôle de version peut être facilement implémenté grâce aux outils présents sur le Datalab. Il ne présente pas le fonctionnement de Git et présuppose donc une certaine familiarité avec l'outil. De nombreuses ressources en ligne peuvent servir d'introduction ; l'utilisateur de R pourra par exemple consulter [ce guide](https://linogaliana.gitlab.io/collaboratif/git.html) et l'utilisateur de Python ce [chapitre de cours](https://linogaliana-teaching.netlify.app/course/git/). Une formation complète à Git sera bientôt proposée dans l'[espace formation ](https://www.sspcloud.fr/documentation)du Datalab.
+Ce tutoriel vise à présenter comment le contrôle de version peut être facilement implémenté grâce aux outils présents sur le Datalab. Il ne présente pas le fonctionnement de Git et présuppose donc une certaine familiarité avec l'outil. De nombreuses ressources en ligne peuvent servir d'introduction ; les utilisateurs de R pourront par exemple suivre [cette formation](https://inseefrlab.github.io/formation-bonnes-pratiques-git-R/) et les utilisateurs de Python ce [chapitre de cours](https://pythonds.linogaliana.fr/content/git/exogit.html).
 :::
 
 ## Intégration de GitHub avec le Datalab
