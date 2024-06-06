@@ -1,6 +1,6 @@
 # First Use
 
-Welcome to Onyxia Datalab, a shared self-service platform for data processing, designed for statisticians and data scientists working for the government. This tutorial provides a guided tour of the Datalab to quickly get you up and running with its services.
+Welcome to Onyxia Datalab, a shared self-service platform for data processing, designed for statisticians and data scientists working for the European Statistical System. This tutorial provides a guided tour of the Datalab to quickly get you up and running with its services.
 
 ::: {.callout-warning} 
 The terms of use for Datalab can be found at [this address](https://datalab.sspcloud.fr/terms). We remind you that Datalab is intended exclusively for the processing of **public and non-sensitive data**. Projects involving non-open data for experimentation can be carried out in consultation with the Datalab team, subject to compliance with project-specific security rules. 
@@ -49,6 +49,8 @@ The resources made available for executing services are shared among different D
 
 ## Support
 
-Support and assistance for using Datalab are provided on a [dedicated channel](https://matrix.to/#/#SSPCloudXDpAw6v:agent.finances.tchap.gouv.fr) of the inter-ministerial instant messaging service [Tchap](https://www.tchap.gouv.fr). Any questions about using Datalab or suggestions for improvement are welcome there.
+Support and assistance for using the Datalab are provided through two communication tools:
 
-For users not using Tchap, it is also possible to contact us via email at [innovation@insee.fr](mailto:innovation@insee.fr).
+- Generally on [the Onyxia Slack](https://join.slack.com/t/3innovation/shared_invite/zt-1bo6y53oy-Y~zKzR2SRg37pq5oYgiPuA) in the specific SSPCloud channel. Any questions about using the Datalab or suggestions for improvement are welcome there.
+- In a [dedicated room](https://matrix.to/#/#SSPCloudXDpAw6v:agent.finances.tchap.gouv.fr) of the French state inter-ministerial instant messaging service [Tchap](https://www.tchap.gouv.fr) for French public agents.
+
