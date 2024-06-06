@@ -50,5 +50,6 @@ Les ressources mises à disposition pour l'execution des services sont partagée
 ## Support
 
 Le support et l'aide à l'utilisation du Datalab sont effectuées sur deux outils de communication :
-- De façon général sur [le Slack Onyxia](https://join.slack.com/t/3innovation/shared_invite/zt-1bo6y53oy-Y~zKzR2SRg37pq5oYgiPuA) dans le canal spécifique SSPCloud. Toute question sur l'utilisation du Datalab ou suggestion d'amélioration y sont les bienvenues.
-- Sur un [salon dédié](https://matrix.to/#/#SSPCloudXDpAw6v:agent.finances.tchap.gouv.fr) du service de messagerie instantanée interministériel de l'état Francais [Tchap](https://www.tchap.gouv.fr) pour les agents publiques français.
+
+* De façon général sur [le Slack Onyxia](https://join.slack.com/t/3innovation/shared_invite/zt-1bo6y53oy-Y~zKzR2SRg37pq5oYgiPuA) dans le canal spécifique SSPCloud. Toute question sur l'utilisation du Datalab ou suggestion d'amélioration y sont les bienvenues.
+* Sur un [salon dédié](https://matrix.to/#/#SSPCloudXDpAw6v:agent.finances.tchap.gouv.fr) du service de messagerie instantanée interministériel de l'état Francais [Tchap](https://www.tchap.gouv.fr) pour les agents publiques français.
