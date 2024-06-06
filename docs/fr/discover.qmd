@@ -1,6 +1,6 @@
 # Première utilisation
 
-Bienvenue sur le Datalab Onyxia, plateforme libre service mutualisée de traitement de données, destinée aux statisticiens et _data scientists_ de l'Etat. Ce tutoriel propose une visite guidée du Datalab pour être rapidement opérationnel dans l'utilisation de ses services.
+Bienvenue sur le Datalab SSPCloud, plateforme libre service mutualisée de traitement de données, destinée aux statisticiens et _data scientists_ au sein du système statistique européens au delà. Ce tutoriel propose une visite guidée du Datalab pour être rapidement opérationnel dans l'utilisation de ses services.
 
 ::: {.callout-warning}
 Les conditions d'utilisation du Datalab sont consultables à [cette adresse](https://datalab.sspcloud.fr/terms). Nous rappelons que le Datalab est destiné exclusivement au traitement de **données publiques et non-sensibles**. Des projets d'expérimentation mobilisant des données non ouvertes peuvent être menés en concertation avec l'équipe du Datalab, sous réserve de se conformer aux règles de sécurité spécifiques au projet.
@@ -8,7 +8,7 @@ Les conditions d'utilisation du Datalab sont consultables à [cette adresse](htt
 
 ## Le catalogue de services
 
-Le [catalogue de services](https://datalab.sspcloud.fr/catalog/inseefrlab-helm-charts-datascience) est au centre de l'utilisation du Datalab. Il propose un ensemble de services destinés aux traitements statistiques de données ainsi qu'à la gestion complète des projets de _data science_.
+Le [catalogue de services](https://datalab.sspcloud.fr/catalog/ide) est au centre de l'utilisation du Datalab. Il propose un ensemble de services destinés aux traitements statistiques de données ainsi qu'à la gestion complète des projets de _data science_.
 
 ![](../img/catalog.png)
 
@@ -49,6 +49,6 @@ Les ressources mises à disposition pour l'execution des services sont partagée
 
 ## Support
 
-Le support et l'aide à l'utilisation du Datalab sont effectuées sur un [salon dédié](https://matrix.to/#/#SSPCloudXDpAw6v:agent.finances.tchap.gouv.fr) du service de messagerie instantanée interministériel [Tchap](https://www.tchap.gouv.fr). Toute question sur l'utilisation du Datalab ou suggestion d'amélioration y sont les bienvenues.
-
-Pour les agents n'utilisant pas Tchap, il est également possible de nous contacter par mail sur la BAL innovation@insee.fr.
+Le support et l'aide à l'utilisation du Datalab sont effectuées sur deux outils de communication :
+- De façon général sur [le Slack Onyxia](https://join.slack.com/t/3innovation/shared_invite/zt-1bo6y53oy-Y~zKzR2SRg37pq5oYgiPuA) dans le canal spécifique SSPCloud. Toute question sur l'utilisation du Datalab ou suggestion d'amélioration y sont les bienvenues.
+- Sur un [salon dédié](https://matrix.to/#/#SSPCloudXDpAw6v:agent.finances.tchap.gouv.fr) du service de messagerie instantanée interministériel de l'état Francais [Tchap](https://www.tchap.gouv.fr) pour les agents publiques français.
