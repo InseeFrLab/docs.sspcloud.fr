@@ -72,7 +72,7 @@ S3_ENDPOINT_URL = "https://" + os.environ["AWS_S3_ENDPOINT"]
 fs = s3fs.S3FileSystem(client_kwargs={'endpoint_url': S3_ENDPOINT_URL})
 ```
 
-#### mc
+#### mc (terminal)
 
 MinIO propose un client en ligne de commande (`ùc`) qui permet d’interagir avec le système de stockage à la manière d'un _filesystem_ UNIX classique. Ce client est installé par défaut et accessible via un terminal dans les différents services du Datalab.
 
@@ -96,7 +96,7 @@ aws.s3::get_bucket("donnees-insee", region = "")
 fs.ls("donnees-insee")
 ```
 
-#### mc
+#### mc (terminal)
 
 Le stockage du Datalab est accessible via l'alias `s3`. Par exemple, pour lister les fichiers du bucket `donnees-insee` :
 
@@ -142,7 +142,7 @@ with fs.open(FILE_PATH_S3, mode="rb") as file_in:
     df_bpe = pd.read_csv(file_in, sep=";")
 ```
 
-#### mc
+#### mc (terminal)
 
 Pour copier les données d'un bucket sur MinIO vers le service local :
 
@@ -186,7 +186,7 @@ with fs.open(FILE_PATH_OUT_S3, 'w') as file_out:
     df_bpe.to_csv(file_out)
 ```
 
-#### mc
+#### mc (terminal)
 
 Pour copier les données du service local vers un bucket sur MinIO:
 
@@ -203,3 +203,78 @@ L'accès au stockage MinIO est possible via un _token_ (jeton d'accès) personne
 - ouvrir un nouveau service sur le Datalab, qui aura par défaut un nouveau token à jour ;
 
 - remplacer manuellement les jetons périmés par des nouveaux. Des scripts indiquant la manière de faire pour les différentes utilisations de MinIO (`R`/`Python`/`mc`) sont disponibles [ici](https://datalab.sspcloud.fr/account/storage). Il suffit de choisir le script pertinent et de l'exécuter dans son environnement de travail courant.
+
+## Usages avancés
+
+### Créer un compte de service
+
+Pour des raisons de sécurité, l'authentification à MinIO utilisée par défault dans les services interactifs du SSP Cloud repose un sur jeton d'accès temporaire.
+Dans le cadre de projets impliquant des traitements périodiques ou le déploiement d'applications, on peut avoir besoin d'un accès plus pérenne à des données sur MinIO. 
+
+Dans ce cas, on utilise un compte de service, c'est à dire un compte qui est rattaché à un certain projet ou une certaine application plutôt qu'à une personne. En termes techniques, au lieu de s'authentifier à MinIO via un triplet (access key id, secret access key et session token), on va utiliser un couple (access key id, secret access key) qui donne des permissions en lecture/écriture à un certain bucket de projet.
+
+La procédure de création d'un compte de service est décrite ci-dessous.
+
+::: {.panel-tabset}
+
+#### Interface graphique
+
+- Ouvrir la [console MinIO](https://minio-console.lab.sspcloud.fr)
+
+- Ouvrir l'onglet `Access Keys`
+
+- Les informations du compte de service sont pré-générées. Il est possible de modifier l'access-key pour lui donner un nom plus simple.
+
+- La `policy` précisant les droits est également pré-générée. Idéalement, on restreint la policy pour qu'elle ne concerne que le/les bucket(s) du projet.
+
+- Une fois le compte de service généré, l'access-key et la secret-access-key peuvent être utilisées pour authentifier les services / applications au bucket spécifié
+
+#### Terminal (mc)
+
+- Créer un service sur le SSP Cloud avec des accès MinIO à jour. Confirmer que la connection fonctionne avec :
+
+```bash
+mc ls s3/<nom_utilisateur>
+```
+
+- Générer un fichier `policy.json` avec le contenu suivant, en remplaçant (deux fois) `projet-<mon_projet>` par le nom du bucket concerné :
+
+```json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+     {
+      "Effect": "Allow",
+      "Action": [
+       "s3:*"
+      ],
+      "Resource": [
+       "arn:aws:s3:::projet-<mon_projet>",
+       "arn:aws:s3:::projet-<mon_projet>/*"
+      ]
+     }
+    ]
+  }
+```
+
+- Dans un terminal, générer le compte de service avec la commande suivante :
+
+```bash
+mc admin user svcacct add s3 $AWS_ACCESS_KEY_ID --access-key="<access-key>" --secret-key="<secret-access-key>" --policy="policy.json"
+```
+
+en remplaçant `<access-key>` et `<secret-access-key>` par des noms de votre choix. Idéalement, on donnera un nom simple comme access-key (ex : `sa-projet-nomduprojet`) mais une clé complexe comme secret-access-key, générable par exemple avec le client `gpg` :
+
+```bash
+gpg --gen-random --armor 1 16
+```
+
+- Vous pouvez désormais utiliser l'access-key et la secret-access-key pour authentifier les services / applications au bucket spécifié. 
+
+:::
+
+::: {.callout-warning}
+Attention, les informations d'authentification générées n'apparaissent qu'une seule fois. Elles peuvent ensuite être stockées dans un gestionnaire de mot de passe, un service de stockage de secrets comme [Vault](https://datalab.sspcloud.fr/my-secrets), ou bien via la feature d'[options de projet](https://datalab.sspcloud.fr/project-settings) d'Onyxia qui permet d'importer le compte de service directement dans les services au moment de leur configuration.
+:::
+
+
