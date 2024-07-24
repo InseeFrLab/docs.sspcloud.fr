@@ -94,6 +94,44 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-discover-the-datalab" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Discover the Datalab</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-discover-the-datalab">    
+        <li>
+    <a class="dropdown-item" href="../content/principles.html">
+ <span class="dropdown-text">Principles</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../content/discover.html">
+ <span class="dropdown-text">First steps</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-use-the-datalab" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Use the Datalab</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-use-the-datalab">    
+        <li>
+    <a class="dropdown-item" href="../content/version-control.html">
+ <span class="dropdown-text">Version control</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../content/storage.html">
+ <span class="dropdown-text">Data storage</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../content/secrets.html">
+ <span class="dropdown-text">Managing secrets</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../content/services-configuration.html">
+ <span class="dropdown-text">Services configuration</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-découvrir-le-datalab" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Découvrir le Datalab</span>
     </a>
@@ -234,6 +272,86 @@ Caution
 <ul>
 <li>De façon général sur <a href="https://join.slack.com/t/3innovation/shared_invite/zt-1bo6y53oy-Y~zKzR2SRg37pq5oYgiPuA">le Slack Onyxia</a> dans le canal spécifique SSP Cloud. Toute question sur l’utilisation du SSP Cloud ou suggestion d’amélioration y sont les bienvenues.</li>
 <li>Sur un <a href="https://matrix.to/#/#SSPCloudXDpAw6v:agent.finances.tchap.gouv.fr">salon dédié</a> du service de messagerie instantanée interministériel de l’état Francais <a href="https://www.tchap.gouv.fr">Tchap</a> pour les agents publiques français.</li>
+</ul>
+</section>
+</section>
+<section id="first-use" class="level1">
+<h1>First Use</h1>
+<p>Welcome to the SSP Cloud, a shared self-service platform for data processing (“Datalab”), designed for statisticians and data scientists working for the European Statistical System. This tutorial provides a guided tour of the Datalab to quickly get you up and running with its services.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The terms of use for the SSP Cloud can be found at <a href="https://datalab.sspcloud.fr/terms">this address</a>. We remind you that the SSP Cloud is intended exclusively for the processing of <strong>public and non-sensitive data</strong>. Projects involving non-open data for experimentation can be carried out in consultation with the Onyxia team, subject to compliance with project-specific security rules.</p>
+</div>
+</div>
+<section id="service-catalog" class="level2">
+<h2 class="anchored" data-anchor-id="service-catalog">Service Catalog</h2>
+<p>The <a href="https://datalab.sspcloud.fr/catalog/inseefrlab-helm-charts-datascience">service catalog</a> is at the core of the SSP Cloud’s usage. It offers a set of services for statistical data processing and complete management of data science projects.</p>
+<p><img src="./img/catalog.png" class="img-fluid"></p>
+<section id="launching-a-service" class="level3">
+<h3 class="anchored" data-anchor-id="launching-a-service">Launching a Service</h3>
+<p>To launch a service, simply click on the <code>Launch</code> button of the desired service.</p>
+<p>A page centered on the requested service will then open, offering several options:</p>
+<ul>
+<li>Click again on the <code>Launch</code> button to start the service with its default configuration.</li>
+<li>Customize the name that the instance will have once the service is launched.</li>
+<li>Unfold a configuration menu to customize the service’s configuration before launching it.</li>
+<li>Save a customized configuration by clicking on the bookmark at the top right of the service.</li>
+</ul>
+<div class="callout-info">
+<p>The detailed configuration of services is an advanced usage and is not covered in this tutorial but in other pages of this documentation site.</p>
+</div>
+</section>
+<section id="using-a-service" class="level3">
+<h3 class="anchored" data-anchor-id="using-a-service">Using a Service</h3>
+<p>Launching a service automatically takes you to the <a href="https://datalab.sspcloud.fr/my-services">My Services</a> page, where all active instances on the user’s account are listed.</p>
+<p><img src="./img/services.png" class="img-fluid"></p>
+<p>Once the service is launched, an <code>Open</code> button appears, allowing access to the service. A password — and, depending on the services, a username — is generally required to use the service. This information is available in the service’s <code>README</code>, which can be accessed by clicking on the button of the same name.</p>
+</section>
+<section id="deleting-an-instance" class="level3">
+<h3 class="anchored" data-anchor-id="deleting-an-instance">Deleting an Instance</h3>
+<p>Deleting an instance of a service is done simply by clicking on the trash can icon below the instance.</p>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Caution
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>For some services, deleting an instance will also delete all associated data, and this action is irreversible. Therefore, it is essential to always read the <code>README</code> associated with the instance, which specifies the consequences of deleting the instance. In general, it is crucial to ensure that the data and code used are backed up before deleting the instance. Ideally, version your code with Git and regularly back up the data using MinIO (S3 storage system).</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Caution
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The resources made available for executing services are shared among different SSP Cloud users. Please make sure not to leave active services that you no longer use. We sometimes systematically remove inactive instances after a certain period to free up resources.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="support-1" class="level2">
+<h2 class="anchored" data-anchor-id="support-1">Support</h2>
+<p>Support and assistance for using the SSP Cloud are provided through two communication tools:</p>
+<ul>
+<li>Generally on <a href="https://join.slack.com/t/3innovation/shared_invite/zt-1bo6y53oy-Y~zKzR2SRg37pq5oYgiPuA">the Onyxia Slack</a> in the specific SSP Cloud channel. Any questions about using the SSP Cloud or suggestions for improvement are welcome there.</li>
+<li>In a <a href="https://matrix.to/#/#SSPCloudXDpAw6v:agent.finances.tchap.gouv.fr">dedicated room</a> of the French state inter-ministerial instant messaging service <a href="https://www.tchap.gouv.fr">Tchap</a> for French public agents.</li>
 </ul>
 
 
