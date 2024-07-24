@@ -2,15 +2,15 @@
 
 # Première utilisation
 
-Bienvenue sur le Datalab SSPCloud, plateforme libre service mutualisée de traitement de données, destinée aux statisticiens et _data scientists_ au sein du système statistique européens au delà. Ce tutoriel propose une visite guidée du Datalab pour être rapidement opérationnel dans l'utilisation de ses services.
+Bienvenue sur le SSP Cloud, plateforme mutualisée de traitement de données ("Datalab"), destinée aux statisticiens et _data scientists_ au sein du système statistique européens au delà. Ce tutoriel propose une visite guidée du Datalab pour être rapidement opérationnel dans l'utilisation de ses services.
 
 ::: {.callout-warning}
-Les conditions d'utilisation du Datalab sont consultables à [cette adresse](https://datalab.sspcloud.fr/terms). Nous rappelons que le Datalab est destiné exclusivement au traitement de **données publiques et non-sensibles**. Des projets d'expérimentation mobilisant des données non ouvertes peuvent être menés en concertation avec l'équipe du Datalab, sous réserve de se conformer aux règles de sécurité spécifiques au projet.
+Les conditions d'utilisation du SSP Cloud sont consultables à [cette adresse](https://datalab.sspcloud.fr/terms). Nous rappelons que le SSP Cloud est destiné exclusivement au traitement de **données publiques et non-sensibles**. Des projets d'expérimentation mobilisant des données non ouvertes peuvent être menés en concertation avec l'équipe du projet Onyxia, sous réserve de se conformer aux règles de sécurité spécifiques au projet.
 :::
 
 ## Le catalogue de services
 
-Le [catalogue de services](https://datalab.sspcloud.fr/catalog/ide) est au centre de l'utilisation du Datalab. Il propose un ensemble de services destinés aux traitements statistiques de données ainsi qu'à la gestion complète des projets de _data science_.
+Le [catalogue de services](https://datalab.sspcloud.fr/catalog/ide) est au centre de l'utilisation du SSP Cloud. Il propose un ensemble de services destinés aux traitements statistiques de données ainsi qu'à la gestion complète des projets de _data science_.
 
 ![](./img/catalog.png)
 
@@ -26,7 +26,7 @@ Une page centrée sur le service demandé s'ouvre alors, qui offre plusieurs pos
 * sauvegarder une configuration personnalisée en cliquant sur le signet en haut à droite du service.
 
 ::: {.callout-info}
-La configuration précise des services du Datalab constitue un usage avancé et n'est donc pas traité dans ce tutoriel, mais dans d'autres pages de ce site documentaire.
+La configuration précise des services du SSP Cloud constitue un usage avancé et n'est donc pas traité dans ce tutoriel, mais dans d'autres pages de ce site documentaire.
 :::
 
 ### Utiliser un service
@@ -46,14 +46,14 @@ Pour certains services, la suppression d'une instance entraîne la suppression d
 :::
 
 ::: {.callout-caution}
-Les ressources mises à disposition pour l'execution des services sont partagées entre les différents utilisateurs du Datalab. Veuillez à ne pas laisser en cours des services dont vous ne faites plus l'usage. Nous procédons parfois à une suppression systématique des instances inactives depuis un certain temps, afin de libérer des ressources.
+Les ressources mises à disposition pour l'execution des services sont partagées entre les différents utilisateurs du SSP Cloud. Veuillez à ne pas laisser en cours des services dont vous ne faites plus l'usage. Nous procédons parfois à une suppression systématique des instances inactives depuis un certain temps, afin de libérer des ressources.
 :::
 
 ## Support
 
-Le support et l'aide à l'utilisation du Datalab sont effectuées sur deux outils de communication :
+Le support et l'aide à l'utilisation du SSP Cloud sont effectuées sur deux outils de communication :
 
-* De façon général sur [le Slack Onyxia](https://join.slack.com/t/3innovation/shared_invite/zt-1bo6y53oy-Y~zKzR2SRg37pq5oYgiPuA) dans le canal spécifique SSPCloud. Toute question sur l'utilisation du Datalab ou suggestion d'amélioration y sont les bienvenues.
+* De façon général sur [le Slack Onyxia](https://join.slack.com/t/3innovation/shared_invite/zt-1bo6y53oy-Y~zKzR2SRg37pq5oYgiPuA) dans le canal spécifique SSP Cloud. Toute question sur l'utilisation du SSP Cloud ou suggestion d'amélioration y sont les bienvenues.
 * Sur un [salon dédié](https://matrix.to/#/#SSPCloudXDpAw6v:agent.finances.tchap.gouv.fr) du service de messagerie instantanée interministériel de l'état Francais [Tchap](https://www.tchap.gouv.fr) pour les agents publiques français.
 
 :::
@@ -68,15 +68,15 @@ Le support et l'aide à l'utilisation du Datalab sont effectuées sur deux outil
 
 # First Use
 
-Welcome to Onyxia Datalab, a shared self-service platform for data processing, designed for statisticians and data scientists working for the European Statistical System. This tutorial provides a guided tour of the Datalab to quickly get you up and running with its services.
+Welcome to the SSP Cloud, a shared self-service platform for data processing ("Datalab"), designed for statisticians and data scientists working for the European Statistical System. This tutorial provides a guided tour of the Datalab to quickly get you up and running with its services.
 
 ::: {.callout-warning} 
-The terms of use for Datalab can be found at [this address](https://datalab.sspcloud.fr/terms). We remind you that Datalab is intended exclusively for the processing of **public and non-sensitive data**. Projects involving non-open data for experimentation can be carried out in consultation with the Datalab team, subject to compliance with project-specific security rules. 
+The terms of use for the SSP Cloud can be found at [this address](https://datalab.sspcloud.fr/terms). We remind you that the SSP Cloud is intended exclusively for the processing of **public and non-sensitive data**. Projects involving non-open data for experimentation can be carried out in consultation with the Onyxia team, subject to compliance with project-specific security rules. 
 :::
 
 ## Service Catalog
 
-The [service catalog](https://datalab.sspcloud.fr/catalog/inseefrlab-helm-charts-datascience) is at the core of Datalab's usage. It offers a set of services for statistical data processing and complete management of data science projects.
+The [service catalog](https://datalab.sspcloud.fr/catalog/inseefrlab-helm-charts-datascience) is at the core of the SSP Cloud's usage. It offers a set of services for statistical data processing and complete management of data science projects.
 
 ![](./img/catalog.png)
 
@@ -92,7 +92,7 @@ A page centered on the requested service will then open, offering several option
 * Save a customized configuration by clicking on the bookmark at the top right of the service.
 
 ::: {.callout-info} 
-The detailed configuration of Datalab services is an advanced usage and is not covered in this tutorial but in other pages of this documentation site. 
+The detailed configuration of services is an advanced usage and is not covered in this tutorial but in other pages of this documentation site. 
 :::
 
 ### Using a Service
@@ -112,14 +112,14 @@ For some services, deleting an instance will also delete all associated data, an
 :::
 
 ::: {.callout-caution} 
-The resources made available for executing services are shared among different Datalab users. Please make sure not to leave active services that you no longer use. We sometimes systematically remove inactive instances after a certain period to free up resources. 
+The resources made available for executing services are shared among different SSP Cloud users. Please make sure not to leave active services that you no longer use. We sometimes systematically remove inactive instances after a certain period to free up resources. 
 :::
 
 ## Support
 
-Support and assistance for using the Datalab are provided through two communication tools:
+Support and assistance for using the SSP Cloud are provided through two communication tools:
 
-* Generally on [the Onyxia Slack](https://join.slack.com/t/3innovation/shared_invite/zt-1bo6y53oy-Y~zKzR2SRg37pq5oYgiPuA) in the specific SSPCloud channel. Any questions about using the Datalab or suggestions for improvement are welcome there.
+* Generally on [the Onyxia Slack](https://join.slack.com/t/3innovation/shared_invite/zt-1bo6y53oy-Y~zKzR2SRg37pq5oYgiPuA) in the specific SSP Cloud channel. Any questions about using the SSP Cloud or suggestions for improvement are welcome there.
 * In a [dedicated room](https://matrix.to/#/#SSPCloudXDpAw6v:agent.finances.tchap.gouv.fr) of the French state inter-ministerial instant messaging service [Tchap](https://www.tchap.gouv.fr) for French public agents.
 
 :::

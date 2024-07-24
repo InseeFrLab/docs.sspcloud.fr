@@ -10,7 +10,7 @@ Le projet Onyxia part du constat de difficultés communes rencontrées par les _
 * des infrastructures inadaptées, aussi bien en matière de ressources que de technologies, qui constituent un frein à l'innovation ;
 * une difficulté à passer de l'expérimentation à la mise en production, du fait de multiples séparations (séparation physique, langage de développement, modes de travail) entre les directions métier et la production informatique.
 
-Face à ce constat, le Datalab SSPCloud a été construit pour proposer une plateforme de mutualisation à plusieurs niveaux :
+Face à ce constat, le SSP Cloud a été construit pour proposer une plateforme de mutualisation à plusieurs niveaux :
 
 * partage d'une _infrastructure_ moderne, centrée autour du déploiement de services via des conteneurs, et dimensionnée pour les usages de _data science ;_
 * partage de _méthodes_, via une mutualisation des services de _data science_ proposés, auxquels chacun peut contribuer ;
@@ -19,7 +19,7 @@ Face à ce constat, le Datalab SSPCloud a été construit pour proposer une plat
 ::: {.callout-note}
 Onyxia, Datalab SSP Cloud : quelles différences ?
 
-[Onyxia ](https://github.com/InseeFrLab/onyxia.git)est un projet open-source qui propose une plateforme de services de _data science_, accessible via une application Web. Le [Datalab SSP Cloud ](https://datalab.sspcloud.fr/home)est une instance du projet Onyxia, hébergée à l'Insee.
+[Onyxia](https://github.com/InseeFrLab/onyxia.git) est un projet open-source qui propose une plateforme de services de _data science_, accessible via une application Web. Le [SSP Cloud](https://datalab.sspcloud.fr/home) est une instance du projet Onyxia, hébergée à l'Insee.
 :::
 
 ## Principes fondamentaux
@@ -74,7 +74,7 @@ The Onyxia project stems from the recognition of common difficulties faced by da
 * Inadequate infrastructures in terms of resources and technologies, which hinder innovation.
 * Difficulty transitioning from experimentation to production due to multiple separations (physical separation, development languages, work methods) between business units and IT production.
 
-In response to these challenges, Datalab SSPCloud was built to offer a collaborative platform at multiple levels:
+In response to these challenges, Datalab SSP Cloud was built to offer a collaborative platform at multiple levels:
 
 * Sharing a modern infrastructure centered around deploying services through containers, specifically designed for data science applications.
 * Sharing methods through the mutualization of data science services offered, to which everyone can contribute.
