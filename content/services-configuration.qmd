@@ -1,6 +1,6 @@
 ::: {.content-visible when-profile="fr"}
 
-# Configuration des services
+# Configuration des services (en construction)
 
 Après avoir cliqué sur "Nouveau service" > "RStudio/Jupyter-python/VScode-python" > "Lancer"
 

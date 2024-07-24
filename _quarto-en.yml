@@ -1,0 +1,19 @@
+website:
+  sidebar:
+    contents:
+      - section: "Discover the Datalab"
+        contents:
+          - text: "Principles"
+            href: content/principles.qmd
+          - text: "First steps"
+            href: content/discover.qmd
+      - section: "Use the Datalab"
+        contents:
+          - text: "Version control"
+            href: content/version-control.qmd
+          - text: "Data storage"
+            href: content/storage.qmd
+          - text: "Managing secrets"
+            href: content/secrets.qmd
+          - text: "Services configuration"
+            href: content/services-configuration.qmd

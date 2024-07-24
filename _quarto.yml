@@ -1,18 +1,19 @@
-profile:
-  default: fr
-
 project:
   type: website
   render:
-    - 'content/*.qmd'
+    - '*.qmd'
+
+profile:
+  group: [fr, en]
+  default: fr
 
 website:
   title: "SSP Cloud - Documentation"
   sidebar:
-    style: 'docked'
+    style: 'floating'
 
 format:
   html:
-    theme: 
-      - darkly
-      - styles.scss
+    theme:
+      dark: [darkly, _assets/scss/styles.scss]
+      light: flatly
