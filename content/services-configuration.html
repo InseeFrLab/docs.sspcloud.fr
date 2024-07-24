@@ -128,44 +128,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-discover-the-datalab" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Discover the Datalab</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-discover-the-datalab">    
-        <li>
-    <a class="dropdown-item" href="../content/principles.html">
- <span class="dropdown-text">Principles</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../content/discover.html">
- <span class="dropdown-text">First steps</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-use-the-datalab" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Use the Datalab</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-use-the-datalab">    
-        <li>
-    <a class="dropdown-item" href="../content/version-control.html">
- <span class="dropdown-text">Version control</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../content/storage.html">
- <span class="dropdown-text">Data storage</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../content/secrets.html">
- <span class="dropdown-text">Managing secrets</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../content/services-configuration.html">
- <span class="dropdown-text">Services configuration</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-découvrir-le-datalab" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Découvrir le Datalab</span>
     </a>
@@ -359,58 +321,13 @@ Warning
 <h3 class="anchored" data-anchor-id="vault">Vault</h3>
 <p>Pour apprendre à utiliser cet onglet, voir la <a href="../docs/fr/secrets.html">page dédiée</a>.</p>
 </section>
-</section>
-</section>
-<section id="service-configuration" class="level1">
-<h1>Service Configuration</h1>
-<p>After clicking on “New service” &gt; “RStudio/Jupyter-python/VScode-python” &gt; “Launch”</p>
-<section id="custom-name" class="level2">
-<h2 class="anchored" data-anchor-id="custom-name">Custom Name</h2>
-<p>To recognize the service and/or the configuration if saved by clicking on the bookmark symbol at the top right. If the name already exists among the saved configurations, saving will overwrite the old configuration.</p>
-<p>Convenient for distinguishing different services of the same type (RStudio, Jupyter…).</p>
-</section>
-<section id="share-the-service" class="level2">
-<h2 class="anchored" data-anchor-id="share-the-service">Share the Service</h2>
-<p>It is possible to share a service with a group of people by checking the “Share the service” box when opening the service. Other members of the group will see the service and can use it. Creating groups can be done by writing to administrators on Tchap (privately) or by email at <a href="mailto:innovation@insee.fr">innovation@insee.fr</a>, providing the group name, usernames of the members, and whether or not a associated storage space is needed on MinIO.</p>
-<div class="callout-info">
-<p>For occasional needs, it is also possible to share a service that you have created with another person. Simply provide them with the URL (e.g., <a href="https://user-aaaaaaaaaaaaaa-xxxxxxx-x.user.lab.sspcloud.fr/">https://user-aaaaaaaaaaaaaa-xxxxxxx-x.user.lab.sspcloud.fr/</a>) and the service password. The username remains <strong>Onyxia</strong>. Please note, it is recommended to change the service password during its launch (in the <em>Security</em> tab) to avoid any leaks. You should also uncheck <em>Enable IP protection</em> and <em>Enable network policy</em> in the <em>Security</em> tab. Only one person at a time can connect to an RStudio service.</p>
-</div>
-</section>
-<section id="s3-1" class="level2">
-<h2 class="anchored" data-anchor-id="s3-1">S3</h2>
-</section>
-<section id="kubernetes-1" class="level2">
-<h2 class="anchored" data-anchor-id="kubernetes-1">Kubernetes</h2>
-</section>
-<section id="init-1" class="level2">
-<h2 class="anchored" data-anchor-id="init-1">Init</h2>
-<section id="personalinit-1" class="level3">
-<h3 class="anchored" data-anchor-id="personalinit-1">PersonalInit</h3>
-<p>A link to a shell script (sequence of Linux commands) that is executed right after the service is launched. Convenient for automating the setup of certain configurations.</p>
-<p>This script link must be accessible on the internet, for example, on <a href="https://git.lab.sspcloud.fr/">https://git.lab.sspcloud.fr/</a> with a public project or on <a href="https://minio-console.lab.sspcloud.fr/">S3 storage</a> with a public file.</p>
-<p><a href="https://git.drees.fr/drees_code_public/ressources/tutos/-/blob/diffusion/contenu/init.sh">Example of an initialization script</a> that clones a project from a private Gitlab instance, configures global RStudio options, automatically opens the cloned RStudio project, installs and selects French spelling correction, and customizes code snippets (<em>snippets</em>).</p>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Warning
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>The script is executed as a superuser (<em>Root</em>), and the files it creates become the property of the superuser. This leads to errors when these files are called, for example, RStudio configuration files. To give normal user rights (named <em>onyxia</em>) to their personal folder</p>
-</div>
-</div>
-<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">chown</span> <span class="at">-R</span> <span class="va">${USERNAME}</span>:<span class="va">${GROUPNAME}</span> <span class="va">${HOME}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
 <section id="personalinitargs-1" class="level3">
 <h3 class="anchored" data-anchor-id="personalinitargs-1">PersonalInitArgs</h3>
 <p>Options to pass to the initialization script, separated by spaces and can be subsequently called with <code>$1</code>, <code>$2</code>, etc.</p>
 <p>For example, if you enter <code>file1.txt file2.txt</code> in the <em>PersonalInitArgs</em> field and use this initialization script:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">#!/bin/bash</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">touch</span> <span class="va">$1</span></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="fu">touch</span> <span class="va">$2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">#!/bin/bash</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">touch</span> <span class="va">$1</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">touch</span> <span class="va">$2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>The script will create two files, <code>file1.txt</code> and <code>file2.txt</code>, using the <code>touch</code> command.</p>
 </section>
 </section>
@@ -476,7 +393,7 @@ Warning
 <h3 class="anchored" data-anchor-id="repository-1">Repository</h3>
 <p>The URL obtained from the platform used (Gitlab, Github…) by clicking on “Clone” &gt; HTTPS.</p>
 <p>In the format:</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">https://github.com/InseeFrLab/docs.sspcloud.fr.git</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">https://github.com/InseeFrLab/docs.sspcloud.fr.git</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="service-1" class="level3">
 <h3 class="anchored" data-anchor-id="service-1">Service</h3>
@@ -734,7 +651,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/InseeFrLab\.github\.io\/docs\.sspcloud\.fr\/");
+      var filterRegex = new RegExp('/' + window.location.host + '/');
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }

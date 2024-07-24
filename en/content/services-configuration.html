@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>principles – docs.sspcloud.fr</title>
+<title>services-configuration – docs.sspcloud.fr</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -94,40 +128,40 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-découvrir-le-datalab" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Découvrir le Datalab</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-discover-the-datalab" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Discover the Datalab</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-découvrir-le-datalab">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-discover-the-datalab">    
         <li>
     <a class="dropdown-item" href="../content/principles.html">
- <span class="dropdown-text">Principes</span></a>
+ <span class="dropdown-text">Principles</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../content/discover.html">
- <span class="dropdown-text">Premiers pas</span></a>
+ <span class="dropdown-text">First steps</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-utiliser-le-datalab" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Utiliser le Datalab</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-use-the-datalab" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Use the Datalab</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-utiliser-le-datalab">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-use-the-datalab">    
         <li>
     <a class="dropdown-item" href="../content/version-control.html">
- <span class="dropdown-text">Contrôle de version</span></a>
+ <span class="dropdown-text">Version control</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../content/storage.html">
- <span class="dropdown-text">Stockage de données</span></a>
+ <span class="dropdown-text">Data storage</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../content/secrets.html">
- <span class="dropdown-text">Gestion des secrets</span></a>
+ <span class="dropdown-text">Managing secrets</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../content/services-configuration.html">
- <span class="dropdown-text">Configuration des services</span></a>
+ <span class="dropdown-text">Services configuration</span></a>
   </li>  
     </ul>
   </li>
@@ -157,79 +191,139 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="principes-du-datalab" class="level1">
-<h1>Principes du Datalab</h1>
-<section id="une-plateforme-de-mutualisation" class="level2">
-<h2 class="anchored" data-anchor-id="une-plateforme-de-mutualisation">Une plateforme de mutualisation</h2>
-<p>Le projet Onyxia part du constat de difficultés communes rencontrées par les <em>datascientists</em> du secteur public :</p>
-<ul>
-<li>des agents souvent isolés, du fait de la relative rareté des compétences <em>data</em> dans l’administration ;</li>
-<li>des infrastructures inadaptées, aussi bien en matière de ressources que de technologies, qui constituent un frein à l’innovation ;</li>
-<li>une difficulté à passer de l’expérimentation à la mise en production, du fait de multiples séparations (séparation physique, langage de développement, modes de travail) entre les directions métier et la production informatique.</li>
-</ul>
-<p>Face à ce constat, le SSP Cloud a été construit pour proposer une plateforme de mutualisation à plusieurs niveaux :</p>
-<ul>
-<li>partage d’une <em>infrastructure</em> moderne, centrée autour du déploiement de services via des conteneurs, et dimensionnée pour les usages de <em>data science ;</em></li>
-<li>partage de <em>méthodes</em>, via une mutualisation des services de <em>data science</em> proposés, auxquels chacun peut contribuer ;</li>
-<li>partage de <em>connaissances</em>, via des formations associées au Datalab ainsi que la constitution de commaunautés d’entraide centrées sur son utilisation.</li>
-</ul>
-<div class="callout callout-style-default callout-note callout-titled">
+<section id="service-configuration" class="level1">
+<h1>Service Configuration</h1>
+<p>After clicking on “New service” &gt; “RStudio/Jupyter-python/VScode-python” &gt; “Launch”</p>
+<section id="custom-name" class="level2">
+<h2 class="anchored" data-anchor-id="custom-name">Custom Name</h2>
+<p>To recognize the service and/or the configuration if saved by clicking on the bookmark symbol at the top right. If the name already exists among the saved configurations, saving will overwrite the old configuration.</p>
+<p>Convenient for distinguishing different services of the same type (RStudio, Jupyter…).</p>
+</section>
+<section id="share-the-service" class="level2">
+<h2 class="anchored" data-anchor-id="share-the-service">Share the Service</h2>
+<p>It is possible to share a service with a group of people by checking the “Share the service” box when opening the service. Other members of the group will see the service and can use it. Creating groups can be done by writing to administrators on Tchap (privately) or by email at <a href="mailto:innovation@insee.fr">innovation@insee.fr</a>, providing the group name, usernames of the members, and whether or not a associated storage space is needed on MinIO.</p>
+<div class="callout-info">
+<p>For occasional needs, it is also possible to share a service that you have created with another person. Simply provide them with the URL (e.g., <a href="https://user-aaaaaaaaaaaaaa-xxxxxxx-x.user.lab.sspcloud.fr/">https://user-aaaaaaaaaaaaaa-xxxxxxx-x.user.lab.sspcloud.fr/</a>) and the service password. The username remains <strong>Onyxia</strong>. Please note, it is recommended to change the service password during its launch (in the <em>Security</em> tab) to avoid any leaks. You should also uncheck <em>Enable IP protection</em> and <em>Enable network policy</em> in the <em>Security</em> tab. Only one person at a time can connect to an RStudio service.</p>
+</div>
+</section>
+<section id="s3-1" class="level2">
+<h2 class="anchored" data-anchor-id="s3-1">S3</h2>
+</section>
+<section id="kubernetes-1" class="level2">
+<h2 class="anchored" data-anchor-id="kubernetes-1">Kubernetes</h2>
+</section>
+<section id="init-1" class="level2">
+<h2 class="anchored" data-anchor-id="init-1">Init</h2>
+<section id="personalinit-1" class="level3">
+<h3 class="anchored" data-anchor-id="personalinit-1">PersonalInit</h3>
+<p>A link to a shell script (sequence of Linux commands) that is executed right after the service is launched. Convenient for automating the setup of certain configurations.</p>
+<p>This script link must be accessible on the internet, for example, on <a href="https://git.lab.sspcloud.fr/">https://git.lab.sspcloud.fr/</a> with a public project or on <a href="https://minio-console.lab.sspcloud.fr/">S3 storage</a> with a public file.</p>
+<p><a href="https://git.drees.fr/drees_code_public/ressources/tutos/-/blob/diffusion/contenu/init.sh">Example of an initialization script</a> that clones a project from a private Gitlab instance, configures global RStudio options, automatically opens the cloned RStudio project, installs and selects French spelling correction, and customizes code snippets (<em>snippets</em>).</p>
+<div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Note
+Warning
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Onyxia, Datalab SSP Cloud : quelles différences ?</p>
-<p><a href="https://github.com/InseeFrLab/onyxia.git">Onyxia</a> est un projet open-source qui propose une plateforme de services de <em>data science</em>, accessible via une application Web. Le <a href="https://datalab.sspcloud.fr/home">SSP Cloud</a> est une instance du projet Onyxia, hébergée à l’Insee.</p>
+<p>The script is executed as a superuser (<em>Root</em>), and the files it creates become the property of the superuser. This leads to errors when these files are called, for example, RStudio configuration files. To give normal user rights (named <em>onyxia</em>) to their personal folder</p>
 </div>
 </div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">chown</span> <span class="at">-R</span> <span class="va">${USERNAME}</span>:<span class="va">${GROUPNAME}</span> <span class="va">${HOME}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="principes-fondamentaux" class="level2">
-<h2 class="anchored" data-anchor-id="principes-fondamentaux">Principes fondamentaux</h2>
-<p>L’architecture du Datalab est basée sur un ensemble de principes fondamentaux :</p>
-<ul>
-<li>une production orientée <em>data science</em>, en proposant une infrastructure dimensionnée à la plupart des usages et un catalogue de services couvrant l’ensemble du cycle de vie des projets <em>data</em> ;</li>
-<li>des choix qui favorisent l’autonomie des usagers, en évitant tout enfermement propriétaire et en permettant l’accès aux couches basses de l’infrastructure pour couvrir les besoins avancés et spécifiques ;</li>
-<li>un projet 100% <em>cloud</em>-natif, mais également <em>cloud</em>-agnostique, permettant un déploiement simple sur n’importe quelle infrastructure ;</li>
-<li>un projet complètement open-source, à la fois du point de vue de ses briques constitutives que de sa diffusion (licence MIT).</li>
-</ul>
+<section id="personalinitargs-1" class="level3">
+<h3 class="anchored" data-anchor-id="personalinitargs-1">PersonalInitArgs</h3>
+<p>Options to pass to the initialization script, separated by spaces and can be subsequently called with <code>$1</code>, <code>$2</code>, etc.</p>
+<p>For example, if you enter <code>file1.txt file2.txt</code> in the <em>PersonalInitArgs</em> field and use this initialization script:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">#!/bin/bash</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">touch</span> <span class="va">$1</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">touch</span> <span class="va">$2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>The script will create two files, <code>file1.txt</code> and <code>file2.txt</code>, using the <code>touch</code> command.</p>
 </section>
-<section id="offre-de-services" class="level2">
-<h2 class="anchored" data-anchor-id="offre-de-services">Offre de services</h2>
-<p>Le Datalab est accessible via une <a href="https://datalab.sspcloud.fr/home">interface utilisateur</a> moderne et réactive, centrée sur l’expérience utilisateur. Celle-ci constitue le liant technique entre les différentes composantes d’Onyxia :</p>
-<ul>
-<li>des technologies open-source qui constituent l’état de l’art du déploiement et de l’orchestration de conteneurs, du stockage et de la sécurité ;</li>
-<li>un catalogue de services et d’outils pour accompagner les projets de <em>data science ;</em></li>
-<li>une plateforme de formation et de documentation pour faciliter l’<em>onboarding</em> sur les technologies proposées.</li>
-</ul>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="./img/components.png" class="img-fluid figure-img"></p>
-<figcaption>Briques fondamentales du Datalab Onyxia</figcaption>
-</figure>
-</div>
-<p>Le catalogue de services est pensé de manière à accomoder l’essentiel des usages des <em>data scientists</em>, du développement en <em>self-service</em> à la mise en production de traitements ou d’application. L’ensemble du cycle de vie d’un projet <em>data</em> est ainsi couvert, et le catalogue des services est régulièrement étendu pour répondre aux nouveaux besoins des utilisateurs.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="./img/catalog-high-level.png" class="img-fluid figure-img"></p>
-<figcaption>Un catalogue de services complet pour les projets de data science</figcaption>
-</figure>
-</div>
 </section>
-<section id="un-projet-ouvert" class="level2">
-<h2 class="anchored" data-anchor-id="un-projet-ouvert">Un projet ouvert</h2>
-<p>Le projet du Datalab Onyxia est résolument ouvert, à de multiples niveaux :</p>
-<ul>
-<li>le Datalab est accessible via son <a href="https://datalab.sspcloud.fr">interface Web</a> à tous les agents du service public (via <em>AgentConnect</em> ou une adresse mail en gouv.fr) ainsi qu’aux élèves des écoles de statistique liées à l’Insee (Cefil, Ensai, Ensae) ;</li>
-<li>le code source ouvert et la modularité du projet rendent possible le déploiement d’une instance Onyxia personnalisée sur n’importe quelle infrastructure basée sur un <em>cluster</em> Kubernetes ;</li>
-<li>le projet est ouvert aux contributions extérieures, qu’elles concernent le catalogue des services, l’interface graphique ou l’agencement des briques logicielles qui le constituent.</li>
-</ul>
+<section id="onyxia-1" class="level2">
+<h2 class="anchored" data-anchor-id="onyxia-1">Onyxia</h2>
+</section>
+<section id="resources-1" class="level2">
+<h2 class="anchored" data-anchor-id="resources-1">Resources</h2>
+</section>
+<section id="networking-1" class="level2">
+<h2 class="anchored" data-anchor-id="networking-1">Networking</h2>
+</section>
+<section id="security-1" class="level2">
+<h2 class="anchored" data-anchor-id="security-1">Security</h2>
+<section id="password-1" class="level3">
+<h3 class="anchored" data-anchor-id="password-1">Password</h3>
+<p>This is the password to enter when opening a service, which is provided by “Copy the password” on the service page. It is supplied by the general parameter “Password for your services,” which can be found in “My Account” &gt; “Account Information,” unless a specific one is defined at the service level.</p>
+</section>
+<section id="enable-ip-protection-1" class="level3">
+<h3 class="anchored" data-anchor-id="enable-ip-protection-1">Enable IP Protection</h3>
+<p>If checked, the service is only accessible from a single IP. Uncheck it if you wish to work from different locations.</p>
+</section>
+<section id="enable-network-policy-1" class="level3">
+<h3 class="anchored" data-anchor-id="enable-network-policy-1">Enable Network Policy</h3>
+</section>
+</section>
+<section id="git-1" class="level2">
+<h2 class="anchored" data-anchor-id="git-1">Git</h2>
+<p>To learn how to use this tab, see the <a href="../docs/en/version-control.html">dedicated page</a>.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>It is not possible to automatically clone a private project from a private instance (i.e., other than gitlab.com and github.com). To do so, you will need to use a shell script as indicated <a href="#init">here</a>.</p>
+</div>
+</div>
+<section id="enabled-1" class="level3">
+<h3 class="anchored" data-anchor-id="enabled-1">Enabled</h3>
+<p>If checked, configure Git and attempt a clone when the service starts.</p>
+</section>
+<section id="name-1" class="level3">
+<h3 class="anchored" data-anchor-id="name-1">Name</h3>
+<p>The name that will appear in the commits (not the Gitlab or Github account username).</p>
+</section>
+<section id="email-1" class="level3">
+<h3 class="anchored" data-anchor-id="email-1">Email</h3>
+<p>The email address that will appear in the commits (not necessarily the email associated with the Gitlab or Github account).</p>
+</section>
+<section id="cache-1" class="level3">
+<h3 class="anchored" data-anchor-id="cache-1">Cache</h3>
+</section>
+<section id="token-1" class="level3">
+<h3 class="anchored" data-anchor-id="token-1">Token</h3>
+<p>Access token defined on the platform used (Gitlab, Github…).</p>
+</section>
+<section id="repository-1" class="level3">
+<h3 class="anchored" data-anchor-id="repository-1">Repository</h3>
+<p>The URL obtained from the platform used (Gitlab, Github…) by clicking on “Clone” &gt; HTTPS.</p>
+<p>In the format:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">https://github.com/InseeFrLab/docs.sspcloud.fr.git</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="service-1" class="level3">
+<h3 class="anchored" data-anchor-id="service-1">Service</h3>
+</section>
+<section id="discovery-1" class="level3">
+<h3 class="anchored" data-anchor-id="discovery-1">Discovery</h3>
+</section>
+<section id="persistence-1" class="level3">
+<h3 class="anchored" data-anchor-id="persistence-1">Persistence</h3>
+</section>
+<section id="vault-1" class="level3">
+<h3 class="anchored" data-anchor-id="vault-1">Vault</h3>
+<p>To learn how to use this tab, see the <a href="../docs/en/secrets.html">dedicated page</a>.</p>
+<p>:::</p>
 
 
+</section>
 </section>
 </section>
 
