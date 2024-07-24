@@ -6,7 +6,7 @@ website:
           - text: "Principes"
             href: content/principles.qmd
           - text: "Premiers pas"
-            href: content/discover.qmd
+            href: index.qmd
       - text: "Utiliser le Datalab"
         menu:
           - text: "Contrôle de version"
