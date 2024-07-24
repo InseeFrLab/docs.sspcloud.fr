@@ -1,13 +1,24 @@
 project:
   type: website
-  render: 
-    - docs/**/*.qmd
+  render:
+    - '*.qmd'
+
+profile:
+  group: [fr, en]
+  default: fr
 
 website:
-  title: "SSP Cloud - Documentation"
+  title: "docs.sspcloud.fr"
+  favicon: assets/onyxia.svg
+  navbar:
+    title: "docs.sspcloud.fr"
+    logo: assets/onyxia.png
+    right:
+      - icon: github
+        href: https://github.com/InseeFrLab/docs.sspcloud.fr
 
 format:
   html:
-    theme: 
-      - darkly
-      - styles.scss
+    theme:
+      light: [flatly, assets/css/theme-light.scss]
+      dark: [darkly, assets/css/theme-dark.scss]

@@ -1,0 +1,19 @@
+website:
+  navbar:
+    left:
+      - text: "Découvrir le Datalab"
+        menu:
+          - text: "Principes"
+            href: content/principles.qmd
+          - text: "Premiers pas"
+            href: content/discover.qmd
+      - text: "Utiliser le Datalab"
+        menu:
+          - text: "Contrôle de version"
+            href: content/version-control.qmd
+          - text: "Stockage de données"
+            href: content/storage.qmd
+          - text: "Gestion des secrets"
+            href: content/secrets.qmd
+          - text: "Configuration des services"
+            href: content/services-configuration.qmd
