@@ -14,9 +14,16 @@ jobs:
         uses: actions/checkout@v4
       - name: Set up quarto
         uses: quarto-dev/quarto-actions/setup@v2
+      - name: Render FR version
+        uses: quarto-dev/quarto-actions/render@v2
+        env:
+          QUARTO_PROFILE: fr
+      - name: Render EN version
+        uses: quarto-dev/quarto-actions/render@v2
+        env:
+          QUARTO_PROFILE: en
       - name: Publish to GitHub Pages (and render)
         uses: quarto-dev/quarto-actions/publish@v2
-        env:
-          QUARTO_PROFILE: fr,en
         with:
+          render: false
           target: gh-pages
