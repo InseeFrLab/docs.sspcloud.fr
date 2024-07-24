@@ -1,3 +1,5 @@
+::: {.content-visible when-profile="fr"}
+
 # Première utilisation
 
 Bienvenue sur le Datalab SSPCloud, plateforme libre service mutualisée de traitement de données, destinée aux statisticiens et _data scientists_ au sein du système statistique européens au delà. Ce tutoriel propose une visite guidée du Datalab pour être rapidement opérationnel dans l'utilisation de ses services.
@@ -10,7 +12,7 @@ Les conditions d'utilisation du Datalab sont consultables à [cette adresse](htt
 
 Le [catalogue de services](https://datalab.sspcloud.fr/catalog/ide) est au centre de l'utilisation du Datalab. Il propose un ensemble de services destinés aux traitements statistiques de données ainsi qu'à la gestion complète des projets de _data science_.
 
-![](../img/catalog.png)
+![](./img/catalog.png)
 
 ### Lancer un service
 
@@ -31,7 +33,7 @@ La configuration précise des services du Datalab constitue un usage avancé et 
 
 L'action de lancer un service amène automatiquement sur la page [Mes Services](https://datalab.sspcloud.fr/my-services), où sont listées toutes les instances en activité sur le compte de l'utilisateur.
 
-![](../img/services.png)
+![](./img/services.png)
 
 Une fois le service lancé, un bouton `Ouvrir` apparaît qui permet l'accès au service. Un mot de passe — et, selon les services, un nom d'utilisateur — est généralement requis pour pouvoir utiliser le service. Ces informations sont disponibles dans le `README` associé au service, auquel on accède en cliquant sur le bouton du même nom.
 
@@ -53,3 +55,71 @@ Le support et l'aide à l'utilisation du Datalab sont effectuées sur deux outil
 
 * De façon général sur [le Slack Onyxia](https://join.slack.com/t/3innovation/shared_invite/zt-1bo6y53oy-Y~zKzR2SRg37pq5oYgiPuA) dans le canal spécifique SSPCloud. Toute question sur l'utilisation du Datalab ou suggestion d'amélioration y sont les bienvenues.
 * Sur un [salon dédié](https://matrix.to/#/#SSPCloudXDpAw6v:agent.finances.tchap.gouv.fr) du service de messagerie instantanée interministériel de l'état Francais [Tchap](https://www.tchap.gouv.fr) pour les agents publiques français.
+
+:::
+
+
+
+
+
+
+
+::: {.content-visible when-profile="en"}
+
+# First Use
+
+Welcome to Onyxia Datalab, a shared self-service platform for data processing, designed for statisticians and data scientists working for the European Statistical System. This tutorial provides a guided tour of the Datalab to quickly get you up and running with its services.
+
+::: {.callout-warning} 
+The terms of use for Datalab can be found at [this address](https://datalab.sspcloud.fr/terms). We remind you that Datalab is intended exclusively for the processing of **public and non-sensitive data**. Projects involving non-open data for experimentation can be carried out in consultation with the Datalab team, subject to compliance with project-specific security rules. 
+:::
+
+## Service Catalog
+
+The [service catalog](https://datalab.sspcloud.fr/catalog/inseefrlab-helm-charts-datascience) is at the core of Datalab's usage. It offers a set of services for statistical data processing and complete management of data science projects.
+
+![](./img/catalog.png)
+
+### Launching a Service
+
+To launch a service, simply click on the `Launch` button of the desired service.
+
+A page centered on the requested service will then open, offering several options:
+
+* Click again on the `Launch` button to start the service with its default configuration.
+* Customize the name that the instance will have once the service is launched.
+* Unfold a configuration menu to customize the service's configuration before launching it.
+* Save a customized configuration by clicking on the bookmark at the top right of the service.
+
+::: {.callout-info} 
+The detailed configuration of Datalab services is an advanced usage and is not covered in this tutorial but in other pages of this documentation site. 
+:::
+
+### Using a Service
+
+Launching a service automatically takes you to the [My Services](https://datalab.sspcloud.fr/my-services) page, where all active instances on the user's account are listed.
+
+![](./img/services.png)
+
+Once the service is launched, an `Open` button appears, allowing access to the service. A password — and, depending on the services, a username — is generally required to use the service. This information is available in the service's `README`, which can be accessed by clicking on the button of the same name.
+
+### Deleting an Instance
+
+Deleting an instance of a service is done simply by clicking on the trash can icon below the instance.
+
+::: {.callout-caution} 
+For some services, deleting an instance will also delete all associated data, and this action is irreversible. Therefore, it is essential to always read the `README` associated with the instance, which specifies the consequences of deleting the instance. In general, it is crucial to ensure that the data and code used are backed up before deleting the instance. Ideally, version your code with Git and regularly back up the data using MinIO (S3 storage system). 
+:::
+
+::: {.callout-caution} 
+The resources made available for executing services are shared among different Datalab users. Please make sure not to leave active services that you no longer use. We sometimes systematically remove inactive instances after a certain period to free up resources. 
+:::
+
+## Support
+
+Support and assistance for using the Datalab are provided through two communication tools:
+
+* Generally on [the Onyxia Slack](https://join.slack.com/t/3innovation/shared_invite/zt-1bo6y53oy-Y~zKzR2SRg37pq5oYgiPuA) in the specific SSPCloud channel. Any questions about using the Datalab or suggestions for improvement are welcome there.
+* In a [dedicated room](https://matrix.to/#/#SSPCloudXDpAw6v:agent.finances.tchap.gouv.fr) of the French state inter-ministerial instant messaging service [Tchap](https://www.tchap.gouv.fr) for French public agents.
+
+:::

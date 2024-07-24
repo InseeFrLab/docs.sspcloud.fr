@@ -1,10 +1,15 @@
+profile:
+  default: fr
+
 project:
   type: website
-  render: 
-    - docs/**/*.qmd
+  render:
+    - 'content/*.qmd'
 
 website:
   title: "SSP Cloud - Documentation"
+  sidebar:
+    style: 'docked'
 
 format:
   html:
