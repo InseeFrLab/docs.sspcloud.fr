@@ -8,12 +8,17 @@ profile:
   default: fr
 
 website:
-  title: "SSP Cloud - Documentation"
-  sidebar:
-    style: 'floating'
+  title: "docs.sspcloud.fr"
+  favicon: assets/onyxia.svg
+  navbar:
+    title: "docs.sspcloud.fr"
+    logo: assets/onyxia.png
+    right:
+      - icon: github
+        href: https://github.com/InseeFrLab/docs.sspcloud.fr
 
 format:
   html:
     theme:
-      dark: [darkly, _assets/scss/styles.scss]
-      light: flatly
+      light: [flatly, theme-light.scss]
+      dark: [darkly, theme-dark.scss]
