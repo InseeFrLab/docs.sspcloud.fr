@@ -1,14 +1,14 @@
 website:
-  sidebar:
-    contents:
-      - section: "Discover the Datalab"
-        contents:
+  navbar:
+    left:
+      - text: "Discover the Datalab"
+        menu:
           - text: "Principles"
             href: content/principles.qmd
           - text: "First steps"
             href: content/discover.qmd
-      - section: "Use the Datalab"
-        contents:
+      - text: "Use the Datalab"
+        menu:
           - text: "Version control"
             href: content/version-control.qmd
           - text: "Data storage"
