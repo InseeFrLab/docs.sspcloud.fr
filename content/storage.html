@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.55">
+<meta name="generator" content="quarto-1.5.57">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -233,8 +233,12 @@ Note
 </section>
 <section id="partager-des-données" class="level3">
 <h3 class="anchored" data-anchor-id="partager-des-données">Partager des données</h3>
-<p>En cliquant sur un fichier dans son <em>bucket</em> personnel, on accède à sa page de caractéristiques. Sur celle-ci, il est notamment possible de <strong>changer le statut de diffusion du fichier</strong>. Changer le statut du fichier de “privé” à “public” permet d’obtenir un <strong>lien de diffusion</strong>, qui peut alors être transmis pour téléchargement du fichier. Le statut “public” ne donne aux autres utilisateurs que des droits en lecture, la modification ou la suppression de fichiers personnels par d’autres utilisateurs est impossible.</p>
-<p>Pour simplifier la mise à disposition en lecture de plusieurs fichiers — dans le cadre d’une formation par exemple — il est possible de créer un <strong>dossier “diffusion”</strong> dans son <em>bucket</em> personnel. Par défaut, tous les fichiers présents dans ce dossier ont un statut de diffusion public.</p>
+<p>Pour partager un dossier ou un fichier, il est actuellement nécessaire d’interagir avec <strong>MinIO</strong> via un terminal. Cette approche vous permet de gérer précisément les permissions et d’accéder à des fonctionnalités avancées.</p>
+<p>Suivez ce tutoriel interactif pour apprendre comment mettre un dossier S3 en accès public :</p>
+<iframe src="https://app.tango.us/app/embed/90b131c8-ebff-4a71-904d-1b0bdf3e108b" style="min-height:640px" sandbox="allow-scripts allow-top-navigation-by-user-activation allow-popups allow-same-origin" security="restricted" title="Mettre un dossier S3 en public" width="100%" height="100%" referrerpolicy="strict-origin-when-cross-origin" frameborder="0" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" allowfullscreen="allowfullscreen">
+</iframe>
+<p>Dans le cadre d’une formation ou d’un projet nécessitant la mise à disposition de plusieurs fichiers en lecture seule, vous pouvez créer un <strong>dossier “diffusion”</strong> dans votre <em>bucket</em> personnel. Par défaut, tous les fichiers ajoutés à ce dossier seront accessibles publiquement.</p>
+<p>Pour des besoins plus spécifiques de contrôle d’accès, comme la gestion de droits d’accès anonymes ou restreints, consultez la <a href="https://min.io/docs/minio/linux/reference/minio-mc/mc-anonymous.html">documentation officielle de MinIO</a>.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
