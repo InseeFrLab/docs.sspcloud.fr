@@ -16,7 +16,8 @@ website:
     right:
       - icon: github
         href: https://github.com/InseeFrLab/docs.sspcloud.fr
-
+resources:
+  - CNAME
 format:
   html:
     theme:
