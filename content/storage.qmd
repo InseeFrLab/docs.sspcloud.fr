@@ -28,19 +28,23 @@ L'interface graphique du stockage de données sur le Datalab est encore en cours
 
 ### Partager des données
 
+Une politique de partage de données est en place pour les utilisateurs du **SSPCloud**. Tous les éléments présents dans un dossier nommé **diffusion** seront automatiquement accessibles en lecture seule à l'ensemble des utilisateurs du SSPCloud. 
 
-Pour partager un dossier ou un fichier, il est actuellement nécessaire d'interagir avec **MinIO** via un terminal. Cette approche vous permet de gérer précisément les permissions et d'accéder à des fonctionnalités avancées.
+Pour partager des données, il vous suffit de créer un dossier **diffusion** à la racine de votre bucket et d'y déposer les éléments que vous souhaitez rendre accessibles aux utilisateurs de la plateforme.
+
+Vous pouvez néamoins ajusté la politique de partage manuellement. Pour ce faire il est actuellement nécessaire d'interagir avec **MinIO** via un terminal. Cette approche vous permet de gérer précisément les permissions et d'accéder à des fonctionnalités avancées.
+
+En utilisant [MinIO Client](https://min.io/docs/minio/linux/reference/minio-mc.html), vous pouvez rendre un dossier public avec la commande suivante :
+
+```bash
+mc anonymous set download s3/<votre nom d'utilisateur>/<le dossier que vous voulez rendre publique>
+```
+Cette commande permet d’accorder des droits de téléchargement publics pour le dossier spécifié.
+
+Pour des besoins plus spécifiques de contrôle d'accès, comme la gestion de droits d'accès anonymes ou restreints, consultez la [documentation officielle de MinIO Client](https://min.io/docs/minio/linux/reference/minio-mc/mc-anonymous.html). 
 
 
-Suivez ce tutoriel interactif pour apprendre comment mettre un dossier S3 en accès public :
-
-<iframe src="https://app.tango.us/app/embed/90b131c8-ebff-4a71-904d-1b0bdf3e108b" style="min-height:640px" sandbox="allow-scripts allow-top-navigation-by-user-activation allow-popups allow-same-origin" security="restricted" title="Mettre un dossier S3 en public" width="100%" height="100%" referrerpolicy="strict-origin-when-cross-origin" frameborder="0" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" allowfullscreen="allowfullscreen"></iframe>
-
-
-Dans le cadre d'une formation ou d'un projet nécessitant la mise à disposition de plusieurs fichiers en lecture seule, vous pouvez créer un **dossier "diffusion"** dans votre _bucket_ personnel. Par défaut, tous les fichiers ajoutés à ce dossier seront accessibles publiquement.
-
-
-Pour des besoins plus spécifiques de contrôle d'accès, comme la gestion de droits d'accès anonymes ou restreints, consultez la [documentation officielle de MinIO](https://min.io/docs/minio/linux/reference/minio-mc/mc-anonymous.html).
+Un tutoriel interactif expliquant comment utiliser VSCode au sein du datalab pour partager un dossier S3 est disponible [ici](https://app.tango.us/app/workflow/Mettre-un-dossier-S3-en-publique-90b131c8ebff4a71904d1b0bdf3e108b)
 
 ::: {.callout-note}
 Dans le cadre de projets collaboratifs, il peut être intéressant pour les différents participants d'avoir accès à un espace de stockage commun. Il est possible pour cet usage de créer des _buckets_ partagés sur MinIO. N'hésitez pas à nous contacter via les canaux précisés sur la page "[Première utilisation](discover.qmd)" si vous souhaitez porter des projets _open-data_ sur le Datalab.
