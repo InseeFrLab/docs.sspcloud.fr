@@ -28,30 +28,36 @@ L'interface graphique du stockage de données sur le Datalab est encore en cours
 
 ### Partager des données
 
-Une politique de partage de données est en place pour les utilisateurs du **SSPCloud**. Tous les éléments présents dans un dossier nommé **diffusion** seront automatiquement accessibles en lecture seule à l'ensemble des utilisateurs du SSPCloud. 
+La politique de contrôle d'accès au stockage S3 **interdit par défaut** l'accès aux buckets des autres utilisateurs du SSPCloud,
+**à l'exception du dossier `diffusion`** directement à la racine de chaque bucket qui est accessible en lecture seule à l'ensemble des utilisateurs.
 
-Pour partager des données, il vous suffit de créer un dossier **diffusion** à la racine de votre bucket et d'y déposer les éléments que vous souhaitez rendre accessibles aux utilisateurs de la plateforme.
+Pour partager des données, il vous suffit ainsi de créer un dossier `diffusion` directement à la racine de votre bucket personnel
+et d'y déposer les éléments que vous souhaitez rendre accessibles aux autres utilisateurs de la plateforme.
 
-Vous pouvez néamoins ajusté la politique de partage manuellement. Pour ce faire il est actuellement nécessaire d'interagir avec **MinIO** via un terminal. Cette approche vous permet de gérer précisément les permissions et d'accéder à des fonctionnalités avancées.
+Il est également possible de configurer manuellement la politique de partage afin d'ajuster plus finement les permissions.
+Pour ce faire il est actuellement nécessaire d'interagir avec **MinIO** via un terminal qui vous permet d'accéder à des fonctionnalités avancées.
 
-En utilisant [MinIO Client](https://min.io/docs/minio/linux/reference/minio-mc.html), vous pouvez rendre un dossier public avec la commande suivante :
-
+En utilisant [MinIO Client](https://min.io/docs/minio/linux/reference/minio-mc.html), vous pouvez rendre un dossier publiquement accessible avec la commande suivante :
 ```bash
 mc anonymous set download s3/<votre nom d'utilisateur>/<le dossier que vous voulez rendre publique>
 ```
 Cette commande permet d’accorder des droits de téléchargement publics pour le dossier spécifié.
 
-Pour des besoins plus spécifiques de contrôle d'accès, comme la gestion de droits d'accès anonymes ou restreints, consultez la [documentation officielle de MinIO Client](https://min.io/docs/minio/linux/reference/minio-mc/mc-anonymous.html). 
+Pour des besoins plus spécifiques de contrôle d'accès, comme la gestion de droits d'accès anonymes ou restreints,
+consultez la [documentation officielle de MinIO Client](https://min.io/docs/minio/linux/reference/minio-mc/mc-anonymous.html).
 
-
-Un tutoriel interactif expliquant comment utiliser VSCode au sein du datalab pour partager un dossier S3 est disponible [ici](https://app.tango.us/app/workflow/Mettre-un-dossier-S3-en-publique-90b131c8ebff4a71904d1b0bdf3e108b)
+Un tutoriel interactif expliquant comment utiliser VSCode au sein du datalab pour partager un dossier S3
+est disponible [ici](https://app.tango.us/app/workflow/Mettre-un-dossier-S3-en-publique-90b131c8ebff4a71904d1b0bdf3e108b)
 
 ::: {.callout-note}
-Dans le cadre de projets collaboratifs, il peut être intéressant pour les différents participants d'avoir accès à un espace de stockage commun. Il est possible pour cet usage de créer des _buckets_ partagés sur MinIO. N'hésitez pas à nous contacter via les canaux précisés sur la page "[Première utilisation](discover.qmd)" si vous souhaitez porter des projets _open-data_ sur le Datalab.
+Dans le cadre de projets collaboratifs, il peut être intéressant pour les différents participants d'avoir accès à un espace de stockage commun.
+Il est possible pour cet usage de créer des _buckets_ partagés sur MinIO.
+N'hésitez pas à nous contacter via les canaux précisés sur la page "[Première utilisation](discover.qmd)" si vous souhaitez porter des projets _open-data_ sur le Datalab.
 :::
 
 ::: {.callout-warning}
-Conformément aux [conditions d'utilisation](https://www.sspcloud.fr/tos\_fr.md), seuls des données de type _open data_ ou ne présentant aucune sensibilité peuvent être stockées sur le Datalab. Le fait qu'un fichier ait un statut de diffusion "privé" ne suffit pas à garantir une parfaite confidentialité.
+Conformément aux [conditions d'utilisation](https://datalab.sspcloud.fr/custom-resources/tos\_en.md), seules des données de type _open data_ ou ne présentant aucune sensibilité peuvent être stockées sur le Datalab.
+Le fait qu'un fichier ait un statut de diffusion "privé" ne suffit pas à garantir sa confidentialité.
 :::
 
 ## Utiliser des données stockées sur MinIO
@@ -132,7 +138,7 @@ mc ls s3/donnees-insee
 BUCKET <- "donnees-insee"
 FILE_KEY_S3 <- "diffusion/BPE/2019/BPE_ENS.csv"
 
-df <- 
+df <-
   aws.s3::s3read_using(
     FUN = readr::read_delim,
     # Mettre les options de FUN ici
@@ -225,7 +231,7 @@ L'accès au stockage MinIO est possible via un _token_ (jeton d'accès) personne
 ### Créer un compte de service
 
 Pour des raisons de sécurité, l'authentification à MinIO utilisée par défault dans les services interactifs du SSP Cloud repose un sur jeton d'accès temporaire.
-Dans le cadre de projets impliquant des traitements périodiques ou le déploiement d'applications, on peut avoir besoin d'un accès plus pérenne à des données sur MinIO. 
+Dans le cadre de projets impliquant des traitements périodiques ou le déploiement d'applications, on peut avoir besoin d'un accès plus pérenne à des données sur MinIO.
 
 Dans ce cas, on utilise un compte de service, c'est à dire un compte qui est rattaché à un certain projet ou une certaine application plutôt qu'à une personne. En termes techniques, au lieu de s'authentifier à MinIO via un triplet (access key id, secret access key et session token), on va utiliser un couple (access key id, secret access key) qui donne des permissions en lecture/écriture à un certain bucket de projet.
 
@@ -285,7 +291,7 @@ en remplaçant `<access-key>` et `<secret-access-key>` par des noms de votre cho
 gpg --gen-random --armor 1 16
 ```
 
-- Vous pouvez désormais utiliser l'access-key et la secret-access-key pour authentifier les services / applications au bucket spécifié. 
+- Vous pouvez désormais utiliser l'access-key et la secret-access-key pour authentifier les services / applications au bucket spécifié.
 
 :::
 
@@ -328,22 +334,32 @@ Each user has a personal bucket by default to store their files. Within this buc
 * "**Create a directory**": Creates a directory in the current bucket/directory hierarchically, similar to a traditional file system.
 * "**Upload a file**": Uploads one or multiple files to the current directory.
 
-::: {.callout-note} 
-The graphical interface for data storage in Datalab is still under construction. As such, it may experience responsiveness issues. For frequent operations on file storage, it may be preferable to interact with MinIO via the terminal. 
+::: {.callout-note}
+The graphical interface for data storage in Datalab is still under construction. As such, it may experience responsiveness issues. For frequent operations on file storage, it may be preferable to interact with MinIO via the terminal.
 :::
 
 ### Sharing data
 
-By clicking on a file in their personal bucket, the user can access its characteristics page. On this page, it is possible to **change the distribution status of the file**. Changing the status of the file from "private" to "public" generates a **distribution link**, which can then be shared for downloading the file. The "public" status only grants read rights to other users, and modifying or deleting other users' personal files is not possible.
+The default access policy of the S3 storage **forbids all access** to a bucket by any third party users of the **SSPCLoud**.
+The **only exception** is the `diffusion` folder located directly at the root of each bucket for which other users have read-only access by default.
 
-To simplify the sharing of multiple files for, say, a training session, it is possible to create a **"distribution" folder** in the user's personal bucket. By default, all files present in this folder have a public distribution status.
+Therefore a straightforward way to share files for, say, a training session, is to create a `diffusion` folder in the user's personal bucket
+and use it to store all resources meant to be shared with other users of the plateform.
 
-::: {.callout-note} 
-For collaborative projects, it can be beneficial for different participants to have access to a shared storage space. It is possible to create shared buckets on MinIO for this purpose. Feel free to contact us via the channels specified on the "[First Use](discover.qmd)" page if you wish to work on open data projects on Datalab. 
+By clicking on a file in their personal bucket, the user can access its characteristics page.
+On this page, it is also possible to **manually change the diffusion status of the file**.
+Changing the status of the file from "private" to "public" generates a **diffusion link**, which can then be shared for downloading the file.
+The "public" status only grants read-only access rights to other users, and modifying or deleting other users' personal files is not possible.
+
+::: {.callout-note}
+For collaborative projects, it can be beneficial for different participants to have access to a shared storage space.
+It is possible to create shared buckets on MinIO for this purpose.
+Feel free to contact us via the channels specified on the "[First Use](discover.qmd)" page if you wish to work on open data projects on the SSPCloud Datalab.
 :::
 
-::: {.callout-warning} 
-In accordance with the [terms of use](https://www.sspcloud.fr/tos_fr.md), only *open data*\-type or non-sensitive data can be stored on Datalab. Having a file with a "private" distribution status does not guarantee perfect confidentiality. 
+::: {.callout-warning}
+In accordance with the [terms of use](https://datalab.sspcloud.fr/custom-resources/tos\_fr.md), only non-sensitive data (e.g. *open data*) may be stored on the SSPCloud Datalab.
+Setting a file's diffusion status to "private" does not guarantee its confidentiality.
 :::
 
 ## Using data stored on MinIO
@@ -424,7 +440,7 @@ mc ls s3/donnees-insee
 BUCKET <- "donnees-insee"
 FILE_KEY_S3 <- "diffusion/BPE/2019/BPE_ENS.csv"
 
-df <- 
+df <-
   aws.s3::s3read_using(
     FUN = readr::read_delim,
     # Put FUN options here
@@ -458,8 +474,8 @@ To copy data from a MinIO bucket to the local service:
 mc cp s3/donnees-insee/diffusion/BPE/2019/BPE_ENS.csv ./BPE_ENS.csv
 ```
 
-::: {.callout-warning} 
-**Copying files to the local service is generally not a good practice**: it limits the reproducibility of analyses and becomes quickly impossible with large volumes of data. Therefore, it is preferable to get into the habit of importing data directly into `R`/`Python`. 
+::: {.callout-warning}
+**Copying files to the local service is generally not a good practice**: it limits the reproducibility of analyses and becomes quickly impossible with large volumes of data. Therefore, it is preferable to get into the habit of importing data directly into `R`/`Python`.
 :::
 
 :::
