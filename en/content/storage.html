@@ -233,8 +233,9 @@ Note
 </section>
 <section id="sharing-data" class="level3">
 <h3 class="anchored" data-anchor-id="sharing-data">Sharing data</h3>
-<p>By clicking on a file in their personal bucket, the user can access its characteristics page. On this page, it is possible to <strong>change the distribution status of the file</strong>. Changing the status of the file from “private” to “public” generates a <strong>distribution link</strong>, which can then be shared for downloading the file. The “public” status only grants read rights to other users, and modifying or deleting other users’ personal files is not possible.</p>
-<p>To simplify the sharing of multiple files for, say, a training session, it is possible to create a <strong>“distribution” folder</strong> in the user’s personal bucket. By default, all files present in this folder have a public distribution status.</p>
+<p>The default access policy of the S3 storage <strong>forbids all access</strong> to a bucket by any third party users of the <strong>SSPCLoud</strong>. The <strong>only exception</strong> is the <code>diffusion</code> folder located directly at the root of each bucket for which other users have read-only access by default.</p>
+<p>Therefore a straightforward way to share files for, say, a training session, is to create a <code>diffusion</code> folder in the user’s personal bucket and use it to store all resources meant to be shared with other users of the plateform.</p>
+<p>By clicking on a file in their personal bucket, the user can access its characteristics page. On this page, it is also possible to <strong>manually change the diffusion status of the file</strong>. Changing the status of the file from “private” to “public” generates a <strong>diffusion link</strong>, which can then be shared for downloading the file. The “public” status only grants read-only access rights to other users, and modifying or deleting other users’ personal files is not possible.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -245,7 +246,7 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>For collaborative projects, it can be beneficial for different participants to have access to a shared storage space. It is possible to create shared buckets on MinIO for this purpose. Feel free to contact us via the channels specified on the “<a href="discover.qmd">First Use</a>” page if you wish to work on open data projects on Datalab.</p>
+<p>For collaborative projects, it can be beneficial for different participants to have access to a shared storage space. It is possible to create shared buckets on MinIO for this purpose. Feel free to contact us via the channels specified on the “<a href="discover.qmd">First Use</a>” page if you wish to work on open data projects on the SSPCloud Datalab.</p>
 </div>
 </div>
 <div class="callout callout-style-default callout-warning callout-titled">
@@ -258,7 +259,7 @@ Warning
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>In accordance with the <a href="https://www.sspcloud.fr/tos_fr.md">terms of use</a>, only <em>open data</em>-type or non-sensitive data can be stored on Datalab. Having a file with a “private” distribution status does not guarantee perfect confidentiality.</p>
+<p>In accordance with the <a href="https://datalab.sspcloud.fr/custom-resources/tos_fr.md">terms of use</a>, only non-sensitive data (e.g.&nbsp;<em>open data</em>) may be stored on the SSPCloud Datalab. Setting a file’s diffusion status to “private” does not guarantee its confidentiality.</p>
 </div>
 </div>
 </section>
@@ -323,7 +324,7 @@ Warning
 <div class="sourceCode" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>BUCKET <span class="ot">&lt;-</span> <span class="st">"donnees-insee"</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>FILE_KEY_S3 <span class="ot">&lt;-</span> <span class="st">"diffusion/BPE/2019/BPE_ENS.csv"</span></span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> </span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span></span>
 <span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>  aws.s3<span class="sc">::</span><span class="fu">s3read_using</span>(</span>
 <span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">FUN =</span> readr<span class="sc">::</span>read_delim,</span>
 <span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Put FUN options here</span></span>

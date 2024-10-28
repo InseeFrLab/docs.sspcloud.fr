@@ -233,10 +233,10 @@ Note
 </section>
 <section id="partager-des-données" class="level3">
 <h3 class="anchored" data-anchor-id="partager-des-données">Partager des données</h3>
-<p>Une politique de partage de données est en place pour les utilisateurs du <strong>SSPCloud</strong>. Tous les éléments présents dans un dossier nommé <strong>diffusion</strong> seront automatiquement accessibles en lecture seule à l’ensemble des utilisateurs du SSPCloud.</p>
-<p>Pour partager des données, il vous suffit de créer un dossier <strong>diffusion</strong> à la racine de votre bucket et d’y déposer les éléments que vous souhaitez rendre accessibles aux utilisateurs de la plateforme.</p>
-<p>Vous pouvez néamoins ajusté la politique de partage manuellement. Pour ce faire il est actuellement nécessaire d’interagir avec <strong>MinIO</strong> via un terminal. Cette approche vous permet de gérer précisément les permissions et d’accéder à des fonctionnalités avancées.</p>
-<p>En utilisant <a href="https://min.io/docs/minio/linux/reference/minio-mc.html">MinIO Client</a>, vous pouvez rendre un dossier public avec la commande suivante :</p>
+<p>La politique de contrôle d’accès au stockage S3 <strong>interdit par défaut</strong> l’accès aux buckets des autres utilisateurs du SSPCloud, <strong>à l’exception du dossier <code>diffusion</code></strong> directement à la racine de chaque bucket qui est accessible en lecture seule à l’ensemble des utilisateurs.</p>
+<p>Pour partager des données, il vous suffit ainsi de créer un dossier <code>diffusion</code> directement à la racine de votre bucket personnel et d’y déposer les éléments que vous souhaitez rendre accessibles aux autres utilisateurs de la plateforme.</p>
+<p>Il est également possible de configurer manuellement la politique de partage afin d’ajuster plus finement les permissions. Pour ce faire il est actuellement nécessaire d’interagir avec <strong>MinIO</strong> via un terminal qui vous permet d’accéder à des fonctionnalités avancées.</p>
+<p>En utilisant <a href="https://min.io/docs/minio/linux/reference/minio-mc.html">MinIO Client</a>, vous pouvez rendre un dossier publiquement accessible avec la commande suivante :</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">mc</span> anonymous set download s3/<span class="op">&lt;</span>votre nom d<span class="st">'utilisateur&gt;/&lt;le dossier que vous voulez rendre publique&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Cette commande permet d’accorder des droits de téléchargement publics pour le dossier spécifié.</p>
 <p>Pour des besoins plus spécifiques de contrôle d’accès, comme la gestion de droits d’accès anonymes ou restreints, consultez la <a href="https://min.io/docs/minio/linux/reference/minio-mc/mc-anonymous.html">documentation officielle de MinIO Client</a>.</p>
@@ -264,7 +264,7 @@ Warning
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Conformément aux <a href="https://www.sspcloud.fr/tos_fr.md">conditions d’utilisation</a>, seuls des données de type <em>open data</em> ou ne présentant aucune sensibilité peuvent être stockées sur le Datalab. Le fait qu’un fichier ait un statut de diffusion “privé” ne suffit pas à garantir une parfaite confidentialité.</p>
+<p>Conformément aux <a href="https://datalab.sspcloud.fr/custom-resources/tos_en.md">conditions d’utilisation</a>, seules des données de type <em>open data</em> ou ne présentant aucune sensibilité peuvent être stockées sur le Datalab. Le fait qu’un fichier ait un statut de diffusion “privé” ne suffit pas à garantir sa confidentialité.</p>
 </div>
 </div>
 </section>
@@ -329,7 +329,7 @@ Warning
 <div class="sourceCode" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>BUCKET <span class="ot">&lt;-</span> <span class="st">"donnees-insee"</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>FILE_KEY_S3 <span class="ot">&lt;-</span> <span class="st">"diffusion/BPE/2019/BPE_ENS.csv"</span></span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> </span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span></span>
 <span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>  aws.s3<span class="sc">::</span><span class="fu">s3read_using</span>(</span>
 <span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">FUN =</span> readr<span class="sc">::</span>read_delim,</span>
 <span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Mettre les options de FUN ici</span></span>
