@@ -17,3 +17,13 @@ website:
             href: content/secrets.qmd
           - text: "Configuration des services"
             href: content/services-configuration.qmd
+      - text: "Créer un tuto"
+        menu:
+        - text: "Introduction"
+          href: content/tutorials/introduction.qmd
+        - text: "Choisir un support"
+          href: content/tutorials/choose-materials.qmd
+        - text: "Structurer le cours"
+          href: content/tutorials/course-structure.qmd
+        - text: "Configurer l'environnement"
+          href: content/tutorials/set-up-environment.qmd
