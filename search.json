@@ -21,6 +21,34 @@
     "text": "Le support et l’aide à l’utilisation du SSP Cloud sont effectuées sur deux outils de communication :\n\nSur le Slack Onyxia dans le canal dédié #sspcloud. Toute question sur l’utilisation du SSP Cloud ou suggestion d’amélioration y sont les bienvenues.\nSur un salon dédié du service de messagerie instantanée interministériel de l’état Francais Tchap pour les agents publiques français."
   },
   {
+    "objectID": "content/tutorials/set-up-environment.html",
+    "href": "content/tutorials/set-up-environment.html",
+    "title": "docs.sspcloud.fr",
+    "section": "",
+    "text": "Vous pouvez toutefois vous référez à la version anglaise"
+  },
+  {
+    "objectID": "content/tutorials/set-up-environment.html#travail-en-cours",
+    "href": "content/tutorials/set-up-environment.html#travail-en-cours",
+    "title": "docs.sspcloud.fr",
+    "section": "",
+    "text": "Vous pouvez toutefois vous référez à la version anglaise"
+  },
+  {
+    "objectID": "content/tutorials/course-structure.html",
+    "href": "content/tutorials/course-structure.html",
+    "title": "docs.sspcloud.fr",
+    "section": "",
+    "text": "Vous pouvez toutefois vous référez à la version anglaise"
+  },
+  {
+    "objectID": "content/tutorials/course-structure.html#travail-en-cours",
+    "href": "content/tutorials/course-structure.html#travail-en-cours",
+    "title": "docs.sspcloud.fr",
+    "section": "",
+    "text": "Vous pouvez toutefois vous référez à la version anglaise"
+  },
+  {
     "objectID": "content/storage.html",
     "href": "content/storage.html",
     "title": "Stockage de données",
@@ -159,6 +187,34 @@
     "title": "Configuration des services (en construction)",
     "section": "",
     "text": "To learn how to use this tab, see the dedicated page.\n\n\n\n\n\n\nWarning\n\n\n\nIt is not possible to automatically clone a private project from a private instance (i.e., other than gitlab.com and github.com). To do so, you will need to use a shell script as indicated here.\n\n\n\n\nIf checked, configure Git and attempt a clone when the service starts.\n\n\n\nThe name that will appear in the commits (not the Gitlab or Github account username).\n\n\n\nThe email address that will appear in the commits (not necessarily the email associated with the Gitlab or Github account).\n\n\n\n\n\n\nAccess token defined on the platform used (Gitlab, Github…).\n\n\n\nThe URL obtained from the platform used (Gitlab, Github…) by clicking on “Clone” &gt; HTTPS.\nIn the format:\nhttps://github.com/InseeFrLab/docs.sspcloud.fr.git\n\n\n\n\n\n\n\n\n\n\n\n\nTo learn how to use this tab, see the dedicated page.\n:::"
+  },
+  {
+    "objectID": "content/tutorials/choose-materials.html",
+    "href": "content/tutorials/choose-materials.html",
+    "title": "docs.sspcloud.fr",
+    "section": "",
+    "text": "Vous pouvez toutefois vous référez à la version anglaise"
+  },
+  {
+    "objectID": "content/tutorials/choose-materials.html#travail-en-cours",
+    "href": "content/tutorials/choose-materials.html#travail-en-cours",
+    "title": "docs.sspcloud.fr",
+    "section": "",
+    "text": "Vous pouvez toutefois vous référez à la version anglaise"
+  },
+  {
+    "objectID": "content/tutorials/introduction.html",
+    "href": "content/tutorials/introduction.html",
+    "title": "docs.sspcloud.fr",
+    "section": "",
+    "text": "Vous pouvez toutefois vous référez à la version anglaise"
+  },
+  {
+    "objectID": "content/tutorials/introduction.html#travail-en-cours",
+    "href": "content/tutorials/introduction.html#travail-en-cours",
+    "title": "docs.sspcloud.fr",
+    "section": "",
+    "text": "Vous pouvez toutefois vous référez à la version anglaise"
   },
   {
     "objectID": "content/version-control.html",
