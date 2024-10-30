@@ -20,3 +20,13 @@ website:
             href: content/secrets.qmd
           - text: "Services configuration"
             href: content/services-configuration.qmd
+      - text: "Create a tutorial"
+        menu: 
+        - text: "Introduction"
+          href: content/tutorials/introduction.qmd
+        - text: "Choose a material"
+          href: content/tutorials/choose-materials.qmd
+        - text: "Course structure"
+          href: content/tutorials/course-structure.qmd
+        - text: "Set up an environment"
+          href: content/tutorials/set-up-environment.qmd
