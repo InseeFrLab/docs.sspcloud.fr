@@ -1,6 +1,6 @@
 ::: {.content-visible when-profile="fr"}
 
-## 🚧 Travail en cours 🚧
+# 🚧 Travail en cours 🚧
 
 Vous pouvez toutefois [vous référez à la version anglaise](https://docs.sspcloud.fr/en/content/tutorials/course-structure.html)
 
@@ -9,7 +9,7 @@ Vous pouvez toutefois [vous référez à la version anglaise](https://docs.sspcl
 
 ::: {.content-visible when-profile="en"}
 
-## How to Structure an Effective Training Course with SSP Cloud notebooks
+# How to Structure an Effective Training Course with SSP Cloud notebooks
 
 1. **Clear Objectives**: 👨‍🎓 Start with clear learning objectives. For example, a Python basics course could focus on data types, control structures, and basic data manipulation using libraries like Pandas.
 
