@@ -38,7 +38,8 @@ Pratique pour automatiser la mise en place de certaines configurations.
 
 Ce lien du script doit être accessible sur internet, par exemple sur [https://git.lab.sspcloud.fr/](https://git.lab.sspcloud.fr/) avec un projet public ou sur le [stockage S3](https://minio-console.lab.sspcloud.fr/) avec un fichier public.
 
-[Exemple de script d'initialisation](https://git.drees.fr/drees_code_public/ressources/tutos/-/blob/diffusion/contenu/init.sh) qui clone un projet à partir d'une instance Gitlab privée, configure les options globales de RStudio, ouvre automatiquement le projet RStudio cloné, installe et sélectionne la correction orthographique française, personnalise les bribes de codes (*snippets*).
+[Exemple de script d'initialisation](https://git.drees.fr/drees_code_public/ressources/tutos/-/blob/diffusion/contenu/init.sh) qui clone un projet à partir d'une instance Gitlab privée, configure les options globales de RStudio, ouvre automatiquement le projet RStudio cloné, installe et sélectionne la correction orthographique française, personnalise les bribes de codes (*snippets*).  
+Vous pouvez également trouver un ensemble de scripts d'initialisation sur [notre repo github dédié](https://github.com/InseeFrLab/sspcloud-init-scripts/).  
 
 ::: {.callout-warning} 
 Le script est exécuté en tant que superutilisateur (*Root*) et les fichiers qu'il crée sont ainsi la propriété du superutilisateur.
@@ -169,7 +170,9 @@ A link to a shell script (sequence of Linux commands) that is executed right aft
 
 This script link must be accessible on the internet, for example, on [https://git.lab.sspcloud.fr/](https://git.lab.sspcloud.fr/) with a public project or on [S3 storage](https://minio-console.lab.sspcloud.fr/) with a public file.
 
-[Example of an initialization script](https://git.drees.fr/drees_code_public/ressources/tutos/-/blob/diffusion/contenu/init.sh) that clones a project from a private Gitlab instance, configures global RStudio options, automatically opens the cloned RStudio project, installs and selects French spelling correction, and customizes code snippets (*snippets*).
+[Example of an initialization script](https://git.drees.fr/drees_code_public/ressources/tutos/-/blob/diffusion/contenu/init.sh) that clones a project from a private Gitlab instance, configures global RStudio options, automatically opens the cloned RStudio project, installs and selects French spelling correction, and customizes code snippets (*snippets*).  
+You can also find some initialization scripts on [our dedicated repo on github](https://github.com/InseeFrLab/sspcloud-init-scripts/). 
+ 
 
 ::: {.callout-warning} 
 The script is executed as a superuser (*Root*), and the files it creates become the property of the superuser. This leads to errors when these files are called, for example, RStudio configuration files. To give normal user rights (named *onyxia*) to their personal folder
