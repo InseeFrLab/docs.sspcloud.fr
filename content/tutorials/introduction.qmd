@@ -34,7 +34,8 @@ SSP Cloud allows users to deploy cloud-based workspaces easily, without the hass
 
 3. **Scalability**: SSP Cloud can scale with your needs, offering powerful computing resources for large datasets or compute-intensive tasks. This allows it to support a wide range of training types, from beginner-level Python tutorials to advanced machine learning workflows.
 
-:::
+
 ::: {.callout-warning}
 SSPCloud does not provide formal service level agreements (SLAs) or guarantees regarding service availability. This means that users should be prepared for potential service interruptions or downtimes.
+:::
 :::
