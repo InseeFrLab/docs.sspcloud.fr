@@ -10,7 +10,9 @@ Dans ce qui suit, nous comparerons différents environnements interactifs en fon
 
 🐍 En Python, les notebooks Jupyter, également disponibles dans VSCode, s'imposent comme le choix incontournable. Avec le support des médias riches, des widgets et de nombreuses extensions, ils permettent d'intégrer des graphiques interactifs, des tableaux de données et même des formulaires pour les exercices.
 
-![Jupyter](../img/jupyter.png)
+![Exemple avec jupyter](../img/jupyter.png)
+
+![Exemple avec vscode](../img/vscode.png)
 
 ## Utilisation de R
 
@@ -19,6 +21,8 @@ Dans ce qui suit, nous comparerons différents environnements interactifs en fon
 Dans l'ensemble, bien que LearnR offre un environnement interactif pour R adapté aux exercices simples, les notebooks R Markdown offrent une solution plus robuste, flexible et largement utilisée. Pour R, les sessions interactives locales ou R Markdown traditionnel sont souvent plus pratiques pour des formations complètes.
 
 C'est pourquoi, pour des supports de formation sophistiqués nécessitant une progression fluide et une gestion de l'état, les notebooks restent le choix privilégié pour les tutoriels en Python ou en R.
+
+![Exemple avec rstudio](../img/rstudio.png)
 
 :::
 
@@ -36,7 +40,9 @@ In the following, we'll compare different interactive environments according to 
 
 🐍 In python, Jupyter Notebooks, also available in Vscode, stand out as the go-to choice. With support for rich media, widgets, and numerous extensions, it allows the integration of interactive graphs, data tables, and even forms for exercises.
 
-![Jupyter](../img/jupyter.png)
+![Exemple with jupyter](../img/jupyter.png)
+
+![Exemple with vscode](../img/vscode.png)
 
 ## Using R 
 
@@ -45,6 +51,7 @@ In the following, we'll compare different interactive environments according to 
 Overall, while learnR provides an interactive environment for R that’s suitable for simple exercises, Rmarkdown Notebooks offer a more robust, flexible, and widely-used solution. For R, traditional R Markdown or local interactive sessions are often more practical for comprehensive training sessions. 
 This is why, for sophisticated training materials that require smooth progression and state management, notebooks remains the preferred choice for Python or R tutorials.
 
+![Exemple with rstudio](../img/rstudio.png)
 
 ::: {.callout-warning}
 Here will lie some explanation on how to deploy a static site using quarto and CI to automate its deployment. It may be moved to another tab.
