@@ -12,9 +12,10 @@ SSP Cloud permet aux utilisateurs de déployer facilement des espaces de travail
 
 3. **Évolutivité** : SSP Cloud peut évoluer en fonction de vos besoins, offrant des ressources informatiques puissantes pour les grands jeux de données ou les tâches intensives en calcul. Cela lui permet de prendre en charge un large éventail de formations, des tutoriels Python pour débutants aux workflows avancés de machine learning.
 
-:::
+
 ::: {.callout-warning}
 SSPCloud ne fournit pas d’accords de niveau de service (SLA) formels ni de garanties concernant la disponibilité du service. Cela signifie que les utilisateurs doivent être prêts à faire face à des interruptions ou des pannes de service potentielles.
+:::
 :::
 
 
