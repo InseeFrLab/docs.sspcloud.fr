@@ -10,7 +10,7 @@ Dans ce qui suit, nous comparerons différents environnements interactifs en fon
 
 🐍 En Python, les notebooks Jupyter, également disponibles dans VSCode, s'imposent comme le choix incontournable. Avec le support des médias riches, des widgets et de nombreuses extensions, ils permettent d'intégrer des graphiques interactifs, des tableaux de données et même des formulaires pour les exercices.
 
-![Jupyter](./img/jupyter.png)
+![Jupyter](../img/jupyter.png)
 
 ## Utilisation de R
 
@@ -36,7 +36,7 @@ In the following, we'll compare different interactive environments according to 
 
 🐍 In python, Jupyter Notebooks, also available in Vscode, stand out as the go-to choice. With support for rich media, widgets, and numerous extensions, it allows the integration of interactive graphs, data tables, and even forms for exercises.
 
-![Jupyter](./img/jupyter.png)
+![Jupyter](../img/jupyter.png)
 
 ## Using R 
 
