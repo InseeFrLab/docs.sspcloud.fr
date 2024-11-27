@@ -29,7 +29,7 @@ Vous pouvez toutefois [vous référez à la version anglaise](https://docs.sspcl
 
 5. **Interactive Exercises**: Include exercises at the end of each module. Encourage learners to modify the code, test different inputs, and debug any errors they encounter.
 
-You can display solutions for exercises in two ways: either by creating separate files - one for exercises and another one for solutions - or by embedding the solution directly within the course using the following snippet of code:
+Tip : :bulb: You can use the following HTML snippet within the notebook to hide the solution. These tags create collapsible sections that the user can expand or hide by clicking on them.
 
 ```markdown
 <details>
