@@ -282,7 +282,7 @@ mc ls s3/<nom_utilisateur>
 - Dans un terminal, générer le compte de service avec la commande suivante :
 
 ```bash
-mc admin user svcacct add s3 $AWS_ACCESS_KEY_ID --access-key="<access-key>" --secret-key="<secret-access-key>" --policy="policy.json"
+mc admin accesskey create s3 $AWS_ACCESS_KEY_ID --access-key="<access-key>" --secret-key="<secret-access-key>" --policy="policy.json"
 ```
 
 en remplaçant `<access-key>` et `<secret-access-key>` par des noms de votre choix. Idéalement, on donnera un nom simple comme access-key (ex : `sa-projet-nomduprojet`) mais une clé complexe comme secret-access-key, générable par exemple avec le client `gpg` :
@@ -583,7 +583,7 @@ mc ls s3/<username>
 - In a terminal, generate the service account with the following command:
 
 ```bash
-mc admin user svcacct add s3 $AWS_ACCESS_KEY_ID --access-key="<access-key>" --secret-key="<secret-key>" --policy="policy.json"
+mc admin accesskey create s3 $AWS_ACCESS_KEY_ID --access-key="<access-key>" --secret-key="<secret-access-key>" --policy="policy.json"
 ```
 
 replacing `<access-key>` and `<secret-key>` with names of your choice. Ideally, give a simple name for the access key (e.g., `sa-project-projectname`) but a complex key for the secret access key, which can be generated, for example, with the `gpg` client:
