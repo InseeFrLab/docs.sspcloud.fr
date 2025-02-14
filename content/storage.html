@@ -74,8 +74,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-8ea72dc5fed832574809a9c94082fbbb.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-bba33fea3fafcbbeb54eec4175281139.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-b47be58601eb7da0f14d5ad336bbe864.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-40f8fe8df88be55b4df6c82d17e550f4.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-8746d145817776bcb86e4d1a43ced806.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -479,7 +479,7 @@ Warning
 <ul>
 <li>Dans un terminal, générer le compte de service avec la commande suivante :</li>
 </ul>
-<div class="sourceCode" id="cb15"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="ex">mc</span> admin user svcacct add s3 <span class="va">$AWS_ACCESS_KEY_ID</span> <span class="at">--access-key</span><span class="op">=</span><span class="st">"&lt;access-key&gt;"</span> <span class="at">--secret-key</span><span class="op">=</span><span class="st">"&lt;secret-access-key&gt;"</span> <span class="at">--policy</span><span class="op">=</span><span class="st">"policy.json"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb15"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="ex">mc</span> admin accesskey create s3 <span class="va">$AWS_ACCESS_KEY_ID</span> <span class="at">--access-key</span><span class="op">=</span><span class="st">"&lt;access-key&gt;"</span> <span class="at">--secret-key</span><span class="op">=</span><span class="st">"&lt;secret-access-key&gt;"</span> <span class="at">--policy</span><span class="op">=</span><span class="st">"policy.json"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>en remplaçant <code>&lt;access-key&gt;</code> et <code>&lt;secret-access-key&gt;</code> par des noms de votre choix. Idéalement, on donnera un nom simple comme access-key (ex : <code>sa-projet-nomduprojet</code>) mais une clé complexe comme secret-access-key, générable par exemple avec le client <code>gpg</code> :</p>
 <div class="sourceCode" id="cb16"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="ex">gpg</span> <span class="at">--gen-random</span> <span class="at">--armor</span> 1 16</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ul>
