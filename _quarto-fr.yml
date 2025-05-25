@@ -34,4 +34,4 @@ website:
         - text: "Utilisez le tchat"
           href: content/llm/tchat.qmd
         - text: "Utilsez l'api"
-          href: content/llm/api.md
+          href: content/llm/api.qmd

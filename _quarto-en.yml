@@ -37,4 +37,4 @@ website:
         - text: "Use chatbot"
           href: content/llm/tchat.qmd
         - text: "Use the api"
-          href: content/llm/api.md
+          href: content/llm/api.qmd
