@@ -105,6 +105,41 @@
     "text": "Secrets Management\n\nEnvironment Variables\nSometimes, certain pieces of information need to be made available to a large number of applications, or they should not be directly embedded in your code (access tokens, passwords, etc.). The use of environment variables allows accessing this information from any service.\nWhen a service is launched, several environment variables are automatically injected—such as access tokens for GitHub and MinIO.\n\n\n\nCreation and Management of Secrets\nOn the platform, environment variables are treated as secrets stored in Vault (the Datalab’s safe) and are encrypted. This enables you to store tokens, credentials, and passwords securely. The My Secrets page is designed like a file explorer, allowing you to sort and organize your variables into folders.\n\nGetting Started:\n\nCreate a new folder with + New folder.\nThen, within this folder, create a new secret with + New secret.\nOpen your secret.\n\n\nEach secret can contain multiple variables, consisting of key-value pairs.\n\n+ Add a variable\n\n\n\n\n\n\n\n\nNote\n\n\n\nThe keys (variable names) always begin with $ and contain only letters, numbers, and the underscore character (_). By convention, keys are written in UPPERCASE.\n\n\nFill in the name of the key and its value.\n\n\n\nConverting Secrets into Environment Variables\nOnce your secret is edited, along with its different variables, you are ready to use it in your service.\n\nCopy the secret’s path by clicking on the Use in a service button.\nThen, during the configuration of your service, go to the Vault tab and paste the secret’s path in the dedicated field.\n\n\n\nCreate and open your service.\n\nTo verify that your environment variables have been successfully created, you can run the following commands in the service terminal:\n# List all available environment variables\nenv\n\n# Display the value of an environment variable\necho $MY_VARIABLE\n\n# Find all environment variables containing a given pattern\nenv | grep -i \"&lt;PATTERN&gt;\""
   },
   {
+    "objectID": "content/llm/tchat.html",
+    "href": "content/llm/tchat.html",
+    "title": "How to use this service ?",
+    "section": "",
+    "text": "How to use this service ?\nThe easiest way to use the service is to utilize the chat interface provided by OpenWebUI. Simply log in to the service at https://llm.lab.sspcloud.fr using the platform’s SSO authentication, and then start a new conversation by selecting the desired model."
+  },
+  {
+    "objectID": "content/llm/api.html",
+    "href": "content/llm/api.html",
+    "title": "Using LLMs Programmatically",
+    "section": "",
+    "text": "To use Large Language Models (LLM) programmatically, it is necessary to generate an API key. This key will allow you to authenticate your requests and access the features offered by the service.\n\nConnecting to the Platform :\n\nAccess the SSP Cloud platform via your browser.\nLog in with your SSO credentials.\n\nGenerating the API Key :\n\nOnce logged in, go to the section dedicated to API key management.\nClick on your name, then on “Settings” and then on “Account”.\nA dedicated section allows you to generate an API key.\n\nSecuring the Key :\n\nYou will be able to access your key at any time.\nDo not share it publicly to avoid unauthorized access.\n\n\n\n\n\nThe API provided by OpenWebUI allows you to interact with LLMs programmatically. Here are some key points to understand and use this API.\n\n\nAn OpenAI interface is available: - Base Endpoint : https://llm.lab.sspcloud.fr/api - Authentication : All requests must include your API key in the Authorization header.\nA proxy to the Ollama interface is also available: - Base Endpoint : https://llm.lab.sspcloud.fr/ollama - Authentication : All requests must include your API key in the Authorization header.\n\n\n\n\n\n\nWarning\n\n\n\nOllama programmable clients rarely have the capability to add an API key. This proxy is therefore difficult to use."
+  },
+  {
+    "objectID": "content/llm/api.html#generating-an-api-key",
+    "href": "content/llm/api.html#generating-an-api-key",
+    "title": "Using LLMs Programmatically",
+    "section": "",
+    "text": "To use Large Language Models (LLM) programmatically, it is necessary to generate an API key. This key will allow you to authenticate your requests and access the features offered by the service.\n\nConnecting to the Platform :\n\nAccess the SSP Cloud platform via your browser.\nLog in with your SSO credentials.\n\nGenerating the API Key :\n\nOnce logged in, go to the section dedicated to API key management.\nClick on your name, then on “Settings” and then on “Account”.\nA dedicated section allows you to generate an API key.\n\nSecuring the Key :\n\nYou will be able to access your key at any time.\nDo not share it publicly to avoid unauthorized access."
+  },
+  {
+    "objectID": "content/llm/api.html#understanding-the-api-provided-by-openwebui",
+    "href": "content/llm/api.html#understanding-the-api-provided-by-openwebui",
+    "title": "Using LLMs Programmatically",
+    "section": "",
+    "text": "The API provided by OpenWebUI allows you to interact with LLMs programmatically. Here are some key points to understand and use this API.\n\n\nAn OpenAI interface is available: - Base Endpoint : https://llm.lab.sspcloud.fr/api - Authentication : All requests must include your API key in the Authorization header.\nA proxy to the Ollama interface is also available: - Base Endpoint : https://llm.lab.sspcloud.fr/ollama - Authentication : All requests must include your API key in the Authorization header.\n\n\n\n\n\n\nWarning\n\n\n\nOllama programmable clients rarely have the capability to add an API key. This proxy is therefore difficult to use."
+  },
+  {
+    "objectID": "content/llm/introduction.html",
+    "href": "content/llm/introduction.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "Introduction\nSSP Cloud is a data processing platform dedicated to experimenting with data science methods using open data. It offers a shared environment for users to launch, customize, and manage various services autonomously. Among the available services, the on-demand provisioning of Large Language Models (LLM) represents a significant advancement. These models enable the automation of complex tasks, accelerate information access, and optimize business processes. LLMs facilitate interactions through natural language processing, thus offering solutions tailored to users’ specific needs. By integrating these technologies, SSP Cloud positions itself as a key lever to improve training and prototyping in the field of artificial intelligence.\n\n\nWhy use SSP Cloud for Training?\nThe service for providing Large Language Models (LLM) on demand in the SSP Cloud is based on an innovative and modular architecture. At the heart of this architecture is an instance of OpenWebUI, which serves as an open and flexible user interface. This OpenWebUI instance interacts directly with Ollama, an advanced platform for managing and deploying language models. Thanks to this configuration, users can easily access, customize, and deploy LLM models according to their specific needs. The list of available models is managed by the platform administrators and is likely to evolve over time to meet new requirements and technological advancements.\n\n\n\n\n\n\nWarning\n\n\n\nSSPCloud does not provide formal service level agreements (SLAs) or guarantees regarding service availability. This means that users should be prepared for potential service interruptions or downtimes."
+  },
+  {
     "objectID": "content/principles.html",
     "href": "content/principles.html",
     "title": "Principles of Datalab",
