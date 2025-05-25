@@ -30,3 +30,11 @@ website:
           href: content/tutorials/course-structure.qmd
         - text: "Set up an environment"
           href: content/tutorials/set-up-environment.qmd
+      - text: "LLM as a service"
+        menu:
+        - text: "Introduction"
+          href: content/llm/introduction.qmd
+        - text: "Use chatbot"
+          href: content/llm/tchat.qmd
+        - text: "Use the api"
+          href: content/llm/api.md

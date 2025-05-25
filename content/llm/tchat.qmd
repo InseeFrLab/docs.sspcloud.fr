@@ -1,0 +1,15 @@
+::: {.content-visible when-profile="fr"}
+
+# Comment utilisez le service ?
+La manière la plus simple d'utiliser le service est d'utiliser l'interface de chat proposée par OpenWebUI. Il suffit de se connecter au service via https://llm.lab.sspcloud.fr en utilisant l'authentification SSO de la plateforme, puis de démarrer une nouvelle conversation en sélectionnant le modèle souhaité.
+
+:::
+
+
+
+::: {.content-visible when-profile="en"}
+
+# How to use this service ?
+The easiest way to use the service is to utilize the chat interface provided by OpenWebUI. Simply log in to the service at https://llm.lab.sspcloud.fr using the platform's SSO authentication, and then start a new conversation by selecting the desired model.
+
+:::

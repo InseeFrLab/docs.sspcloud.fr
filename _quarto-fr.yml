@@ -27,3 +27,11 @@ website:
           href: content/tutorials/course-structure.qmd
         - text: "Configurer l'environnement"
           href: content/tutorials/set-up-environment.qmd
+      - text: "LLM à la demande"
+        menu:
+        - text: "Introduction"
+          href: content/llm/introduction.qmd
+        - text: "Utilisez le tchat"
+          href: content/llm/tchat.qmd
+        - text: "Utilsez l'api"
+          href: content/llm/api.md
