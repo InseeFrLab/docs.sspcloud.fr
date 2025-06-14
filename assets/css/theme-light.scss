@@ -1,9 +1,20 @@
 /*-- scss:defaults --*/
 
-$link-color: #db4a32;
+$link-color: #3b82f6;
+$light-blue: #e3eefb;
+$font-black: #2c323f;
 
 /* css styles */
 
 .navbar {
     background-color: transparent !important;
-  }
+    color: $link-color;
+}
+
+.navbar a {
+    color: $font-black;
+}
+
+.navbar a:hover {
+    color: $link-color;
+}
