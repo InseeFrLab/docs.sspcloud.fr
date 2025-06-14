@@ -1,10 +1,23 @@
 /*-- scss:defaults --*/
+// Base document colors
+$body-bg: #181818;
+$body-color: #ccc;
+$link-color: #75AADB;
 
-$body-bg: #181c1f;
-$link-color: #db4a32;
+// Code blocks
+$code-block-bg-alpha: -.9;
 
 /* css styles */
 
-.navbar {
-    background-color: transparent !important;
-  }
+.navbar a {
+    color: white;
+}
+
+.navbar a:hover {
+    color: $link-color;
+}
+
+code {
+  background-color: transparent !important;
+  color: $link-color !important;
+}

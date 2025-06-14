@@ -20,6 +20,9 @@ resources:
   - CNAME
 format:
   html:
+    respect-user-color-scheme: true
     theme:
-      light: [flatly, assets/css/theme-light.scss]
-      dark: [darkly, assets/css/theme-dark.scss]
+      light: [cosmo, assets/css/theme-light.scss]
+      dark: [cosmo, assets/css/theme-dark.scss]
+
+toc: true
