@@ -77,9 +77,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-8dce0c40f2d28b28da136a1c337455c5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-0d468f875053c9f6c8231d9266964bb5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-8dce0c40f2d28b28da136a1c337455c5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-22a5108df202e5a8319b22a7f1408d4d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-2f8eff420be849534293fcdfd92b543d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-22a5108df202e5a8319b22a7f1408d4d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -111,7 +111,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </head>
 
-<body class="nav-fixed fullcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -254,7 +254,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       }
     };
     const authorPrefersDark = false;
-    const darkModeDefault = authorPrefersDark;
+    const queryPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+    const darkModeDefault = queryPrefersDark.matches;
       document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
       document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
     let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
@@ -267,6 +268,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       toggleGiscusIfUsed(toAlternate, darkModeDefault);
       window.dispatchEvent(new Event('resize'));
     };
+    queryPrefersDark.addEventListener("change", e => {
+      if(window.localStorage.getItem("quarto-color-scheme") !== null)
+        return;
+      const alternate = e.matches
+      toggleColorMode(alternate);
+      localAlternateSentinel = e.matches ? 'alternate' : 'default'; // this is used alongside local storage!
+      toggleGiscusIfUsed(alternate, darkModeDefault);
+    });
     // Switch to dark mode if need be
     if (hasAlternateSentinel()) {
       toggleColorMode(true);
@@ -392,7 +401,71 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#configuration-des-services-en-construction" id="toc-configuration-des-services-en-construction" class="nav-link active" data-scroll-target="#configuration-des-services-en-construction">Configuration des services (en construction)</a>
+  <ul class="collapse">
+  <li><a href="#nom-personnalisé" id="toc-nom-personnalisé" class="nav-link" data-scroll-target="#nom-personnalisé">Nom personnalisé</a></li>
+  <li><a href="#partager-le-service" id="toc-partager-le-service" class="nav-link" data-scroll-target="#partager-le-service">Partager le service</a></li>
+  <li><a href="#s3" id="toc-s3" class="nav-link" data-scroll-target="#s3">S3</a></li>
+  <li><a href="#kubernetes" id="toc-kubernetes" class="nav-link" data-scroll-target="#kubernetes">Kubernetes</a></li>
+  <li><a href="#init" id="toc-init" class="nav-link" data-scroll-target="#init">Init</a>
+  <ul class="collapse">
+  <li><a href="#personalinit" id="toc-personalinit" class="nav-link" data-scroll-target="#personalinit">PersonalInit</a></li>
+  <li><a href="#personalinitargs" id="toc-personalinitargs" class="nav-link" data-scroll-target="#personalinitargs">PersonalInitArgs</a></li>
+  </ul></li>
+  <li><a href="#onyxia" id="toc-onyxia" class="nav-link" data-scroll-target="#onyxia">Onyxia</a></li>
+  <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources">Resources</a></li>
+  <li><a href="#networking" id="toc-networking" class="nav-link" data-scroll-target="#networking">Networking</a></li>
+  <li><a href="#security" id="toc-security" class="nav-link" data-scroll-target="#security">Security</a>
+  <ul class="collapse">
+  <li><a href="#password" id="toc-password" class="nav-link" data-scroll-target="#password">Password</a></li>
+  <li><a href="#enable-ip-protection" id="toc-enable-ip-protection" class="nav-link" data-scroll-target="#enable-ip-protection">Enable IP protection</a></li>
+  <li><a href="#enable-network-policy" id="toc-enable-network-policy" class="nav-link" data-scroll-target="#enable-network-policy">Enable network policy</a></li>
+  </ul></li>
+  <li><a href="#git" id="toc-git" class="nav-link" data-scroll-target="#git">Git</a>
+  <ul class="collapse">
+  <li><a href="#enabled" id="toc-enabled" class="nav-link" data-scroll-target="#enabled">Enabled</a></li>
+  <li><a href="#name" id="toc-name" class="nav-link" data-scroll-target="#name">Name</a></li>
+  <li><a href="#email" id="toc-email" class="nav-link" data-scroll-target="#email">Email</a></li>
+  <li><a href="#cache" id="toc-cache" class="nav-link" data-scroll-target="#cache">Cache</a></li>
+  <li><a href="#token" id="toc-token" class="nav-link" data-scroll-target="#token">Token</a></li>
+  <li><a href="#repository" id="toc-repository" class="nav-link" data-scroll-target="#repository">Repository</a></li>
+  <li><a href="#service" id="toc-service" class="nav-link" data-scroll-target="#service">Service</a></li>
+  <li><a href="#discovery" id="toc-discovery" class="nav-link" data-scroll-target="#discovery">Discovery</a></li>
+  <li><a href="#persistence" id="toc-persistence" class="nav-link" data-scroll-target="#persistence">Persistence</a></li>
+  <li><a href="#vault" id="toc-vault" class="nav-link" data-scroll-target="#vault">Vault</a></li>
+  <li><a href="#personalinitargs-1" id="toc-personalinitargs-1" class="nav-link" data-scroll-target="#personalinitargs-1">PersonalInitArgs</a></li>
+  </ul></li>
+  <li><a href="#onyxia-1" id="toc-onyxia-1" class="nav-link" data-scroll-target="#onyxia-1">Onyxia</a></li>
+  <li><a href="#resources-1" id="toc-resources-1" class="nav-link" data-scroll-target="#resources-1">Resources</a></li>
+  <li><a href="#networking-1" id="toc-networking-1" class="nav-link" data-scroll-target="#networking-1">Networking</a></li>
+  <li><a href="#security-1" id="toc-security-1" class="nav-link" data-scroll-target="#security-1">Security</a>
+  <ul class="collapse">
+  <li><a href="#password-1" id="toc-password-1" class="nav-link" data-scroll-target="#password-1">Password</a></li>
+  <li><a href="#enable-ip-protection-1" id="toc-enable-ip-protection-1" class="nav-link" data-scroll-target="#enable-ip-protection-1">Enable IP Protection</a></li>
+  <li><a href="#enable-network-policy-1" id="toc-enable-network-policy-1" class="nav-link" data-scroll-target="#enable-network-policy-1">Enable Network Policy</a></li>
+  </ul></li>
+  <li><a href="#git-1" id="toc-git-1" class="nav-link" data-scroll-target="#git-1">Git</a>
+  <ul class="collapse">
+  <li><a href="#enabled-1" id="toc-enabled-1" class="nav-link" data-scroll-target="#enabled-1">Enabled</a></li>
+  <li><a href="#name-1" id="toc-name-1" class="nav-link" data-scroll-target="#name-1">Name</a></li>
+  <li><a href="#email-1" id="toc-email-1" class="nav-link" data-scroll-target="#email-1">Email</a></li>
+  <li><a href="#cache-1" id="toc-cache-1" class="nav-link" data-scroll-target="#cache-1">Cache</a></li>
+  <li><a href="#token-1" id="toc-token-1" class="nav-link" data-scroll-target="#token-1">Token</a></li>
+  <li><a href="#repository-1" id="toc-repository-1" class="nav-link" data-scroll-target="#repository-1">Repository</a></li>
+  <li><a href="#service-1" id="toc-service-1" class="nav-link" data-scroll-target="#service-1">Service</a></li>
+  <li><a href="#discovery-1" id="toc-discovery-1" class="nav-link" data-scroll-target="#discovery-1">Discovery</a></li>
+  <li><a href="#persistence-1" id="toc-persistence-1" class="nav-link" data-scroll-target="#persistence-1">Persistence</a></li>
+  <li><a href="#vault-1" id="toc-vault-1" class="nav-link" data-scroll-target="#vault-1">Vault</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 

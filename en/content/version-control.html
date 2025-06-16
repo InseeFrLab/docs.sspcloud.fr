@@ -42,9 +42,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-8dce0c40f2d28b28da136a1c337455c5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-0d468f875053c9f6c8231d9266964bb5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-8dce0c40f2d28b28da136a1c337455c5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-22a5108df202e5a8319b22a7f1408d4d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-2f8eff420be849534293fcdfd92b543d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-22a5108df202e5a8319b22a7f1408d4d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -76,7 +76,7 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-fixed fullcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -219,7 +219,8 @@ ul.task-list li input[type="checkbox"] {
       }
     };
     const authorPrefersDark = false;
-    const darkModeDefault = authorPrefersDark;
+    const queryPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+    const darkModeDefault = queryPrefersDark.matches;
       document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
       document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
     let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
@@ -232,6 +233,14 @@ ul.task-list li input[type="checkbox"] {
       toggleGiscusIfUsed(toAlternate, darkModeDefault);
       window.dispatchEvent(new Event('resize'));
     };
+    queryPrefersDark.addEventListener("change", e => {
+      if(window.localStorage.getItem("quarto-color-scheme") !== null)
+        return;
+      const alternate = e.matches
+      toggleColorMode(alternate);
+      localAlternateSentinel = e.matches ? 'alternate' : 'default'; // this is used alongside local storage!
+      toggleGiscusIfUsed(alternate, darkModeDefault);
+    });
     // Switch to dark mode if need be
     if (hasAlternateSentinel()) {
       toggleColorMode(true);
@@ -357,7 +366,29 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#version-control" id="toc-version-control" class="nav-link active" data-scroll-target="#version-control">Version Control</a>
+  <ul class="collapse">
+  <li><a href="#why-use-version-control" id="toc-why-use-version-control" class="nav-link" data-scroll-target="#why-use-version-control">Why use version control?</a></li>
+  <li><a href="#integrating-github-with-datalab" id="toc-integrating-github-with-datalab" class="nav-link" data-scroll-target="#integrating-github-with-datalab">Integrating GitHub with Datalab</a>
+  <ul class="collapse">
+  <li><a href="#why-github" id="toc-why-github" class="nav-link" data-scroll-target="#why-github">Why GitHub?</a></li>
+  <li><a href="#creating-an-access-token" id="toc-creating-an-access-token" class="nav-link" data-scroll-target="#creating-an-access-token">Creating an access token</a></li>
+  <li><a href="#adding-the-access-token-to-datalab" id="toc-adding-the-access-token-to-datalab" class="nav-link" data-scroll-target="#adding-the-access-token-to-datalab">Adding the access token to Datalab</a></li>
+  </ul></li>
+  <li><a href="#using-git-with-datalab-services" id="toc-using-git-with-datalab-services" class="nav-link" data-scroll-target="#using-git-with-datalab-services">Using Git with Datalab services</a>
+  <ul class="collapse">
+  <li><a href="#via-the-terminal" id="toc-via-the-terminal" class="nav-link" data-scroll-target="#via-the-terminal">Via the terminal</a></li>
+  <li><a href="#via-integrated-graphical-interfaces" id="toc-via-integrated-graphical-interfaces" class="nav-link" data-scroll-target="#via-integrated-graphical-interfaces">Via integrated graphical interfaces</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 

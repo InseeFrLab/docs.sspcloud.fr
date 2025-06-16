@@ -77,9 +77,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-8dce0c40f2d28b28da136a1c337455c5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-0d468f875053c9f6c8231d9266964bb5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-8dce0c40f2d28b28da136a1c337455c5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-22a5108df202e5a8319b22a7f1408d4d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-2f8eff420be849534293fcdfd92b543d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-22a5108df202e5a8319b22a7f1408d4d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -111,7 +111,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </head>
 
-<body class="nav-fixed fullcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -254,7 +254,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       }
     };
     const authorPrefersDark = false;
-    const darkModeDefault = authorPrefersDark;
+    const queryPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+    const darkModeDefault = queryPrefersDark.matches;
       document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
       document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
     let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
@@ -267,6 +268,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       toggleGiscusIfUsed(toAlternate, darkModeDefault);
       window.dispatchEvent(new Event('resize'));
     };
+    queryPrefersDark.addEventListener("change", e => {
+      if(window.localStorage.getItem("quarto-color-scheme") !== null)
+        return;
+      const alternate = e.matches
+      toggleColorMode(alternate);
+      localAlternateSentinel = e.matches ? 'alternate' : 'default'; // this is used alongside local storage!
+      toggleGiscusIfUsed(alternate, darkModeDefault);
+    });
     // Switch to dark mode if need be
     if (hasAlternateSentinel()) {
       toggleColorMode(true);
@@ -392,7 +401,35 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#stockage-de-données" id="toc-stockage-de-données" class="nav-link active" data-scroll-target="#stockage-de-données">Stockage de données</a>
+  <ul class="collapse">
+  <li><a href="#principes" id="toc-principes" class="nav-link" data-scroll-target="#principes">Principes</a></li>
+  <li><a href="#gérer-ses-données" id="toc-gérer-ses-données" class="nav-link" data-scroll-target="#gérer-ses-données">Gérer ses données</a>
+  <ul class="collapse">
+  <li><a href="#importer-des-données" id="toc-importer-des-données" class="nav-link" data-scroll-target="#importer-des-données">Importer des données</a></li>
+  <li><a href="#partager-des-données" id="toc-partager-des-données" class="nav-link" data-scroll-target="#partager-des-données">Partager des données</a></li>
+  </ul></li>
+  <li><a href="#utiliser-des-données-stockées-sur-minio" id="toc-utiliser-des-données-stockées-sur-minio" class="nav-link" data-scroll-target="#utiliser-des-données-stockées-sur-minio">Utiliser des données stockées sur MinIO</a>
+  <ul class="collapse">
+  <li><a href="#configuration" id="toc-configuration" class="nav-link" data-scroll-target="#configuration">Configuration</a></li>
+  <li><a href="#lister-les-fichiers-dun-bucket" id="toc-lister-les-fichiers-dun-bucket" class="nav-link" data-scroll-target="#lister-les-fichiers-dun-bucket">Lister les fichiers d’un <em>bucket</em></a></li>
+  <li><a href="#importer-des-données-1" id="toc-importer-des-données-1" class="nav-link" data-scroll-target="#importer-des-données-1">Importer des données</a></li>
+  <li><a href="#exporter-des-données-vers-minio" id="toc-exporter-des-données-vers-minio" class="nav-link" data-scroll-target="#exporter-des-données-vers-minio">Exporter des données vers MinIO</a></li>
+  </ul></li>
+  <li><a href="#renouveler-des-jetons-daccès-tokens-périmés" id="toc-renouveler-des-jetons-daccès-tokens-périmés" class="nav-link" data-scroll-target="#renouveler-des-jetons-daccès-tokens-périmés">Renouveler des jetons d’accès (<em>tokens</em>) périmés</a></li>
+  <li><a href="#usages-avancés" id="toc-usages-avancés" class="nav-link" data-scroll-target="#usages-avancés">Usages avancés</a>
+  <ul class="collapse">
+  <li><a href="#créer-un-compte-de-service" id="toc-créer-un-compte-de-service" class="nav-link" data-scroll-target="#créer-un-compte-de-service">Créer un compte de service</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
